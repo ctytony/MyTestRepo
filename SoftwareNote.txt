@@ -1,0 +1,3647 @@
+v3.1
+T580sc 211020 debug spark fail bond extra wire
+T579sc 211009 link USG v1.0.T28 - debug display wrong version no.
+T578sc 211007
+	1. in last index unit, add config to skip last col
+	2. link MachineConfig v1.1.T24 - add [DEBUG][Skip Last Column]=0
+T577sc 210922 link MachineConfig v1.1.T23 - add [EFO][Gap Large Time High Limit]=0
+T576sc 210916 in CBond.CalcBallInfo, show more debug info
+T575sc 210915 add Rev/PreKink Span Length 2
+T574sc 210912 add wire only option for bump ball control
+T573sc 210910 debug bond timeout for bsob with bump only
+T572sc 210909 debug wrong name for bbos shape para
+T571sc 210908 debug can't stop auto bond for bump ball only
+T570sc 210904 link DHUsb3Cam v1.0.T1, Vision8 v1.9.T3
+T569sc 210827 link Wire v1.1.T26 - inc max dummy wire to 6000
+T568sc 210825 debug dummy bond error after 150 wires
+T567sc 210819 link ServoETEL v1.0.T5 - add shared memory for scope data
+T566sc 210817 in CWaveForm, rename local var
+T565sc 210812
+	1. add CalcArcMotionZ to debug loop top premove
+	2. link MachineConfig v1.1.T22 - add [DEBUG][Loop Top Premove]=0
+T564sc 210809 add rls power limit range
+T563sc 210809 link BondPara v1.0.T25, Program v1.1.T19
+T562sc 210809 rename BACK_UP_PR para
+T561sc 210807 add/remove pos/force/wcl cali menu according to config
+T560sc 210807 link Program v1.1.T18 - debug teach dummy program window crash
+T559sc 210807 clean CDummyProgram
+T558sc 210806 in DataStruct.h, rename BALL/WIRE_INFO_RCD as ST_BALL/WIRE_INFO
+T557sc 210806 clean DataStruct.h
+T556sc 210805 link ServoETEL v1.0.T4 - home x before srch y limit
+T555sc 210805 for bump ball, set REV_DIST_HT = 0
+T554sc 210731
+	1. link AcsServo v1.0.T13, MachineData v1.1.T23, MachineConfig v1.1.T21
+	2. link Program v1.1.T17, Reference v1.1.T11, Wire v1.1.T19
+	3. link CuIndex v1.1.T10, R2RIndex v1.1.T12, VisionDisplay v1.1.T18
+	4. link ServoController v1.1.T136, SoftController v1.0.T118
+	5. link StepperIO v1.2.T41, ServoETEL v1.0.T3
+T553sc 210730 in motion.h, rename EN_SERVO_VAR
+T552sc 210730 in motion.h, remove ST_SERVO_INT_VAR
+T551sc 210730 in CLoopConfigPage, rename local var
+T550sc 210730 in CLoop1stKinkPage, rename local var
+T549sc 210730 in CLoopParaGeneral, rename local var
+T548sc 210729 link LoopPara v1.0.T34 - set arc delay default = 100
+T547sc 210727 for etel,
+	1. use EN_SERVO_INT_VAR.REV_DIST_HT_POINT as skew factor
+	2. add EN_SERVO_INT_VAR.REV_DIST_HT
+	3. in DataStruct.h, rename WIRE_INFO_RCD.stKink1Pos to stRevPos
+T546sc 210727 for etel, change arc delay unit to percent
+T545sc 210725 for etel, use EN_SERVO_INT_VAR.KINK2/3_DIST_HT_POINT as skew factor
+T544sc 210725 in motion.h EN_SERVO_INT_VAR,
+	1. rename NECK_HT/DIST_PREMOVE to REV_HT/DIST_PREMOVE
+	2. rename NECK/PRE_KINK/KINK2/KINK3_DIST_Z_POINT to REV/PRE_KINK/KINK2/KINK3_DIST_HT_POINT
+T543sc 210725 in DataStruct.h, rename WIRE_INFO_RCD.nNeckHt/DistPremove to nRevHt/DistPremove
+T542sc 210725 in DataStruct.h,
+	1. rename WIRE_INFO_RCD.nNeckDistZPoint to nRevDistHtPoint
+	2. rename WIRE_INFO_RCD.adNeckDistZMotion to adRevDistHtMotion
+T541sc 210725 in DataStruct.h,
+	1. rename WIRE_INFO_RCD.nPreKinkDistZPoint to nPreKinkDistHtPoint
+	2. rename WIRE_INFO_RCD.adPreKinkDistZMotion to adPreKinkDistHtMotion
+T540sc 210725 in DataStruct.h,
+	1. rename WIRE_INFO_RCD.nRevDist3ZPoint to nKink3DistHtPoint
+	2. rename WIRE_INFO_RCD.adRevDist3ZMotion to adKink3DistHtMotion
+T539sc 210725 in DataStruct.h,
+	1. rename WIRE_INFO_RCD.nRevDist2ZPoint to nKink2DistHtPoint
+	2. rename WIRE_INFO_RCD.adRevDist2ZMotion to adKink2DistHtMotion
+T538sc 210724 for etel, add EN_SERVO_INT_VAR.KINK2/3_DIST_HT
+T537sc 210724 for etel, use EN_SERVO_INT_VAR.PRE_KINK_DIST_Z_POINT as skew factor
+T536sc 210723 link MachineConfig v1.1.T20 - add GetSwitchForceDelay
+T535sc 210724 in force cali, debug cap crash
+T534sc 210723 link MachineConfig v1.1.T19 - add GetSwitchForcePercent
+T533sc 210722 in force cali, debug cap crash
+T532sc 210720 change force cali srch thres to 20 (from 40)
+T531sc 210719 link MachineConfig v1.1.T17 - remove max pattern size limit
+T530sc 210716 in debug mode, show program record matrix row/col
+T529sc 210716 link DeviceData v2.0.T2 - debug wrong last index window column
+T528sc 210715 link DeviceData v2.0.T1
+T527sc 210713 debug stepper wire spool not init during power up, need to reload config
+T526sc 210713 remove comment //v1.5.T151 & //3.0.T37/44
+T525sc 210713 remove comment //v1.5.T9/26/28/31/33
+T524sc 210713 remove comment //v1.5.T70/71/76/113/115
+T523sc 210713 remove comment //v1.5.T22/36/41/42 & //v2.0.T4
+T522sc 210710 remove comment //v1.4.T1/5/9/11/12/27/31/35/40/44
+T521sc 210710 remove comment //v1.3.T138
+T520sc 210709 remove comment //v1.2.T2/15/19
+T519sc 210709 debug bsob stop auto bond servo error
+T518sc 210709 debug bbos stop auto bond servo error
+T517sc 210709 remove comment //v1.1.T318/319
+T516sc 210709 remove comment //v1.1.T186/282/283/284
+T515sc 210709 remove comment //v1.1.W255/T280
+T514sc 210709 remove comment //v1.1.T293
+T513sc 210709 remove comment //v3.0.T26/51/68/92/95
+T512sc 210709 remove comment //v2.0.T9
+T511sc 210709 debug bbos ball only option can't stop auto bond
+T510sc 210709 debug bbos ball only option bond wire instead
+T509sc 210708 remove comment //v1.1.W11/17
+T508sc 210708 change Send/SetUsgProf message
+T507sc 210708 remove comment //v3.0.T336
+T506sc 210708 debug bbos bump bond 1st search delay
+T505sc 210708 in CBond::BondOneWire/Ball, show m_nBondType
+T504sc 210708 in CBond::CheckBondProgress, add para nIndex
+T503sc 210707 in CBond::BondOneBall, debug can't stop auto bond
+T502sc 210707 in CBond::PreFireEFO, debug start bonding hang for fab x4
+T501sc 210706 in CSparkParaPage, change gap large time range to 10..50
+T500sc 210706 debug efo unknown error
+T499sc 210706 clean CBondObjectDlg
+T498sc 210706 link MachineConfig v1.1.T16 - add [EFO][Prefire Current]=0
+T497sc 210628 add \ACS\ACS_SC_668
+T496sc 210628
+	1. for piezo wcl force para, use menu replace config
+	2. link ServoController v1.1.T135
+T495sc 210628 link ServoController v1.1.T134 - clean UpdateWireClampProfile
+T494sc 210624
+	1. for etel, thread wire move bh up
+	2. link MachineConfig v1.1.T15 - add [ETEL][Thread Wire Move Bond Head]=0
+T493sc 210617 in force cali, debug reset after verify
+T492sc 210617 link SoftController v1.0.T116 - change tail power after tail delay
+T491sc 210617 add CBond.MatrixDieAheadAlign2
+T490sc 210616 link MachineConfig v1.1.T14 - add [VISION][Multi PR]=0
+T489sc 210616 link Vision v1.9.T1 - add multi pr
+T488sc 210616 link SoftController v1.0.T115 - add seat power
+T487sc 210612 clean CBond.CalcWireInfo
+T486sc 210611 clean CBond.CheckBondResult
+T485sc 210611 clean CUsgConfigPage
+T484sc 210610
+	1. link MachineConfig v1.1.T13, EFO v1.0.T37
+	2. add gap large time
+T483sc 210610 debug 1st search delay at 2nd wire
+T482sc 210606
+	1. link SoftController v1.0.T114 - debug cap crash
+	2. in CBond.CheckBondProgress, use 1-hour timeout when debug step motion, allow user press stop to quit
+	3. move bh to fire before re-do pr during auto bond
+T481sc 210606
+	1. in CBond.GetPerformPrRef, debug wrong nStartRef
+	2. rename debug message
+T480sc 210604 in CBond.ShowDebugMsg, add theMcConfig.IsDebugModeBond/VisionTime
+T479sc 210601 revert T475
+T478sc 210601
+	1. for etel, debug wrong wire display
+	2. link ServoETEL v1.0.T2, VisionDisplay v1.1.T17
+T477sc 210601 link VisionDisplay v1.1.T16
+T476sc 210531 clean CAutoBondPage
+T475sc 210529
+	1. link VisionDisplay v1.1.T15
+	2. for etel, debug wrong wire display
+T474sc 210528 for etel, move to safe pos before init mhs
+T473sc 210528 clean CWireBondDlg
+T472sc 210527 link MachineConfig v1.1.T12 - add [FORCE CALIBRATION][Auto Reset]=1
+T471sc 210527 show efo io error message
+T470sc 210526 debug efo no alarm on first time error
+T469sc 210526 add debug message for efo error io
+T468sc 210524 link SoftController v1.0.T113 - debug dry run move up
+T467sc 210524 change Mode Start Stop debug message to %.2f
+T466sc 210520
+	1. link MachineConfig v1.1.T11 - remove [MACHINE][Servo Type]
+	2. link MachineData v1.1.T21
+T465sc 210519 link MachineConfig v1.1.T10 - add [DEBUG][Mode Start Stop]=0
+T464sc 210518 link ServoETEL v1.0.T1
+T463sc 210517 in CServoETEL, remove unused header files
+T462sc 210517 show waveform by config
+T461sc 210517 debug cap crash during start/stop
+T460sc 210514 replace theMcConfig.GetServoType with _SERVO_TYPE
+T459sc 210513
+	1. link MachineConfig v1.1.T9 - add [DEBUG][Bondhead Move Wait]=0
+	2. change CBond.MoveBondHeadToFireLevel/RelaxPosition to move with wait
+T458sc 210513 link MachineConfig v1.1.T8 - add [DEBUG][Waveform File]=0
+T457sc 210512 clean CBond.DieAheadAlign2
+T456sc 210512 clean CBond.DieAheadAlign2
+T455sc 210512 add CBond.DieAheadAlign2
+T454sc 210511 link LoopPara v1.0.T32
+T453sc 210511 link Wire v1.1.T18
+T452sc 210510 remove comment //v3.0.T36/38
+T451sc 210510 remove comment //v3.0.T466
+T450sc 210510 clean CBond.BondOneWire
+T449sc 210510 add TriggerBonding to debug cap crash during start/stop
+T448sc 210507 debug cap crash during auto bond start/stop
+T447sc 210506 revert T397 - for etel load config init wire clamp
+T446sc 210506 link MachineConfig v1.1.T7 - add [USG][Manual Power]
+T445sc 210506 clean CBond.PerformMultiPrAlignment
+T444sc 210506 change efo time 1 range to 0..max (prev 50..max)
+T443sc 210505 rename/clean int CBond.GetPerformPrReference to void GetPerformPrRef
+T442sc 210505 clean CBond.PrepareErrorMsg
+T441sc 210505 link EFO v1.0.T35, MachineConfig v1.1.T6 - add [EFO][Current Factor/Offset]
+T440sc 210505 clean CBond.PerformMultiPrAlignment
+T439sc 210504 add air tensioner control
+T438sc 210504 clean CBond
+T437sc 210503 add info in TrajData.txt
+T436sc 210503 clean CBond::CalcWireInfo
+T435sc 210430 for etel, debug compile error
+T434sc 210429
+	1. link ServoController v1.1.T133 - add GetInput
+	2. link MachineConfig v1.1.T5 - add [EFO][Error IO]=0
+T433sc 210429 link VisionDisplay v1.1.T14
+T432sc 210429 for etel, add touchdown force/range/time menu
+T431sc 210426 link VisionDisplay v1.1.T13
+T430sc 210426 for etel, change head time range to -10..0 (prev -10..10)
+T429sc 210426 link MachineConfig v1.1.T4
+T428sc 210421 link MachineConfig v1.1.T3 - add Transit/FilterTime, WndRange/Time, GainThres
+T427sc 210421 link ServoController v1.1.T132
+T426sc 210421 revert T421
+T425sc 210420
+	1. in IDD_TOP_ELEV_SETUP, re-layout overlap buttons
+	2. debug search contact error after dummy bond
+T424sc 210417 clean CDummyBond/CWireBondDlg::ContactSearch/CAutoBondPage::OnDummyBond
+T423sc 210414 debug error message after finish teaching bond pt
+T422sc 210413 in IDD_TCH_VISION_PATTERN, add combo "Copy From"
+T421sc 210413 link Debug v1.1.T1
+T420sc 210413 clean CBond::CalcWireInfo
+T419sc 210413 link SoftController v1.0.T112 - debug loop top premove
+T418sc 210413 change feed time range to 0..100 (from 0..30)
+T417sc 210412 clean CTchVisionPatternPage
+T416sc 210409 link MathCalc v1.0.T18, Vision v1.8.T65, Wire v1.1.T17
+T415sc 210407 remove CServoETEL.InitConfig/ReDownloadBufferProgram
+T414sc 210406 in CUsgConfigPage, change usg feed power/time range
+T413sc 210405 rename ST_BUMP_SHAPE variable
+T412sc 210405 rename ST_BUMP_BALL variable
+T411sc 210405 link BallPara v1.1.T8
+T410sc 210402 add bbos/bsob menu Position Offset/Span Length Delay/Arc Span/Arc Span Delay
+T409sc 210402 debug bump shape para menu length too short
+T408sc 210402
+	1. link MachineConfig v1.1.T1 - remove arc kink para
+	2. link LoopPara v1.0.T31, LoopShape v1.0.T63, Program v1.1.T15
+	3. link SoftController v1.0.T111, ServoController v1.1.T131
+T407sc 210401
+	1. link LoopPara v1.0.T30, LoopShape v1.0.T62, Program v1.1.T14
+	2. add menu prekink/kink2/kink3 HtFactor2/ArcFactor/ArcDelay/Height/SpanLen2
+	3. link SoftController v1.0.T110, ServoController v1.1.T130
+T406sc 210331 in CBond::TriggerBonding, debug msg show return status
+T405sc 210331 in CBond::CalcWire/BallInfo, re-arrange debug message
+T404sc 210323 debug hang during teach by:
+	1. link Program v1.1.T13, CuIndex v1.1.T9, R2RIndex v1.1.T11
+	2. link VisionDisplay v1.1.T9, LoopPara v1.0.T29
+T403sc 210323 link LoopPara v1.0.T28, LoopShape v1.0.T61
+T402sc 210322 link Wire v1.1.T16
+T401sc 210320
+	1. link Program v1.1.T12, Wire v1.1.T15
+	2. add individual bsob wire pre-ctact/ctact/bond/release time/power/force
+	3. remove bump wire power offset
+T400sc 210317 link Wire v1.1.T13
+T399sc 210317
+	1. for etel, change wcl pretrig low limit to non-negative
+	2. change wcl pretrig message
+T398sc 210315 for etel, debug wrong wire clamp force
+T397sc 210312 for etel, load config init wire clamp
+T396sc 210312
+	1. link efo v1.0.T34
+	2. change efo time max limit based on time factor
+T395sc 210312 link SoftController v1.0.T109 - add delay for loop top premove < 0
+T394sc 210312 in WIRE_INFO_RCD,
+	1. rename nRevHt4Premove to nTwistHtPremove
+	2. rename nRevDist3Premove to nKink3DistPremove
+	3. rename nRevHt3Premove to nKink3HtPremove
+	4. rename nRevDist2Premove to nKink2DistPremove
+	5. rename nRevHt2Premove to nKink2HtPremove
+T393sc 210311 link LoopPara v1.0.T27
+T392sc 210311 change bump wire srch delay range 2..15 (prev 2..8)
+T391sc 210310 for etel, debug ResetBondProgress err
+T390sc 210310 for etel, thread wire bh not move down
+T389sc 210304 clean CAdvParaMapDlg::OnDestroy/OnInitDialog
+T388sc 210304
+	1. move menu bbos/bsob fab type from wire offset to bbos/bsob offset
+	2. rename messages
+T387sc 210302 link SoftController v1.0.T108 - debug servo error
+T386sc 210302 in DataStruct.h,
+	1. remove struct BOND_SEQUENCE_RCD
+	2. rename enLfClampState to EN_LF_CLAMP_STATE
+T385sc 210226 in MacDef.h, rename enums
+T384sc 210226
+	1. add bump span length delay
+	2. link MachineConfig v1.0.T239 - add [BBOS/BSOB][Span Length Delay]
+	3. link SoftController v1.0.T107, ServoController v1.1.T129
+T383sc 210225
+	1. in MACDEF.h, rename MAP_PARA_TYPE to EN_PARA_TYPE
+	2. in MSGDEF.h, rename enMessageID to EN_MSG_ID
+T382sc 210223 clean CBallShapeParaPage
+T381sc 210223
+	1. add menu for bbos fab type
+	2. link Program v1.1.T11, Wire v1.1.T12
+T380sc 210223 clean CDummyBondPage
+T379sc 210223 clean CBondParaPage
+T378sc 210223 link MachineConfig v1.0.T238 - debug wrong efo time resol
+T377sc 210221 link MachineConfig v1.0.T237 - remove acs buffer type
+T376sc 210221 clean CSparkParaPage
+T375sc 210220
+	1. add kink 2/3 span len 2
+	2. link LoopShape v1.0.T60
+	3. link SoftController v1.0.T106, ServoController v1.1.T128
+T374sc 210220 clean CBond.CalcWireInfo
+T373sc 210220
+	1. change BALL_INFO_RCD.lFlexSpanHeight to nFlexSpanHt
+	2. change BALL_INFO_RCD.lFlexHeight to nFlexHt
+	3. change BALL_INFO_RCD.lSpanHeight to nSpanHt
+	4. change BALL_INFO_RCD.lBaseHeight/2 to nBaseHt/2
+	5. change WIRE_INFO_RCD.lTwistHt & lTwistRev/FwdDistHt to int
+	6. change WIRE_INFO_RCD.lKink3Ht/lKink3DistHt to int
+	7. change WIRE_INFO_RCD.lKink2DistHt to int
+	8. change WIRE_INFO_RCD.lKink2Ht to int
+	9. change WIRE_INFO_RCD.lPreKinkDistHt to int
+	10. change WIRE_INFO_RCD.lPreKinkHt to int
+	11. change WIRE_INFO_RCD.lRevDistHt to int
+	12. change WIRE_INFO_RCD.lRevHt to int
+	13. change BALL/WIRE_INFO_RCD.lCtactLvl1/2 to int
+	14. change WIRE_INFO_RCD.lSlopeLength to nSlopeLen
+	15. change WIRE_INFO_RCD.lAboveLoopTopHt to int
+	16. remove WIRE_INFO_RCD.lTrajHeight
+	17. change BALL/WIRE_INFO_RCD.lTailHeight to nTailHt
+	18. remove BALL_INFO_RCD.nResetLvlPoint/adResetLvlMotion
+	19. change BALL/WIRE_INFO_RCD.lResetLvl to int
+	20. change BALL/WIRE_INFO_RCD.lSrchLvl1 to int
+	21. change BALL/WIRE_INFO_RCD.lSrchLvl2 to int
+	22. change WIRE_INFO_RCD.lPreKinkHt2/lKink2Ht2/lKink3Ht2/lRevHt2 to int
+T372sc 210220
+	1. link MachineConfig v1.0.T236, MathCalc v1.0.T17
+	2. add bump position offset
+	3. replace CalcPosAlongWire with CalcPosAlongWire2
+T371sc 210220
+	1. clean CBond::CalcBallInfo
+	2. in CBond::CalcBallInfo, replace switch(nBumpType) with if
+	3. clean CBumpWireParaPage
+L370sc 210202 change layout of Loop Parameter
+T369sc 210111
+	1. link Program v1.1.T10, Reference v1.1.T10, Wire v1.1.T11
+	2. link CuIndex v1.1.T8, R2RIndex v1.1.T10, VisionDisplay v1.1.T8
+T368sc 210129 link LoopShape v1.0.T57 - invert ht factor polarity for kink 2/3
+T367sc 210129 link MachineConfig v1.0.T235 - add [ARC KINK 0..11][Neck Delay]=0
+T366sc 210129
+	1. change tail break speed range min 2.5 (prev 10)
+	2. clean CCfgBondPage
+T365sc 210127
+	1. link LoopShape v1.0.T56 - change kink height factor to 0 = flat
+	2. change wire length correction range to -200..400 (from -200..200)
+T364sc 210126 in BBOS/BSOB para menu, debug bump shape mode para not shown
+T363sc 210122
+	1. link MachineConfig v1.0.T234 - add [ARC KINK 0..11]
+	2. link LoopShape v1.0.T55
+T362sc 210122
+	1. add individual bump shape mode
+	2. in BBOS/BSOB para menu, remove bump shape mode
+	3. link Program v1.1.T9, Wire v1.1.T10
+T361sc 210122
+	1. in CLoopParaGeneral, debug wrong prekink para & loop base mode combo option
+	2. clean CLoopParaGeneral
+T360sc 210121
+	1. in CLoopParaBaseDlg, debug show wrong loop group para
+	2. debug auto page loop para not update after change wire loop group
+	3. link LoopPara v1.0.T26
+T359sc 210120
+	1. in CLoopParaGeneral, group Loop Ht/Wire Length Correct/L Angle together
+	2. clean CLoopParaGeneral::UpdateLoopParaMenu
+	3. rename msg
+T358sc 210119 rename msg
+T357et 210114 change [DEBUG][ETEL]=225 for debug rtss
+T356et 210113 if [DEBUG][ETEL]=255, debug rtss by visual studio
+T355et 210113 in PerformScanKeyThread, replace GetCurrentTime with CHTimer
+T354et 210111
+	1. update Servo/ServoETEL.h version no.
+	2. link Program v1.1.T8, Reference v1.1.T9, Wire v1.1.T9
+	3. link CuIndex v1.1.T7, R2RIndex v1.1.T9, VisionDisplay v1.1.T7
+T353et 210111 in CCfgWclProfilePage::OnDestroy, debug wrong close force for etel
+T352et 210111 remove CServoETEL::ClearOutputBit
+T352et 210111 remove CServoETEL::SetOutputBit
+T351et 210111 in CServoETEL.UpdateWireClampProfile, replace config force with menu force
+T350sc 210111 add neck ht factor 2
+	1. link MachineConfig v1.0.T233, LoopShape v1.0.T54
+	2. link SoftController v1.0.T105, ServoController v1.1.T127
+	3. in DataStruct.h, add WIRE_INFO_RCD.lRevHt2
+	4. in motion.h, add EN_SERVO_INT_VAR.REV_HT2
+T349sc 210108 link SoftController v1.0.T104 - debug ht factor 2 move one dir only
+T348sc 210107 link SoftController v1.0.T103 - debug bump base ht 2 error
+T347sc 210106 debug bump base height 2 not working
+T346sc 210106 clean CCfgWclProfilePage
+T345sc 210105 debug bump base height 2 not working
+T344et 210105 add CServoETEL.TrigEFO to replace CServoController.RunBuffer(3)
+T343sc 210104 clean CLoopParaBaseDlg
+T342sc 201230 debug extra angle
+T341sc 201228 add extra angle:
+	1. link MachineConfig v1.0.T232, LoopShape v1.0.T53, SoftController v1.0.T102
+	2. in DataStruct.h, add WIRE_INFO_RCD.lPreKinkHt2, lKink2/3Ht2
+	3. in motion.h, add EN_SERVO_INT_VAR.PRE_KINK_HT2, KINK2/3_HT2
+T340sc 201225 implement CServoETEL.TriggerWireClampProfile
+T339sc 201223 link LoopShape v1.0.T50 - debug kink 2 affected by prekink
+T338sc 201223
+	1. link MachineConfig v1.0.T231 - add [ARC KINK][Kink 2/3 Height]
+	2. link LoopShape v1.0.T49
+T337sc 201222
+	1. link MachineConfig v1.0.T229 - add [ARC KINK][Kink 2/3 Delay]
+	2. link SoftController v1.0.T101
+T336sc 201222 in CBond.CalcWireInfo
+	1. rename nTwistFwdDistZTime to nTwistFwdDistHtTime
+	2. rename nTwistFwdDistTblTime to nTwistFwdDistTime
+	3. rename nTwistRevDistZTime to nTwistRevDistHtTime
+	4. rename nTwistRevDistTblTime to nTwistRevDistTime
+	5. rename nRevHt4Time to nTwistHtTime
+	6. rename nRevDist3ZTime to nKink3DistHtTime
+	7. rename nRevDist3TblTime to nKink3DistTime
+	8. rename nRevHt3Time to nKink3HtTime
+	9. rename nRevDist2ZTime to nKink2DistHtTime
+	10. rename nRevDist2TblTime to nKink2DistTime
+	11. rename nRevHt2Time to nKink2HtTime
+	12. rename nNeckDistZTime to nNeckDistHtTime
+	13. rename nNeckDistTblTime to nNeckDistTime
+T335sc 201221 link LoopShape v1.0.T48
+T334sc 201221 amend messages
+T333sc 201221
+	1. link MachineConfig v1.0.T228 - add [MACHINE][Loop Shape Type]
+	2. link LoopShape v1.0.T47
+T332sc 201211
+	1. link MachineConfig v1.0.T227 - add [BUMP BALL][Arc Span Delay]
+	2. link SoftController v1.0.T100
+T331sc 201209 link MachineConfig v1.0.T226 - add [BUMP BALL][Arc Span]
+T330sc 201208
+	1. link SoftController v1.0.T98 - add flex bump base ht 2 movement
+	2. link MachineConfig v1.0.T225 - add [BUMP BALL][Base Height 2]
+T329sc 201208 link SoftController v1.0.T97
+T328sc 201202
+	1. add arc prekink delay
+	2. link MachineConfig v1.0.T223, SoftController v1.0.T89
+T327sc 201201 debug wrong arc prekink time
+T326sc 201130
+	1. link SoftController v1.0.T80, ServoController v1.1.T126
+	2. add arc prekink
+T325sc 201128
+	1. link Program v1.1.T7, Reference v1.1.T8, Wire v1.1.T8
+	2. link CuIndex v1.1.T6, R2RIndex v1.1.T8, VisionDisplay v1.1.T6
+T324sc 201128 change Servo.h & ServoETEL.h version no.
+T323sc 201125 debug wrong [DEBUG][Device Sequence]=2
+T322sc 201125 rename twist premove chinese message
+T321sc 201125 link MachineConfig v1.0.T222 - add [ARC KINK][Pre Kink]
+T320sc 201115 rename kink2/3 chinese message
+T319sc 201120 debug wrong CBond.CalcArcMotionZ
+T319sc 201119
+	1. link MachineConfig v1.0.T221 - add [ARC KINK][Neck/Kink 2/3]
+	2. add CBond.CalcArcMotionZ
+T318et 201113
+	1. in DataStruct.h, add WIRE_INFO_RCD.nTrajFactor
+	2. in motion.h, replace EN_SERVO_INT_VAR.BUF2_PARAM1 with TRAJ_FACTOR
+T317sc 201108
+	1. link MachineConfig v1.0.T220
+	2. debug wrong premove group
+T316sc 201107 debug wrong premove & control group for loop mode 0
+T315sc 201105
+	1. replace soft search with RH/RD control para
+	2. link MachineConfig v1.0.T219 - add [CONTROL GROUP][RH/RD ? 1..11]
+	3. link ServoController v1.1.T125, SoftController v1.0.T79
+T314sc 201105 link MachineConfig v1.0.T218 - add [PREMOVE GROUP][Enable/Neck Height/Distance 1.11]
+T313et 201103 in CBond.SetUsgProfile, add show index no.
+T312et 201103 in CBond.SetUsgProfile, debug show wrong wire no.
+T311et 201029 debug not send wcl profile to etel
+T310et 201027 in ServoETEL, add share mem SoftPosLmt
+T309et 201021 for etel, not send SERVO_VAR_TRAJ_Z data
+T308et 201021 in ServoETEL, add share mem ServoIntData0/1
+T307et 201019 in ServoETEL, add share mem Buf0/1Ctact1/2
+T306et 201017 in ServoETEL, add share mem RestartBond & StartBond0/1
+T305et 201017
+	1. link Program v1.1.T6, Reference v1.1.T7, Wire v1.1.T7
+	2. link CuIndex v1.1.T5, R2RIndex v1.1.T7, VisionDisplay v1.1.T5
+T304et 201017
+	1. link MachineConfig v1.0.T203 - add [BYPASS][Onload Elev No Mag]=0
+	2. start auto bond not checking onload elev no mag error
+T303et 201017 for etel, not set ctact force = bond force if ctact time = 0
+T302et 201017 in CBond.BondOneWire, SendWireInfoNext show nNextWire instead of nNextWireExist
+T301et 201016 in CBond.BondOneWire, debug SendWireInfoNext show wrong nNextWireExist
+T300et 201016 in CBond.BondOneWire, Calc/SendWireInfo debug message show wire no.
+T299et 201015 in CServoETEL.SearchLimit, add para "update etel"
+T298et 201013 for etel, debug negative search delay
+T297et 201013 re-org CBond.TriggerBonding debug message
+T296et 201013 change speed unit to mm/s (from um/ms)
+T295et 201010 for etel, set srch delay min = 0
+T294et 201009 replace theMcConfig.GetAcsBufferType = 3 with GetServoType = 1
+T293et 201009 add force factor for acs/etel when calc force
+T292et 201008
+	1. link MachineConfig v1.0.T215 - add [MACHINE][Servo Type]
+	2. link MachineData v1.1.T20
+T291et 201008 for etel, debug show wrong xyz pos
+T290sc 201007 link SoftController v1.0.T78 - debug hang at init bonder
+T289sc 201007 change loop para message
+T288sc 201007 change loop top mode option to above loop & fast loop (prev mode A/B)
+T287et 201007 link LoopShape v1.0.T45
+T286et 201007 link LoopShape v1.0.T44
+T285et 201007 link LoopShape v1.0.T42
+T284et 201006 in CBond.CalcWireInfo, rename dTwistRev/FwdKinkLvl to dTwistRev/FwdDistLvl
+T284et 201006 in CBond.CalcWireInfo, rename dTwistRevLvl to dTwistLvl
+T284et 201006 in DataStruct.h, rename WIRE_INFO_RCD.lTwistRev/FwdDistHeight to lTwistRev/FwdDistHt
+T284et 201006 in DataStruct.h, rename WIRE_INFO_RCD.lRevHeight4 to lTwistHt
+T284et 201006 in DataStruct.h, rename WIRE_INFO_RCD.bTwistKinkEnable to bTwistEnable
+T284et 201006 in CBond.CalcWireInfo, rename dRevLvl3 to dKink3Lvl, dKinkLvl3 to dKink3DistLvl
+T284et 201006 in DataStruct.h, rename WIRE_INFO_RCD.lRevHeight3 to lKink3Ht, lRevDist3Height to lKink3DistHt
+T284et 201006 in CBond.CalcWireInfo, rename dRevLvl2 to dKink2Lvl, dKinkLvl2 to dKink2DistLvl
+T284et 201006 in DataStruct.h, rename WIRE_INFO_RCD.lRevHeight2 to lKink2Ht, lRevDist2Height to lKink2DistHt
+T284et 201006 in CBond.CalcWireInfo, rename dPreRevLvl to dPreKinkLvl
+T284et 201006 in CBond.CalcWireInfo, rename dPreKinkLvl to dPreKinkDistLvl
+T284et 201006 in DataStruct.h, rename WIRE_INFO_RCD.lPreKinkRevHt to lPreKinkHt, lPreKinkDistHeight to lPreKinkDistHt
+T284et 201006 in CBond.CalcWireInfo, rename dRevLvl1 to dRevLvl, dKinkLvl1 to dRevDistLvl
+T284et 201006 in DataStruct.h, rename WIRE_INFO_RCD.lRevHeight1 to lRevHt, lRevDist1Height to lRevDistHt
+T283et 201005 in motion.h, rename EN_SERVO_INT_VAR.REV_HT2/DIST2_PREMOVE to KINK2_HT/DIST_PREMOVE
+T282et 201005 in motion.h, rename EN_SERVO_INT_VAR.PEAK/TAIL_WCL_CLOSE_PRETRIG to WCL_PEAK/TAIL_CLOSE_PRETRIG
+T282et 201005 in motion.h, rename EN_SERVO_INT_VAR.REV_HEIGHT to REV_HT
+T282et 201005 in motion.h, rename EN_SERVO_INT_VAR.REV_DIST2_X/Y/Z_POINT to KINK2_DIST_X/Y/Z_POINT
+T282et 201005 in motion.h, rename EN_SERVO_INT_VAR.REV_HEIGHT2 to KINK2_HT
+T282et 201005 in motion.h, rename EN_SERVO_INT_VAR.REV_HT3/DIST3_PREMOVE to KINK3_HT/DIST_PREMOVE
+T282et 201005 in motion.h, rename EN_SERVO_INT_VAR.REV_DIST3_X/Y/Z_POINT to KINK3_DIST_X/Y/Z_POINT
+T282et 201005 in motion.h, rename EN_SERVO_INT_VAR.REV_HEIGHT3 to KINK3_HT
+T282et 201005 in motion.h, rename EN_SERVO_INT_VAR.REV_HEIGHT4 to TWIST_HT
+T282et 201005 in motion.h, rename EN_SERVO_INT_VAR.REV_HT3/DIST3_SPEED to KINK3_HT/DIST_SPEED
+T282et 201005 in motion.h, rename EN_SERVO_INT_VAR.REV_HT2/DIST2_SPEED to KINK2_HT/DIST_SPEED
+T282et 201005 in motion.h, rename EN_SERVO_INT_VAR.REV/FWD_TWIST_SPEED to TWIST_REV/FWD_DIST_SPEED
+T282et 201005 in motion.h, rename EN_SERVO_INT_VAR.REV_HT4_SPEED to TWIST_HT_SPEED
+T282et 201005 in motion.h, rename EN_SERVO_INT_VAR.PRE_KINK_RH/RD_SPEED to PRE_KINK_HT/DIST_SPEED
+T282et 201005 in motion.h, rename EN_SERVO_INT_VAR.REV_HT1/DIST1_SPEED to REV_HT/DIST_SPEED
+T281et 201005 in motion.h, rename EN_SERVO_INT_VAR.SOFTSRCH_?1/2 to SOFTSRCH1/2_?
+T280et 201004 add comment for rev ht & rev dist ht
+T279et 201004 in DataStruct.h, rename WIRE_INFO_RCD.chLoopTopMode to cLoopTopMode
+T278et 201004 in DataStruct.h, clean deleted code
+T277et 201004 in motion.h, rename EN_SERVO_INT_VAR.BOND_POS_1_X/Y? to BOND_POS1_X/Y
+T276et 201004 in motion.h, rename EN_SERVO_INT_VAR.FIRST_SCRUB_? to SCRUB1_?
+T276et 201004 in motion.h, rename EN_SERVO_INT_VAR.SECOND_SCRUB_? to SCRUB2_?
+T275et 201004 in DataStruct.h, rename WIRE_INFO_RCD.b1stBondShiftEnable to bBondShift1Enable
+T275et 201004 in DataStruct.h, rename WIRE_INFO_RCD.st1stBondShiftPos to stBondShiftPos1
+T275et 201004 in DataStruct.h, rename WIRE_INFO_RCD.st2ndBondShiftPos to stBondShiftPos2
+T274et 201003 in motion.h, rename EN_SERVO_INT_VAR.FIRST_BOND_SHIFT_X/Y/ENABLE to BOND_SHIFT1_X/Y/ENABLE
+T273et 201003 in motion.h, rename EN_SERVO_INT_VAR.BOND_SHIFT_X/Y to BOND_SHIFT2_X/Y
+T272et 201003 in DataStruct.h, rename WIRE_INFO_RCD.stBondShiftPos to st2ndBondShiftPos
+T271et 201003 in CLoopLandingPage, rename private var
+T271et 201003 clean CLoopLandingPage
+T270et 200928 change head time for etel
+T269et 200928 change search speed for etel
+T268et 200927
+	1. debug CServoETEL.SendIntDataToServo wrong memory len
+	2. add _SERVO_TYPE to bypass etel problem, debug later
+T267et 200926 read BondProgress from shared memory direct
+T266et 200922 in CBond.CtactSrch, apply sample time only for etel servo
+T265et 200922 in CAutoBondPage.StartAutoBond, not check onload elev no mag if MHS bypass
+T264et 200921 link MachineConfig v1.0.T214 - add [DEBUG][Contact Search Sample Time]=5
+T263et 200921 link SoftController v1.0.T76, ServoController v1.1.T124
+T262et 200921 add BALL_INFO_RCD.lSrchLvl2
+T261et 200921 rename BALL_INFO_RCD.lSrchHt1Lvl to lSrchLvl1
+T260et 200921 add WIRE_INFO_RCD.lSrchLvl2 & EN_SERVO_INT_VAR.SRCH_LVL2
+T259et 200919 clean CBtosPage.OnStart
+T258et 200918 link MachineConfig v1.0.T213 - set [MACHINE][Share PR]=0
+T257sc 200918 in CServoETEL.GetPositionError, debug return wrong pos err
+T256sc 200918 debug jog z wrong dir
+T255sc 200917 change m_nJogSpeed up/down scale
+T254sc 200917 change CServoETEL.m_dJogSpeed to m_nJogSpeed
+T253sc 200915 replace command 20/21 with 32/33 for start/stop jog
+T252sc 200915 implement CServoETEL::UpdateWireClampProfile
+T251sc 200914 add theMcConfig.IsCheckAbnormalShutdown
+T250sc 200913 in CServoGeneralPage, debug recovery error
+T249sc 200913 link MachineConfig v1.0.T212 - change etel delay/timeout default
+T248sc 200913 debug etel command timeout error
+T247sc 200912 in CServoETEL.SendCommand/WaitCmdAck, add para nTimeout
+T246sc 200912 add check IsAbnormalExit
+T245sc 200912 implement CServoETEL.SetTableKillDec
+T245sc 200912 implement CServoETEL.AutoTuneControlParaThread
+T245sc 200912 implement CServoETEL.LoadSpeed/ControlParameterFromFile
+T245sc 200912 implement CServoETEL.SaveAcsMemoryParamToFile
+T245sc 200912 implement CServoETEL.ForceCaliSrchCtact
+T245sc 200912 implement CServoETEL.PerformTableScrub
+T245sc 200912 implement CServoETEL.SetPosCompFactor
+T245sc 200912 implement CServoETEL.PositionCompen
+T245sc 200912 implement CServoETEL.GetServo/SpScopeData
+T245sc 200912 implement CServoETEL.ApplyForceControl
+T245sc 200912 implement CServoETEL.WriteBondHeadDcom
+T245sc 200912 implement CServoETEL.GetPositionError
+T244sc 200911 implement CServoETEL.TriggerBuffer
+T244sc 200911 implement CServoETEL.TriggerRestartWire
+T243sc 200911 implement CServoETEL.CheckServoError
+T243sc 200911 implement CServoETEL.Read/WriteBondHeadMFlags
+T242sc 200911 implement CServoETEL.ReadMemoryReal
+T242sc 200911 implement CServoETEL.ReadMemoryInteger
+T242sc 200911 implement CServoETEL.WriteMemoryInteger
+T241sc 200911 implement CServoETEL.SendIntDataToServo
+T240sc 200910 in CServoETEL.SendRealDataToServo, debug wrong data length
+T239sc 200910 implement CServoETEL.SendServoCtrlProfileToServo
+T238sc 200910 in motion.h, rename EN_SERVO_VAR_ARRAY to EN_SERVO_VAR
+T237sc 200910 debug CServoETEL.SendRealDataToServo
+T236sc 200908 in CServoETEL.SendRealDataToServo, change acVar to wchar_t (from char)
+T235sc 200908 implement CServoETEL.GetBondHeadEncPos
+T234sc 200908 link SoftController v1.0.T75 - debug negv premove
+T233et 200908 add set etel debug mode
+T232sc 200907 add etel startup delay before init etel
+T231sc 200907 debug machine can't shutdown due to etel
+T230sc 200905
+	1. link SoftController v1.0.T74, ServoController v1.1.T123
+	2. add checking _SERVO_TYPE == 0
+T229sc 200904 link LoopPara v1.0.T25
+T228sc 200904 link SoftController v1.0.T73
+T227sc 200904
+	1. link SoftController v1.0.T72 - add pre kink ht/dist premove
+	2. link MachineConfig v1.0.T211 - add [DEBUG][Pre Kink Height/Distance Premove]=0
+T226sc 200904 in EN_SERVO_INT_VAR, rename var
+T225sc 200904
+	1. rename MSG_NECK_HT/DIST_PERCENT to MSG_NECK_HT/DIST_PREMOVE
+	2. rename MSG_REV_HT2/DIST2 to MSG_REV_HT2/DIST2_PREMOVE
+	3. rename MSG_REV_HT3/DIST3 to MSG_REV_HT3/DIST3_PREMOVE
+	4. rename MSG_TWIST to MSG_TWIST_PREMOVE
+	5. rename MSG_LOOP_TOP to MSG_LOOP_TOP_PREMOVE
+T224et 200902 implement CServoETEL.SearchTableLimit
+T223et 200831 do SearchHome before SearchLimit
+T222et 200831 implement CServoETEL.SearchLimit/GetBondProgress
+T221et 200828 remove CServoETEL.MoveTable
+T220et 200828 link MachineConfig v1.0.T210 - add [DEBUG][Safe Pos Tol]=2
+T219et 200827 rename MHS_TOP_BOND_HEAD_NOT_SEFTY to MHS_TOP_BH_NOT_IN_SAFE_POS
+T218et 200827 link MachineConfig v1.0.T208 - add [DEBUG][Check Abnormal Shutdown]=0
+T217et 200827 debug etel command timeout
+T216et 200827 link MachineConfig v1.0.T207 - add [ETEL][Command Timeout]=30
+T215et 200827 link MachineConfig v1.0.T206 - add [ETEL][Startup Delay]=20, [DEBUG][ETEL]=0
+T214et 200826 implement CServoETEL.FastMoveTable/2
+T213sc 200826 implement CServoETEL.RecoverServo
+T212sc 200826 in CCuEliteIndexTchPage/CDlgCuEliteWHSetupPage/CR2RWhSetupPage/CTchAutoPadPatternDlg, replace theServo.MoveTable with MoveTable2
+T211sc 200826 in CR2RIndexTchPage, replace theServo.MoveTable with MoveTable2
+T210sc 200826 in CTopEliteIndex, replace theServo.MoveTable with MoveTable2
+T209sc 200826 in CServoTune/CSleepModeDlg/CThreadWireDlg, replace theServo.MoveTable with MoveTable2
+T208sc 200826 in CTopTrack, replace theServo.MoveTable with MoveTable2
+T207sc 200826 in CDummyBond, replace theServo.MoveTable with MoveTable2
+T206sc 200826 in CVisionCalibDlg, replace theServo.MoveTable with MoveTable2
+T205sc 200826 in CWireBondDlg, replace theServo.MoveTable with MoveTable2
+T204sc 200826 in CServoGeneralPage, replace theServo.MoveTable with MoveTable2
+T203sc 200826 in CPositionCalibPage, replace theServo.MoveTable with MoveTable2
+T202sc 200826 in CPositionAdjustDlg, replace theServo.MoveTable with MoveTable2
+T201sc 200826 in CIndexCtrlDlg, replace theServo.MoveTable with MoveTable2
+T200sc 200825 in CTchBondPoints, replace theServo.MoveTable with MoveTable2
+T199sc 200825 in CDummyBondPage, replace theServo.MoveTable with MoveTable2
+T198sc 200825 in CDlgTopWhSetUpPage, replace theServo.MoveTable with MoveTable2
+T197sc 200825
+	1. in CCtactSrchTestPage, replace theServo.MoveTable with MoveTable2
+	2. clean CCtactSrchTestPage
+T196sc 200825 in CCorrectBondDlg, replace theServo.MoveTable with MoveTable2
+T195sc 200825 in CBondEditPage, replace theServo.MoveTable with MoveTable2
+T194sc 200825 in CAdvWireLayoutPage, replace theServo.MoveTable with MoveTable2
+T193sc 200825 implement Start/EndJogX/Y/Z
+T192sc 200824
+	1. remove operation.h/lib
+	2. link Reference v1.1.T6, R2RIndex v1.1.T6
+T191sc 200824 replace theOper.IsOnline with !theMcConfig.IsBypassAll
+T191sc 200824 replace theOper.IsOffline with theMcConfig.IsBypassAll
+T191sc 200824 remove CAfpOptionDlg, remove theOper.IsAfp checking
+T191sc 200824 remove CAfpEncoderPage
+T190sc 200820 link MachineConfig v1.0.T205 - add [L ANGLE][Neck/Pre Kink/Kink 2/Kink 3]=0
+T189sc 200820 link Vision8 v1.8.T64
+T188sc 200820 in CServoETEL.WaitCmdAck, accept ack < 0 as error, 0 = no error
+T187sc 200820
+	1. link SoftController v1.0.T71 - add negv pre-move
+	2. change rev ht/dist 3 & twist pre-move range to -500..100 (from 0..100)
+T186sc 200820 in CServoETEL.MoveTable2, debug wrong relative move
+T185sc 200819
+	1. link SoftController v1.0.T70 - add negv pre-move
+	2. change pre-move range to -500..100 (from 0..100)
+T184sc 200819 remove deleted theServo.MoveTable
+T183sc 200818 in CServoETEL.MoveTable2, remove checking pos limit
+T182sc 200817 change MoveTable to call MoveTable2
+T181sc 200817 home bond head before move table to safe pos
+T180sc 200817 in SendCommand(5), add para bAbsolute
+T179sc 200814 implement CServoETEL.GetBondHeadPosition
+T178sc 200814 in CServoETEL.MoveTable/2, debug wrong vel & acc
+T177sc 200814 implement CServoETEL.GetTableMechLimit
+T176sc 200814 in CServoETEL::Init, add SendCommand init to etel
+T175sc 200813 implement CServoETEL.MoveTable2
+T174sc 200813 implement CServoETEL.SearchBondHeadHomeFromLimit
+T173sc 200813
+	1. link Operation v1.0.T7
+	2. replace theOper.IsStepper/IoEnable with theMcConfig.IsBypassMHS
+	3. link CuClamp v1.0.T8, Stepper v1.0.T7, TopClamp v1.0.T22
+T172sc 200812
+	1. link MachineConfig v1.0.T203 - add [BYPASS][MHS]=0
+	2. replace theOper.IsStepperEnable with !theMcConfig.IsBypassMHS
+T171sc 200812 link operation v1.0.T6
+T170sc 200812 replace theOper.IsPrEnable with !theMcConfig.IsBypassCamera
+T169sc 200812 link MachineConfig v1.0.T202 - not allow kink3 span len < 0
+T168sc 200812 link operation v1.0.T5
+T167sc 200812 in CBond::CalcWireInfo, remove casting (double)
+T166sc 200812 clean CBond::CalcWireInfo
+T165sc 200812 link LoopShape v1.0.T41
+T164sc 200812 link LoopPara v1.0.T24, LoopShape v1.0.T37
+T163sc 200812 in CLoopLastKinkPage, rename private var
+T162sc 200812 clean CLoopLastKinkPage
+T161sc 200812 in CLoop1stKinkPage, rename private var
+T160sc 200812 in CLoop2ndKinkPage, rename private var
+T159sc 200812 in CLoop3rdKinkPage, rename private var
+T158sc 200812 link LoopPara v1.0.T23, LoopShape v1.0.T32
+T157sc 200812 in CLoop3rdKinkPage, debug wrong wire feed speed
+T156sc 200812 clean CLoop2ndKinkPage
+T155sc 200811 link LoopShape v1.0.T30
+T154sc 200811 link LoopPara v1.0.T22, LoopShape v1.0.T27
+T153sc 200811 link LoopPara v1.0.T21, LoopShape v1.0.T26
+T152sc 200811 link LoopPara v1.0.T20, LoopShape v1.0.T25
+T151sc 200811
+	1. link MachineConfig v1.0.T201 - add [DEBUG][Kink3 Span Length]=0
+	2. link LoopShape v1.0.T24
+T150sc 200811 link LoopShape v1.0.T22
+T149sc 200810 link LoopShape v1.0.T18 - rename to ST_LOOP_SHAPE_PARA
+T148sc 200810 move LOOP_SHAPE_PARA to Loopshape.h (from DataStruct.h)
+T147sc 200810
+	1. link LoopPara v1.0.T19 - rename structures
+	2. link LoopShape v1.0.T16, Program v1.1.T5
+T146sc 200810 rename CLoop3rdKinkPage.m_nSpan2Length/Unit to m_nKink3SpanLen/Unit
+T146sc 200810 clean CLoop3rdKinkPage
+T145sc 200810
+	1. rename MSG_SPAN2_LEN to MSG_KINK3_SPAN_LEN
+	2. rename MSG_SPAN2_LEN_UNIT to MSG_KINK3_SPAN_LEN_UNIT
+T145sc 200810 rename MSG_SPAN_LENGTH to MSG_KINK2_SPAN_LEN
+T144sc 200810 implement CServoETEL.TriggerWireClampProfile
+T143sc 200810 implement CServoETEL.SetOutputIo
+T143sc 200810 implement CServoETEL.MoveBondHeadToSafePos
+T142sc 200808 implement CServoETEL.SetServoControlParameter
+T141sc 200808
+	1. link MachineConfig v1.0.T200 - add [DEBUG][Kink2 Span Length]=0
+	2. link LoopShape v1.0.T15
+T140sc 200807 link LoopShape v1.0.T13
+T139sc 200807 implement CServoETEL.GetTablePosition
+T138sc 200806 change CServoETEL.SetVel/Acc para unit
+T137sc 200806 rename CServoETEL.MoveAxisX/Y/Z para lDistance to lDist_um
+T136sc 200805 link LoopShape v1.0.T12
+T135sc 200804 debug BSB mixed bump type not working
+T135sc 200804 clean CBond
+T134sc 200804 link CServoController v1.1.T122 - change TriggerRestartWire to protected
+T133sc 200804 link Operation v1.0.T4, AcsServo v1.0.T11, R2RIndex v1.1.T5
+T132sc 200804 replace theOper.IsServoEnable with !theMcConfig.IsBypassServo
+T131sc 200803
+	1. implement CServoETEL.Init
+	2. add CServoETEL.InitOutput/SetOutputBit/ClearOutputBit
+T130sc 200803 implement CServoETEL.StartJogX/Y/Z
+T130sc 200803 implement CServoETEL.MoveTable
+T129sc 200731 implement CServoETEL.GetTableCtrlBlock
+T128sc 200731 implement CServoETEL.Enable/DisableTableLimit
+T128sc 200731 implement CServoETEL.InitWireClamp
+T127sc 200731 implement CServoETEL.JogSpeedUp/Down/Slowest
+T127sc 200731 implement CServoETEL.SyncMotion
+T127sc 200731 implement CServoETEL.DisableServoController
+T126sc 200731 debug BSB not working with mixed bump type
+T125sc 200731 debug BSB auto bond not working, single bond ok
+T124sc 200731 implement CServoETEL.MoveAxisZ
+T123sc 200731 implement CServoETEL.Load/SaveWireClampProfile
+T123sc 200731 implement CServoETEL.Load/SaveControlParameter
+T122sc 200731 implement CServoETEL.SetWireClampIdleCurrent
+T122sc 200731 implement CServoETEL.Get/SetWireClampProfile
+T121sc 200731 implement CServoETEL.Get/SetControlProfile
+T120sc 200731 implement CServoETEL.UpdateWireClampProfile
+T119sc 200731 implement CServoETEL.ServoPreparePowerOn
+T119sc 200731 implement CServoETEL.MoveAxisX/Y
+T118sc 200731 implement CServoETEL.SetSpeedProfile
+T118sc 200731 implement CServoETEL.GetSpeedProfile
+T117sc 200730 implement CServoETEL.Load/SaveMotionParameter
+T117sc 200730 implement CServoETEL.Enable/DisableMotor, remove SendCommand(bWaitAck)
+T116sc 200730 implement CServoETEL.InitConfig
+T115sc 200730 implement CServoETEL.VerifyControlData
+T114sc 200730 implement CServoETEL.VerifySpeedData
+T113sc 200730 add/implement CServoETEL.IsMotorXYZ
+T112sc 200730 implement CServoETEL.SearchHome
+T112sc 200730 implement CServoETEL.PowerOnServo, add MoveAxisX/Y
+T111sc 200730
+	1. implement CServoETEL.SetServoSpeedProfile
+	2. add CServoETEL.SetVel/Acc/Jerk & GetMotorAxis
+T110sc 200730
+	1. Program v1.1.T4, Reference v1.1.T5, Wire v1.1.T6
+	2. link CuIndex v1.1.T4, R2RIndex v1.1.T4, VisionDisplay v1.1.T4
+T109sc 200730 in CServoETEL, add protected functions
+T108sc 200730 in CServoETEL, add public functions
+T107sc 200729
+	1. link ServoController v1.1.T121
+	2. Program v1.1.T3, Reference v1.1.T4, Wire v1.1.T5
+	3. link CuIndex v1.1.T3, R2RIndex v1.1.T3, VisionDisplay v1.1.T3
+T106sc 200729 in CServoETEL, add more public functions
+T106sc 200729
+	1. add option CServo : public CServoETEL
+	2. in CServoETEL, add public functions
+T105sc 200729 clean CBond.BondOneWire
+T104sc 200729 clean CBond.BondOneBall
+T103sc 200728 debug BSB auto bond not working, single bond ok
+T102sc 200727 remove CBond.BondOneBall.nAheadAlignDone
+T101sc 200727 in CBond.BondOneBall, add para nBumpSeq
+T100sc 200727 in CBond.BondOneWire, change nNextWireNum to nNextWire
+T100sc 200727 in CBond.BondOneBall, change nNextWireNum to nNextWire
+T100sc 200727 in CBond.BondOneBall, change nNextWireExist to bNextWireExist
+T99sc 200727 in CBond.UpdateBondTipOffset, replace stRefRcd with pstRef
+T99sc 200727 in CBond.UpdateBondTipOffset, replace stWireRcd with pstWire
+T98sc 200727 in motion.h, rename EN_SERVO_INT_VAR.INT_BALL_TYPE to BUMP_TYPE
+T97sc 200727 remove MOTOR_AXIS in macdef.h, add EN_MOTOR_AXIS in motion.h
+T96sc 200727 in motion.h, rename ST_SERVO_INT_VAR.nIntBallType to nBumpType
+T96sc 200727
+	1. link Wire v1.1.T4 - rename to nBumpType
+	2. rename WIRE/BALL_INFO_RCD.nBallType to nBumpType
+T95sc 200727 clean CBond
+T94sc 200726
+	1. in EN_BUMP_SEQ, add BUMPSEQ_BALL2
+	2. replace if (BumpSeq) with switch
+T93sc 200726 replace EN_BOND_OBJECT_TYPE with EN_BUMP_SEQ
+T92sc 200726
+	1. rename CBond.Get/SetBondObjectSequenceMode to Get/SetBumpBondOption
+	2. rename CBond.m_nBumpOption to m_nBumpBondOption
+	3. rename CBondFeaturePage.m_iBumpBallCtrl to m_iBumpBondOption
+T91sc 200726 clean CBond::HelpMsgCallBackFunction
+T91sc 200726 add BSB option in menu
+T90sc 200726 in CBond, replace stWireRcd to pstWire
+T89sc 200726 rename CBond.m_nBondObjSeq to m_nBumpOption
+T89sc 200726 in Bond.h, replace EN_BOND_OBJECT_SEQUENCE with EN_BUMP_OPTION
+T88sc 200726
+	1. implement BUMP_BSB, replace if (BumpType) with switch
+	2. change traj factor range to 20..200 (from 20..100)
+T87sc 200726 replace BOND_BALL_TYPE with EN_BALL_TYPE
+T86sc 200725
+	1. remove CServo.GetTable/BondHeadResolution
+	2. link Reference v1.1.T3, Wire v1.1.T3
+	3. link CuIndex v1.1.T2, R2RIndex v1.1.T2, VisionDisplay v1.1.T2
+T85sc 200725 add \Library\RTX\Lib
+T85sc 200725
+	1. link ServoController v1.1.T119
+	2. link Program v1.1.T2, Reference v1.1.T2, Wire v1.1.T2
+	3. link CuIndex v1.1.T1, R2RIndex v1.1.T1, VisionDisplay v1.1.T1
+T84sc 200724 link ServoController v1.1.T116
+T83sc 200723 CServoETEL.SendCommand return WaitAck status
+T83sc 200723 in CServoETEL.SendCommand, add para bWaitAck
+T83sc 200723 add CServoETEL.WaitCmdAck
+T82sc 200723 fix _SERVO_TYPE re-definition error
+T81sc 200723 replace theETEL with CServo.m_ETEL
+T80sc 200723 in CServo, check _SERVO_TYPE for all functions
+T79sc 200723 for etel, test CServo.Init
+T78sc 200723 link ServoController v1.1.T115
+T77sc 200721 in CLoop1stKinkPage, change neck angle range to -80..80 (from -50..50)
+T76sc 200721 link SoftController v1.0.T69 - fix servo error
+T75sc 200720
+	1. link SoftController v1.0.T68 - add negv neck ht pre-move
+	2. change neck ht pre-move range to -200..100 (from 0..100)
+T74sc 200720 clean CLoopConfigPage
+T73sc 200716 rename message
+T72sc 200716 in CLoop1stKinkPage, incr Neck Dist % upper range to 500 (from 100)
+T71sc 200716 link LoopShape v1.0.T11
+T70sc 200715 clean CLoop1stKinkPage
+T69sc 200713 debug wrong space waveform for BSOB
+T68sc 200703 in teach seq, if unit col = 1, no need to teach left unit pos
+T67sc 200703 in teach seq, remove teaching next unit (step 8/9)
+T66sc 200701 link SoftController v1.0.T67
+T65sc 200629 in CDebugDlg, replace stBondInfoRcd with stWireInfo
+T65sc 200629 in CDebugDlg, replace stWireRcd with pstWire
+T65sc 200629 in CDebugDlg, replace stMatrixRcd with pstMat
+T65sc 200629 in CDebugDlg, replace stRefRcd with pstRef
+T65sc 200629 clean CDebugDlg
+T64sc 200629 in debug mode, show efo profile
+T63sc 200627
+	1. in CSparkParaPage, add tail len to fab menu
+	2. link EFO v1.0.T33
+T62sc 200627 in CSparkParaPage, move gap large dac out of fab menu
+T61sc 200627 in CSparkParaPage, rename m_nTailLength as m_nTailLen[], remove m_nFab2TailLengthUm
+T60sc 200627 link EFO v1.0.T32, Program v1.0.T72
+T59sc 200622 link SoftController v1.0.T66 - implement 4xfab
+T58sc 200622 link EFO v1.0.T29
+T57sc 200612 in CCtactSrchPage, debug not copy ctact for matrix seq
+T56sc 200611 in CBond, replace FastMoveTable with FastMoveTable2
+T56sc 200611 link ServoController v1.1.T114sc - add FastMoveTable2
+T55sc 200611 debug teach matrix seq error
+T54sc 200611 clean CTchSequencePage
+T53sc 200611 in debug mode, show program record matrix row/col offset
+T53sc 200611 clean CBond
+T52sc 200611 in CBond, replace MoveTable with MoveTable2
+T51sc 200611 in CBond, clean &() to &
+T51sc 200611 clean CBond.MatrixAlign
+T50sc 200611 clean CBond.PerformWireBond
+T50sc 200611 clean CBond.MoveToWirePoint
+T49sc 200610 clean CWireBondDlg::OnMenuTree
+T48sc 200610 incr efo time range for efo type 2
+T47sc 200608 debug T46 not working
+T46sc 200608 increase no. of rows from 10 to 13 for individual para display
+T45sc 200608 revert T37 & T39
+T44sc 200605 cleanup CAutoBondPage
+T44sc 200605 in CAutoBondPage, replace MoveTable with MoveTable2
+T43sc 200605 in CServo.MoveTable2, change bWait & bSlowSpeed default to true
+T42sc 200605 in CBtosPage, replace MoveTable with MoveTable2
+T41sc 200605 cleanup CParaMapBase
+T40sc 200605 fix teach matrix seq error
+T39sc 200605 fix T37 hang due to 12-row individual para
+T38sc 200605 in CTchSequencePage, replace MoveTable with MoveTable2
+T37sc 200604 increase no. of rows from 8 to 12 for individual para display
+T36sc 200604 cleanup CTchSequencePage
+T35sc 200604 link MachineConfig v1.0.T198 - add [VISION][Max Pattern Size]=256
+T34sc 200603 add 4x fab
+T33sc 200603 in CServo::MoveTable2, replace CServoController::MoveTable with MoveTable2
+T32sc 200603 link MachineConfig v1.0.T197 - add [EFO][FAB Type]=0
+T31sc 200603 link ServoController v1.1.T113sc - add MoveTable2
+T30sc 200602 in motion.h, define macro for MoveTable2 para
+T29sc 200602 in CCtactSrchPage.OnNext, add copy ctact lvl from die 1 to others if share pr
+T28sc 200602 cleanup CCtactSrchPage
+T27sc 200602 in CTchVisionPatternPage, replace theServo.MoveTable with MoveTable2
+T26sc 200602 in CTchAlignPointPage, replace theServo.MoveTable with MoveTable2
+T25sc 200602 in CCtactSrchPage, replace theServo.MoveTable with MoveTable2
+T24sc 200602 add CServo.MoveTable2
+T23sc 200601 cleanup CCtactSrchPage
+T22sc 200601 in CTchAlignPointPage, add share pr for manual align pattern
+T21sc 200601 cleanup CTchAlignPointPage
+T20sc 200530 cleanup CTchVisionPatternPage
+T19sc 200529 in CTchVisionPatternPage.OnContinue, implement share pr function
+T18sc 200528 in CTchVisionPatternPage.OnContinue, replace stCurRef to pstCurRef
+T17sc 200528 in CTchVisionPatternPage.OnContinue, rename stRefRcd to stRef
+T16sc 200528 in CTchVisionPatternPage.OnStart, replace stRefRcd with pstRef
+T15sc 200528 cleanup CTchVisionPatternPage
+T15sc 200528 link MachineConfig v1.0.T196 - add [MACHINE][Share PR]=1
+T14sc 200526 cleanup CTchVisionPatternPage
+T13sc 200526 in CTchVisionPatternPage, rename private var
+T12sc 200526 add busy.lib
+T11sc 200526 cleanup CTchVisionPatternPage
+T10sc 200516 link EFO v1.0.T24 - for efo type=2, remove current factor calc
+T9sc 200428 link MachineConfig v1.0.T195 - change default [WAVEFORM][PZ Scale]=1
+T8sc 200423 in CServoETEL, add shared memory Command
+T7sc 200422 in CServoETEL, implement DisableServoController
+T7sc 200422 in ServoETEL.cpp, rename sSMemName to sMemName
+T6sc 200417 link MachineConfig v1.0.T194 - change [FNK][Max Power] range to 300..1000
+T5sc 200414 fix mcdata corruption by avoiding double entry to menu tree
+T4sc 200411 in CFnkCaliPage, disable button during power calibration
+T3sc 200411 link MachineConfig v1.0.T193 - add [FNK][Max Power]
+T2sc 200410 in CFnkCaliPage, add button Calibrate
+T1sc 200410
+	1. in CFnkCaliPage, add AutoCaliPower
+	2. link MachineConfig v1.0.T191 - add [FNK][Max Power Tol mW] & [Scale Input Min/Max]
+	
+v3.0
+T499sc 200402 link ServoController v1.1.T112sc
+T498sc 200402 link ServoController v1.1.T111sc
+T497sc 200402 in CServoETEL, implement ResetBondProgress
+T496sc 200402
+	1. in motion.h, rename enMotionDir to EN_MOTION_DIRECTION
+	2. in motion.h, rename enMotionMode to EN_MOTION_MODE
+	3. in motion.h, rename enSyncMode to EN_MOTION_SYNC
+	4. link ServoController v1.1.T110sc, SoftController v1.0.T64
+T495sc 200402 link ServoController v1.1.T109sc
+T494sc 200402 link ServoController v1.1.T108sc
+T493sc 200402 link ServoController v1.1.T107sc
+T492sc 200402
+	1. rename MEMORY_VARIABLE to EN_MEMORY_VAR
+	2. rename SERVO_INT_VARIABLE to EN_SERVO_INT_VAR
+	3. rename ST_SERVO_INT_VARIABLE to ST_SERVO_INT_VAR
+	4. remove ST_MEMORY_VARIABLE
+	5. link ServoController v1.1.T106sc, SoftController v1.0.T63
+T491sc 200331 rename macro _SERVO to _SERVO_TYPE
+T491sc 200331 in motion.h, add ST_SERVO_INT_VARIABLE
+T491sc 200331 in motion.h, add ST_MEMORY_VARIABLE
+T491sc 200324 in CServoETEL.SendRealDataToServo, replace str with sSMemName
+T491sc 200210 in CServoETEL.SendRealDataToServo, use shared memory
+T491sc 200210 in CServoETEL.SendIntDataToServo, add buffer no.
+T491sc 200210 in CServoETEL.SendIntDataToServo, use shared memory
+T491sc 200210 add CServoETEL
+Y490sc 200110 机台运作中途将编程的Com锁住,条件为开始线大于1时
+T489sc 200102 revert T482
+Y488sc 191219 修复瓷咀键盘无响应
+Y487sc 191218 add soft keyboard function
+T486sc 191216 debug single bond key not functioning
+T486sc 191214 in CScanKeyThread, rename enum JOYSTICK_CONFIG to EN_JOYSTICK_CONFIG
+T486sc 191214 debug single bond key not functioning
+T485sc 191213 cleanup CServoGeneralPage
+T485sc 191213 link ServoController v1.1.T105, SoftController v1.0.T62, MathCalc v1.0.T14
+T485sc 191213 replace macro _ACS_SC with _SERVO
+T484sc 191212 in CDlgElevCtrl, rename m_nElevId to m_nElevID
+T484sc 191212 in CDlgElevCtrl, rename bCheckPusher to IsPusherError
+T484sc 191212 in CDlgElevCtrl, rename bCheckMagBelow to IsMagBelow
+T484sc 191212 in CDlgElevCtrl, rename bCheck_LF_ON_TRACK to IsLeadframeOnTrack
+T484sc 191212 rename local var theElevatorCtrl to objElev
+T484sc 191212 in CDlgElevCtrl, rename enum TOP_ELEVATOR_ON/OFFLOADER to TOP_ELEV_ON/OFFLOAD
+T484sc 191212 cleanup CDlgElevCtrl
+T484sc 191211 in CDlgElevCtrl, rename enum enTopElevator to EN_TOP_ELEV
+T484sc 191211 in CDlgElevCtrl, rename ShowErrMessage to ShowErrMsg
+T484sc 191211 in CDlgElevCtrl, rename m_nCurrentSlot to m_nCurSlot
+T484sc 191211 cleanup CDlgElevCtrl
+T484sc 191210 cleanup CDlgElevCtrl
+T484sc 191210 cleanup CWireBondDlg::OnClickKeyboardShortcut
+T484sc 191210 in CBond, remove v2.0.T38 deleted code
+T484sc 191210 debug single bond key not functioning
+T483sc 191209 in CKeyPadHandler, rename UpdateKeyinData to UpdateKeyInData, HotkeyHandler to HotKeyHandler
+T483sc 191209 in CKeyPadHandler, remove local var nMask
+T483sc 191209 cleanup CKeyPadHandler
+T483sc 191209 in CKeyPadHandler, rename KEY_PAD_CHARACTOR to EN_KEYPAD_CHARACTER, KEY_PAD_STATUS to ST_KEYPAD_STATUS
+T483sc 191209 rename CForceCalibPage::CaliThreePointsNext/2 to Cali3PtNext/2
+T482sc 191203 link Debug v1.0.T22 - debug machine hang
+T481sc 191203 link Debug v1.0.T19 - debug machine hang
+T480sc 191202 debug new keypad single bond not functioning
+T479sc 191129 in CForceCalibPage::CaliThreePointsNext2, add ReadForceSensor for preload
+T478sc 191128 in CForceCalibPage::CaliThreePointsNext2, add OnTimer to show force sensor readout in list box
+T477sc 191128 in CForceCalibPage::CaliThreePointsNext2, change default measure force = apply force (prev 0)
+T476sc 191128 in CForceCalibPage, debug Done button not show chinese
+T475sc 191127 in CForceCalibPage::CaliThreePointsNext2, add ReadForceSensor
+T474sc 191127
+	1. link StepperIO v1.2.T40, StepperControl v1.0.T14
+	2. link CuClamp v1.0.T7, CuOnload v1.0.T17, CuOffload v1.0.T17, CuIndex v1.0.T26
+	3. link TopClamp v1.0.T21, TopOnload v1.0.T24, TopOffload v1.0.T25
+	4. link R2RIndex v1.0.T31, R2ROnload v1.0.T18, R2ROffload v1.0.T18
+T473sc 191125 debug wire offset menu no items
+T473sc 191125 link ServoController v1.1.T104 - add ReadForceSensor
+T472sc 191125 in CEfoTestPage, set cycle time=60 (default)
+T471sc 191125 link MachineConfig v1.0.T189 - change default [DEBUG][Die Ahead PR]=2 to remove fire delay
+T470sc 191122 link ServoController v1.1.T103 - rename functions
+T469sc 191122 cleanup CBond::CtactSrch
+T469sc 191122 rename CBond::PerformCtactSrch to CtactSrch
+T469sc 191122 in CWireBondDlg::UpdateOverView, init array by {}
+T468sc 191122 link MachineConfig v1.0.T188 - add [WAVEFORM][Capture Count]=4 (default)
+T467sc 191122 add [DEBUG][Die Ahead PR]=2 to do PR after send profile in CBond::BondOneWire
+T466sc 191122 in CBond::BondOneWire, rename nNextWireExist to bNextWireExist
+T465sc 191122 in CWireBondDlg::UpdateInfoView, replace if-else with switch
+T465sc 191122 in edit elev, add instruction msg "edit to fine tune slot pos"
+T464sc 191122 in CWireBondDlg::UpdateOverView, remove dRadiusX/Y
+T464sc 191122 cleanup CWireBondDlg::UpdateOverView
+T464sc 191122 in CWireBondDlg::UpdateOverView, relocate local var
+T464sc 191121 in CWireBondDlg::UpdateOverView, relocate local var
+T464sc 191121 in CWireBondDlg::UpdateOverView, relocate font code
+T464sc 191121 in CWireBondDlg::UpdateOverView, rename pCtrlDC to pCDC
+T464sc 191121 in CWireBondDlg::UpdateOverView, rename to pstRef, remove stMatRcd
+T464sc 191121 in CWireBondDlg::UpdateOverView, rename to pstPgm & pstWire
+T463sc 191121 in CWireBondDlg::UpdateInfoView, relocate time & heater
+T463sc 191121 in CWireBondDlg::UpdateInfoView, remove fontBig
+T463sc 191121 cleanup CWireBondDlg::UpdateInfoView
+T462sc 191121 in edit elev, re-arrange instruction msg
+T462sc 191121 in CTopElevSetupPage, add bypass to avoid hang in offline mode
+T461sc 191121 link SoftController v1.0.T61 - debug dry run image blur
+T460sc 191121 link SoftController v1.0.T60 - debug force sensor reset type = 2 not working
+T460sc 191121 relayout CTopElevSetupPage
+T460sc 191121 cleanup CTopElevSetupPage
+T460sc 191121 in CTopElevSetupPage, replace GetCurrentTime with CHTimer
+T460sc 191120 in CTopElevSetupPage, rename private var
+T460sc 191120 cleanup CTopElevSetupPage
+T460sc 191120 in edit elev, add done button
+T459sc 191120 cleanup CControlState
+T459sc 191120 in CTopIndexerSetupPage, debug OnNext hang in offline mode
+T458sc 191120 link SoftController v1.0.T59 - add force sensor reset type = 2
+T457sc 191119 in CTopIndexerSetupPage, replace GetCurrentTime with CHTimer
+T457sc 191119 cleanup CTopIndexerSetupPage
+T457sc 191119 in edit index, re-arrange instruction msg
+T457sc 191119 in edit index, add done button
+T456sc 191119 in CDummyBondPage, rename private var
+T456sc 191119 cleanup CDummyBondPage
+T456sc 191119 in setup dummy bond, add done button
+T455sc 191119 in CFireLevelPage, rename private var
+T455sc 191119 cleanup CFireLevelPage
+T455sc 191119 in setup fire level, add done button
+T454sc 191118 cleanup CCtactSrchPage
+T454sc 191118 in setup ctact srch, add done button, re-arrange instruction msg
+T454sc 191118 cleanup CBtosPage
+T454sc 191118
+	1. in setup btos, re-arrange instruction msg, add done button
+	2. rename MSG_DONE_TO_FINISH to MSG_DONE_TO_QUIT
+T453sc 191118 cleanup CWclCalibPage
+T453sc 191116 in mhs cali, add instruction msg for start align index
+T453sc 191116 in mhs cali, replace static with list box to show msg
+T453sc 191116 re-layout mhs cali
+T453sc 191116 in mhs cali, add align done button
+T453sc 191116 in mhs cali, add done button
+T453sc 191116 in wcl cali, add done button
+T453sc 191116 in force cali, add instruction msg
+T452sc 191116 link MachineConfig v1.0.T187 - rename to [FORCE CALIBRATION][Search Threshold]
+T452sc 191116 link MachineConfig v1.0.T186 - add [BYPASS][Servo]
+T452sc 191116 in pos cali, add srch done button
+T452sc 191115 in pos cali, add SendMessage to do done button action
+T452sc 191115 in pos cali, add done button
+T452sc 191115 in pos cali table limit, rename button "start" to "auto search"
+T451sc 191115 in CBond, rename nMakeupAheadAlign with nAheadAlignDone
+T451sc 191115 in vision cali, amend instruction msg
+T451sc 191115 in vision cali, add Done button
+T451sc 191115 in USG cali, debug not show chinese for Done button
+T451sc 191115 link fnk v1.0.T4 - add bypass usg to remove read/write err
+T451sc 191115 in USG cali, add Done button
+T450sc 191115 link MachineConfig v1.0.T185 - set default [DRY RUN][Bond Time]=20
+T449sc 191114 in CTopEliteIndex::ProcessIndexEvent, verified TE_STATE_INDEX_WAIT_CLAMP_OPEN & TE_STATE_INDEX_WAIT_CLAMP_OPEN_DELAY
+T448sc 191114
+	1. link MachineConfig v1.0.T184, SoftController v1.0.T58 - add [DRY RUN][Bond Time]
+	2. link MathCalc v1.0.T13 - replace CalcDistBetweenTwoPoint with Calc2PtDist
+T447sc 191114 in CTopEliteIndex::ProcessIndexEvent, verified TE_STATE_INDEX_WAIT_VACUUM_DELAY & TE_STATE_INDEX_WAIT_CLAW_CLAMP
+T447sc 191114 in CTopEliteIndex::ProcessIndexEvent, verified TE_STATE_INDEX & TE_STATE_INDEX_WAIT_BH_SAFETY
+T446sc 191114 in CBond::BondOneWire, cleanup local var
+T446sc 191114 cleanup CBond::BondOneWire
+T445sc 191114 cleanup CBond::DieAheadPR
+T445sc 191114 in CBond::DieAheadPR,
+	1. rename stAheadRef to pstRef
+	2. replace CalcDistBetweenTwoPoint with Calc2PtDist
+T445sc 191114 in CBond::CheckBondProgress, add beg_Progress msg
+T445sc 191114 in CBond::DieAheadPR, cleanup local var
+T444sc 191112 link MachineConfig v1.0.T183 - change access control default
+T443sc 191112 in CTopEliteIndex, rename ChangeStepperMotionProfile to SetStepSpeed
+T443sc 191112 in CTopEliteIndex, rename GetIndexerStepperProfile to GetStepSpeed
+T443sc 191112 in CTopEliteIndex::SubmitIndexEvent, rename local var
+T443sc 191112 in CTopEliteIndex, rename m_cStateSeq to m_acStateSeq
+T443sc 191112 in CTopEliteIndex::ProcessIndexEvent, verified TE_STATE_CLAW_STANDBY_WAIT_DEST_POS
+T443sc 191112 in CTopEliteIndex::ProcessIndexEvent, verified TE_STATE_CLAW_STANDBY
+T443sc 191112 verified CTopEliteIndex::SubmitIndexEvent
+T443sc 191111 in CTopEliteIndex::ProcessIndexEvent, verified TE_STATE_IDLE & TE_STATE_CLAW_POS_RESET
+T443sc 191111 in CTopEliteIndex::ProcessIndexEvent, verified TE_STATE_CLEAR_TRACK_START_1ST/2ND
+T443sc 191111 in CTopEliteIndex::ProcessIndexEvent, verified TE_STATE_CLEAR_TRACK
+T442sc 191111 link MachineConfig v1.0.T180 - add access control
+T441sc 191111 link MachineConfig v1.0.T179 - add access control
+T440sc 191107 link MachineConfig v1.0.T178 - add [FORCE CALIBRATION][Search Tolerance]
+T439sc 191107 link MathCalc v1.0.T12 - remove void Calc3rdOrderMotionTime
+T438sc 191107 in CBond.BondOneBall, rename stCurWireRcd to pstWire
+T438sc 191107 in CBond.BondOneBall, rename stNextWireRcd to pstNextWire
+T438sc 191107 in CBond.CalcWireInfo, rename stNextWireRcd to pstNextWire
+T438sc 191107 in CBallBondParaPage & CBumpWireParaPage, re-arrange order as Pre-Impact Time/Power/Force
+T437sc 191107 in CBond.CalcBallInfo, add bbos offset
+T437sc 191107
+	1. in CBond.CalcBallInfo, add bbos offset
+	2. in CBond.CalcUsgProfile, rename stBondBall to stBallPara
+T436sc 191107 link Program v1.0.T71, Wire v1.0.T24 - upgrade PGM_VERSION = 102, init wire bbos offset
+T435sc 191107 in CBond.CalcBallInfo, cleanup local var
+T435sc 191107 in CBond.CalcBallInfo, rename stNextWireRcd to pstNextWire
+T435sc 191107 in CBond.CalcBallInfo, rename stWireRcd to pstWire
+T435sc 191107 in CBond.CalcBallInfo, cleanup local var
+T435sc 191107 in CBond.CalcBallInfo, rename stCurTblPos to stCurPos
+T435sc 191107 in CBond.CalcBallInfo, rename stServoSpeedProfile to stServoSpeed
+T435sc 191107 in CBond.CalcBallInfo, rename stWireBondPoint to stBondPt
+T435sc 191107 in CBond.CalcBallInfo, rename dWireLength to dWireLen
+T435sc 191107 in CBond.CalcBallInfo, rename pstBallInfoRcd to pstBallInfo
+T435sc 191107 in CBond.CalcBallInfo, rename stBondBallParaRcd to stBallPara
+T435sc 191107 in CBond.CalcBallInfo, rename stBallShapeParaRcd to stBallShape
+T434sc 191106 add MSG_BBOS_BUMP_1ST/2ND_BOND_TIME/POWER/FORCE, PARA_TYPE_BBOS_BUMP_1ST/2ND_BOND_TIME/POWER/FORCE
+T434sc 191106 add MSG_BBOS_BUMP_1ST/2ND_CTACT_FORCE, PARA_TYPE_BBOS_BUMP_1ST/2ND_CTACT_FORCE
+T434sc 191106 add MSG_BBOS_BUMP_1ST/2ND_CTACT_POWER, PARA_TYPE_BBOS_BUMP_1ST/2ND_CTACT_POWER
+T434sc 191106 add MSG_BBOS_BUMP_1ST/2ND_CTACT_TIME, PARA_TYPE_BBOS_BUMP_1ST/2ND_CTACT_TIME
+T434sc 191106 add MSG_BBOS_BUMP_1ST_PRE_CTACT_FORCE, PARA_TYPE_BBOS_BUMP_1ST_PRE_CTACT_FORCE
+T434sc 191106 add MSG_BBOS_BUMP_1ST_PRE_CTACT_POWER, PARA_TYPE_BBOS_BUMP_1ST_PRE_CTACT_POWER
+T434sc 191106 add MSG_BBOS_BUMP_1ST_PRE_CTACT_TIME, PARA_TYPE_BBOS_BUMP_1ST_PRE_CTACT_TIME
+T433sc 191106 add MSG_BBOS_DIRECTION_ANGLE, PARA_TYPE_BBOS_SHAPE_DIRECTION_ANGLE
+T433sc 191106 add MSG_BBOS_MOTION_SPEED, PARA_TYPE_BBOS_SHAPE_MOTION_SPEED
+T433sc 191106 add MSG_BBOS_CUTTING_POWER_DELAY, PARA_TYPE_BBOS_SHAPE_CUTTING_POWER_DELAY
+T433sc 191106 add MSG_BBOS_CUTTING_POWER, PARA_TYPE_BBOS_SHAPE_CUTTING_POWER
+T433sc 191106 add MSG_BBOS_SCRUB_DIST, PARA_TYPE_BBOS_SHAPE_SCRUB_DISTANCE
+T433sc 191106 add MSG_BBOS_BALL_THICKNESS, PARA_TYPE_BBOS_SHAPE_BALL_THICKNESS
+T433sc 191106 add MSG_BBOS_SPAN_LENGTH, PARA_TYPE_BBOS_SHAPE_SPAN_LENGTH
+T433sc 191106 add MSG_BBOS_BASE_HT, PARA_TYPE_BBOS_SHAPE_BASE_HEIGHT
+T433sc 191106 add bbos offset in recipe menu
+T432sc 191105 link fnk v1.0.T3 - debug max power reading not follow config scale value
+T431sc 191105 cleanup CLoopGeneralPage
+T431sc 191105 add L Angle para in loop general page
+T430sc 191105
+	1. in force cali, allow user to change srch speed
+	2. link MachineConfig v1.0.177, ServoController v1.1.T102 - add [FORCE CALIBRATION][Search Speed]
+T429sc 191031 rename message "work holder" to "material handler"
+T429sc 191031 rename BOnW to BBOS, WOnB to BSOB
+T429sc 191031 re-organize Recipe menu
+T428sc 191031 remove CMhsConfigSheet from Config menu, add to Recipe menu
+T428sc 191031 in CMhsConfigSheet, remove stepper & sensor page for MHS_TOP_LED
+T428sc 191031 rename MaterialHandleConfigSheet.h/cpp to MhsConfigSheet.h/cpp
+T427sc 191031 in CMhsUtilitySheet,
+	1. rename theTopIndexerDebugPage to m_TopIndexerDebugPage, theTopStepperPage to m_TopStepperPage
+	2. rename theTopSensorPage to m_TopSensorPage, theTopTestPage to m_TopTestPage
+T427sc 191031 cleanup CMhsUtilitySheet
+T426sc 191031 in CMaterialHandleConfigSheet,
+	1. rename m_lpPage to m_pPropPage, m_TopParaSettingPage to m_TopSettingPage
+	2. rename m_TopStepperPage to m_TopStepperPage, theTopSensorPage to m_TopSensorPage
+T426sc 191031 cleanup CMaterialHandleConfigSheet
+T425sc 191030
+	1. enable force sensor during force calibration
+	2. link ServoController v1.1.T101 - add EnableForceSensor
+T424sc 191030 link MachineConfig v1.0.T176, SoftController v1.0.T57 - add [FORCE SENSOR][Enable/Reset Type]
+T423sc 191029 link SoftController v1.0.T56 - debug wrong force sensor reset
+T422sc 191024 add waveform gnStartBond0/1
+T421sc 191024 link MachineConfig v1.0.T175, Debug v1.0.T21 - add [DEBUG][Mode Work Holder/Waveform]
+T421sc 191024 in CTopEliteIndex, remove theApp.SetRedLamp
+T420sc 191023 link MachineConfig v1.0.T174, Debug v1.0.T20 - add [DEBUG][Mode Bond/Vision Time]
+T419sc 191022 in CMaterialHandlerThread, split MHS_TOP_ELITE
+T419sc 191022 in CBond, split MHS_TOP_ELITE
+T419sc 191022 in CWireBondDlg, split MHS_TOP_ELITE
+T419sc 191022 in CTopIndexerDebug, split MHS_TOP_ELITE
+T419sc 191022 in CThreadWireDlg, split MHS_TOP_ELITE
+T419sc 191022 in CTestMotionTimePage, split MHS_TOP_ELITE
+T419sc 191022 in CPopUpTopStepperCtr, split MHS_TOP_ELITE
+T419sc 191022 in CIndexCtrlDlg::UpdateMatrix, split MHS_TOP_ELITE
+T419sc 191022 in CIndexCtrlDlg::OnEditIndex, split MHS_TOP_ELITE
+T419sc 191021 in CIndexCtrlDlg::OnLfIndex, split MHS_TOP_ELITE
+T419sc 191021 in CAutoBondPage::StartAutoBond, split MHS_TOP_ELITE
+T419sc 191021 debug version not show correct work holder type
+T418sc 191018
+	1. link StepperIO v1.2.T39, StepperControl v1.0.T13 - rename struct
+	2. link CuOnload v1.0.T16, CuOffload v1.0.T16, CuIndex v1.0.T24
+	3. link TopOnload v1.0.T23, TopOffload v1.0.T24
+	4. link R2RIndex v1.0.T30, R2ROnload v1.0.T17, R2ROffload v1.0.T17
+T417sc 191018 link StepperIO v1.2.T38
+T416sc 191017
+	1. link StepperIO v1.2.T35, StepperControl v1.0.T12 - rename struct
+	2. link CuClamp v1.0.T6, CuOnload v1.0.T15, CuOffload v1.0.T15, CuIndex v1.0.T23
+	3. link TopClamp v1.0.T20, TopOnload v1.0.T22, TopOffload v1.0.T23
+	4. link R2RIndex v1.0.T29, R2ROnload v1.0.T16, R2ROffload v1.0.T16
+T415sc 191017 rename CMaterialHandlerThread.m_bTopIndexBusy to m_bIndexBusy
+T414sc 191017 in CTopEliteIndex.EnterDelayState, remove pass-in para lDelayStartTime
+T414sc 191017 in CTopEliteIndex, change ST_DELAY_STATE to ST_TE_DELAY_STATE
+T414sc 191016 in CTopEliteIndex, rename INPUT_OUTPUT_CLAW_SPAN to IN_OUT_CLAW_SPAN
+T414sc 191016 in CTopEliteIndex, rename EN_CLAW_DRY_CYCLE_STATE to EN_TE_CLAW_DRYRUN_STATE
+T414sc 191016 in CTopEliteIndex, rename EN_NEXT_LF_STATE to EN_TE_NEXTLF_STATE
+T414sc 191016 in CTopEliteIndex, rename EN_INDEX_PR_STATE to EN_TE_INDEXPR_STATE
+T414sc 191016 in CTopEliteIndex, rename EN_TEST_STATE to EN_TE_TEST_STATE
+T414sc 191016 in CTopEliteIndex, rename EN_TEST_EVENT to EN_TE_TEST_EVENT
+T414sc 191016 in CTopEliteIndex, rename const
+T414sc 191016 in CTopEliteIndex, rename EN_INDEX_STATE to EN_TE_INDEX_STATE
+T414sc 191016 in CTopEliteIndex, rename m_cStateSequence to m_cStateSeq
+T414sc 191016 in CTopEliteIndex, rename EN_INDEX_EVENT to EN_TE_INDEX_EVENT
+T414sc 191016 in CTopEliteIndex, remove void GetRcd
+T414sc 191016 in CTopEliteIndex,
+	1. rename ST_TOPELITE_INDEX to ST_TE_INDEX_RCD
+	2. rename m_stTopIndex to m_stIndexRcd
+T414sc 191016 in CTopEliteIndex,
+	1. rename TOP_INDEXER_VARIABLE to ST_TE_INDEX_VAR
+	2. rename m_stIndexerVar to m_stIndexVar
+T414sc 191016 in CTopEliteIndex, rename EN_INDEX_SPEED to EN_TE_INDEX_SPEED
+T414sc 191016 in CTopEliteIndex, remove m_stIndexerAxisParam
+T414sc 191016 in CTopEliteIndex, remove old stepper code
+T414sc 191016 in CTopEliteIndex,
+	1. rename TOP_TRACK_DATA to ST_TOPELITE_INDEX
+	2. rename m_stTopTrackRcd to m_stTopIndex
+T413sc 191016 debug rebond timing wrong (need to x10)
+T412sc 191015
+	1. link SoftController v1.0.T54
+	2. debug rebond wrong power timing
+	3. link MachineConfig v1.0.T173 - rename rebond para
+T411sc 191015 cleanup CBond::InitUsgProfile
+T411sc 191015 cleanup CBond
+T411sc 191015 cleanup CBond::CalcUsgProfile
+T411sc 191015
+	1. link MathCalc v1.0.T11
+	2. cleanup CBond::CalcUsgProfile
+T410sc 191015 add rebond power
+T409sc 191015 link MachineConfig v1.0.T171 - add MHS_TOP_ELITE
+T409sc 191015 cleanup CTopEliteIndex
+T409sc 191015 add CTopEliteIndex - top index with front align sensor
+T408sc 191015 link MachineConfig v1.0.T170 - check boundary for rebond para
+T407sc 191014 cleanup CWaveForm::OnInitDialog
+T407sc 191014 when waveform WCL selected for other type, display the waveform by default
+T407sc 191014 link SoftController v1.0.T53 - add rebond force
+T406sc 191014 in bond.h, remove dummy usg const
+T405sc 191014 link USG v1.0.T27
+T404sc 191009 link SoftController v1.0.T52 - add waveform gnUsgPattern
+T403sc 191009 link SoftController v1.0.T51 - add rebond dist x/y
+T402sc 191009 link MachineConfig v1.0.T169 - add [DEBUG][Check Vacuum Delay]
+T401sc 191008 cleanup CBond.CalcWireInfo
+T401sc 191008 link MathCalc v1.0.T10
+T400sc 191008 link SoftController v1.0.T50, MachineConfig v1.0.T168 - add rebond ht up/down & time
+T399sc 191007 link FNK v1.0.T1
+T398sc 191007 link SoftController v1.0.T48 - move waveform code out of while loop
+T397sc 191007 link SoftController v1.0.T46 - debug wrong waveform
+T396sc 191007 cleanup CWaveForm::OnInitDialog
+T396sc 191006 link SoftController v1.0.T45 - add waveform gnRestartBond & gnTrigBuf0/1
+T395sc 190929 rename waveform F.Rst/Out to FS.Rst/Out
+T394sc 190928
+	1. link MachineConfig v1.0.T167 - add RPY/FPY
+	2. link SoftController v1.0.T44
+T393sc 190927
+	1. link SoftController v1.0.T43 - add force sensor reset & output
+	2. link MachineConfig v1.0.T166 - replace RVX/FVX with RPX/FPX
+T392sc 190927
+	1. link MachineConfig v1.0.T165 - add [BYPASS][...]
+	2. link StepperIO v1.2.T31, Vision v1.8.T63
+T391sc 190926 debug CFnk.SetStartStopFreq read fail
+T390sc 190926 in CFnk.WriteData, add pass-in bPurgeRxBuf
+T390sc 190926 in CFnk.ReadData, add pass-in sMsg
+T389sc 190926 use memset to init TxBuf to 0
+T389sc 190926 debug fnk init not working
+T388sc 190926 in waveform, show correct type name (Force/Pgr etc)
+T388sc 190926 link MachineConfig v1.0.T164 - add [WAVEFORM][WCL Offset]
+T388sc 190926 link MachineConfig v1.0.T163 - add [WAVEFORM][RVX/FVX Scale/Offset]
+T388sc 190924
+	1. link MachineConfig v1.0.T162 - add [WAVEFORM][RVX/FVX Type]
+	2. link SoftController v1.0.T42
+T387sc 190924 link MachineConfig v1.0.T159 - add [WAVEFORM][PZ Scale/Offset]
+T386sc 190924 link SoftController v1.0.T41
+T385sc 190923 debug occasional long delay at fire level
+T384sc 190923 cleanup CFnk
+T384sc 190921 in CFnk, init buffer to 0 before use
+T383sc 190921 in CFnk, GetFreq return DWORD instead of double
+T383sc 190920 in CFnk, replace SetStart/StopFreq with SetStartStopFreq
+T382sc 190917
+	1. link TopClamp v1.0.T19 - rename to theTopClamp
+	2. link R2RIndex v1.0.T28
+T381sc 190917 link TopClamp v1.0.T18 - rename to TOP_CLAMP_RCD
+T380sc 190917 link TopClamp v1.0.T17 - add GetRcd return ptr
+T379sc 190917
+	1. move TOP_CLAMP_RCD to TopClamp.h (from DataStruct.h)
+	2. link TopClamp v1.0.T16, MachineConfig v1.0.T158
+T378sc 190916 link TopClamp v1.0.T13
+T377sc 190912 link SoftController v1.0.T40 - waveform show bond progress
+T376sc 190912 link StepperControl v1.0.T11 - add GetPos return pos
+T375sc 190912
+	1. link StepperControl v1.0.T10, CuIndex v1.0.T22, CuOffload v1.0.T14, CuOnload v1.0.T14
+	2. link R2RIndex v1.0.T27, R2ROffload v1.0.T15, R2ROnload v1.0.T15
+	3. link TopOffload v1.0.T22, TopOnload v1.0.T21, VEIndex v1.0.T6
+	4. link VledIndex v1.0.T6, VledOffload v1.0.T5
+T374sc 190911 cleanup CTopIndex
+T374sc 190911 in CTopIndex, change void LogicToPhysPos to long LogicToPhyPos
+T373sc 190911 in CTopIndex,
+	1. rename public m_nIndexedStepperId to private m_nIndexStepID
+	2. add GetIndexStepID
+T372sc 190911 in CTopIndex.ProcessIndexEvent, remove dummy lPos
+T371sc 190911 in CTopIndex.ProcessIndexEvent, remove top declare lPos
+T371sc 190911 in CTopIndex.ProcessIndexEvent, remove top declare lDest
+T371sc 190911 in CTopIndex.ProcessIndexEvent, remove top declare lAbsPos
+T371sc 190911 in CTopIndex.ProcessIndexEvent, remove top declare lAbsDest
+T371sc 190911 in CTopIndex.ProcessIndexEvent, remove top declare lOffset
+T370sc 190911 in CTopIndex.ProcessIndexEvent, debug DEBUG_WORK_HOLDER not show msg correctly
+T369sc 190910 in debug page, correct debug mode combo box
+T368sc 190904 debug show wrong vacuum low error when bonding
+T367sc 190904 debug piezo wire clamp waveform no scaling
+T366sc 190903 in CLightingCtrlDlg, rename private var
+T366sc 190903 cleanup CLightingCtrlDlg
+T365sc 190903 in CLoopParaGeneral, debug para not set when switch to another page
+T365sc 190903 in CBondParaPage, debug para not set when switch to another page (set when switch to another sheet)
+T364sc 190902 cleanup CLoopParaGeneral
+T364sc 190902 cleanup CBondParaPage
+T364sc 190902 cleanup CBondEditPage
+T364sc 190902 cleanup CAutoBondSheet
+T363sc 190902 link SoftController v1.0.T39 - wcl waveform show AOUT instead of DCOM
+T362sc 190830 debug vacuum not off after clear track and program startup
+T361sc 190829 clear track switch off vacuum
+T360sc 190827 debug vacuum auto cutoff when bonding
+T359sc 190827 add fnk dll
+T358sc 190826 link MachineConfig v1.0.T157 - add [DEBUG][Clear Track Check Clamp Open]=0/1
+T357sc 190822 rename IDD
+T356sc 190821
+	1. debug CFnk.OutPower not read ack
+	2. link MachineConfig v1.0.T156 - change default
+T355sc 190815 in fnk cali page, display constant mode
+T354sc 190815 re-layout fnk cali page
+T353sc 190814 replace CFnk.BitCount with CountBit
+T352sc 190814 replace CFnk.SetPreset with SetFreqImpPreset
+T352sc 190814 add CFnk.SetLockRange
+T352sc 190814 in CFnk.SetFreqRange, add pass-in param
+T351sc 190814 in CFnk.SetPhasePreset, add pass-in param
+T350sc 190814
+	1. link MachineConfig v1.0.T155 - add Get/SetFnkScaleInput
+	2. replace CFnk.SetScaling with SetScaleInput
+T349sc 190814 in CFnk.SetStart/StopFreq, add pass-in param
+T348sc 190814 in CFnk, add OutPower
+T347sc 190814 cali fnk show freq & imp
+T347sc 190814 in CFnk, add GetImp, GetPower
+T346sc 190813 in CFnk, add GetFreq, replace SetFreq with SetStart/StopFreq
+T345sc 190813 cleanup CUsgSetupDlg
+T345sc 190813 add CFnkCaliPage
+T344sc 190813
+	1. link MachineConfig v1.0.T154 - add [USG][Type], [FNK][Com Port], [FNK][Constant Mode]=0:Voltage/1:Current/2:Power
+	2. add fnk h/lib, create CFNK
+T343sc 190807 link MachineConfig v1.0.T151 - add efo type 2
+T342sc 190806 link ServoController v1.1.T100
+T341sc 190806 switch off vacuum after pressure error detected
+T340sc 190806 link MachineConfig v1.0.T150 - add [DEBUG][Vacuum Auto Cutoff]=0/1
+T339sc 190731 in TopIndex.cpp, replace DEBUG_BOND_TIMING with DEBUG_WORK_HOLDER
+T338sc 190731 link MachineConfig v1.0.T149 - add [DEBUG][Check Vacuum]=0/1
+T337sc 190730 debug index hang when vacuum enabled
+T336sc 190726 in bond_one_wire/ball, edit debug msg
+T335sc 190724 link Vision8 v1.8.T62
+T334sc 190723 link BondStatistics v1.0.T26
+T333sc 190723 replace autopad with autopadmgr
+T332sc 190715 debug Teach/Edit Recipe not show menu item
+T331sc 190715 inc allowable row/col to 70 (from 30) regardless of mhs_foxconn or not
+T330sc 190528 add time stamp bond & pr
+T329sc 190527 debug cycle time stamp show wrong time when pr/bond time stamp activated
+T328sc 190527 link Debug v1.0.T19 - add TIME_STAMP_CYCLE/PR/BOND/INDEX
+T327sc 190527 change debug bond/vision time message
+T326sc 190524 debug IsTimeStampCycle not show time
+T325sc 190524 link MachineConfig v1.0.T148 - add IsTimeStampCycle/Bond/PR
+T325sc 190524 delete dummy CWireBondApp::GetWorkingDir
+T324sc 190507 添加能够设置做尾的X,Y位置的功能
+T323sc 190507 更改自动跳过芯片/单元功能
+T322sc 190507 解决清空轨道按钮无法操作的问题
+T321sc 190507 添加富士康的芯片搜索范围
+T320sc 190427 link MachineConfig v1.0.T147 - add AccessControl.ini
+T319sc 190426
+	1. revert T316 - resume elevator button
+	2. debug wrong button for foxconn
+T318sc 190426 efo prog current range inc to 100 (from 47)
+T317sc 190419
+	1. link Program v1.0.T70- debug mc hang when detect ctact err
+	2. link ContactLevel v1.0.T32 - in AddRcd, show ctact err
+T316sc 190416 link Vision8 v1.8.T61 - add MathCalc.h
+T316sc 190416 in IDD_WIREBOND_DIALOG, hide elevator button
+T315sc 190416 link Vision8 v1.8.T61 - add MathCalc.h
+T314sc 190415 link ServoController v1.1.T100 - move force/wcl cali const to DataStruct.h
+T313sc 190415 add measure dist tool
+T312sc 190412 cleanup CWclCalibPage
+T311sc 190403 teach seq add teach 2nd unit pos to calc last unit pos
+T310sc 190403 link MachineConfig v1.0.T147 - set default [VISION][Hide PR Result Time]=0
+T309sc 190403 debug CIndexCtrlDlg index function not working
+T308sc 190330 for foxconn, in CIndexCtrlDlg, add index function
+T307sc 190328 debug bump bond timeout
+T306sc 190328 debug CForceCalibPage hang
+T305sc 190327 only use search pr show time offset when showing "PrStatus"
+T304sc 190327 link MachineConfig v1.0.T146 - add [WIRE SPOOL][Trigger Delay]
+T303sc 190327 link MachineConfig v1.0.T145 - add [SEARCH PR][Show Time Offset]
+L302sc 190322 加载配置文件后设置送线马达参数
+T301sc 190322 in CForceCalibPage, debug can't set apply force
+T300sc 190316 for foxconn, move to next index pos use relative instead of absolute
+T299sc 190314 link MachineConfig v1.0.T144 - add [WIRE SPOOL][Type/Distance/Speed]
+T298sc 190313 in CForceCalibPage, log indicate old or new procedure
+T298sc 190313 in CForceCalibPage, log cali factor
+T298sc 190313 link MachineConfig v1.0.T143 - add [DEBUG][Calibrate Force] to show cali data
+T298sc 190313 in CForceCalibPage, log cali data
+T298sc 190313 link MachineConfig v1.0.T142 - add [DEBUG][Calibrate Force Type]
+T298sc 190313 in CForceCalibPage, add CaliThreePointsNext2
+T298sc 190311 cleanup CForceCalibPage
+T297sc 190308 improve waveform slider
+T297sc 190308 cleanup CWaveForm
+T296sc 190308 cleanup CWaveForm
+T295sc 190308 debug waveform show wrong trajectory
+T294sc 190226 relayout IDD_DLG_TOP_WH_SET_UP
+T294sc 190226 in CDlgTopWhSetUpPage, rename m_dWhTbX/Y to m_dSafePosX/Y
+T294sc 190226 cleanup CDlgTopWhSetUpPage
+T293sc 190226 for foxconn, debug menu work holder calibration not working
+T292sc 190226 rename CMsgManager.m_bSingletonLock to m_bMsgLock, setLock to SetMsgLock, getLock to IsMsgLock
+T292sc 190226 cleanup CMsgManager
+T291sc 190226 rename CMsgManager.Initialize to Init
+T290sc 190226 for foxconn, add menu work holder calibration
+T289sc 190125 link Vision8 v1.8.T60 - rename IsReverse to IsDieInverted
+T288sc 190124 cleanup MsgManager.cpp
+T287sc 190124 link MachineConfig v1.0.T141 - add [MACHINE][Check Invert Die]
+T286sc 190124 link ServoController v1.1.T99 - debug dry run wire clamp logic inverted
+T285sc 190124 cleanup MsgManager.cpp
+L284sc 190124 add IsReverse to check whether the chip position is reversed
+T283sc 190124
+	1. link MachineConfig v1.0.T140 - add [DEBUG][Dry Run Wire Clamp]
+	2. link ServoController v1.1.T98
+T282sc 190123
+	1. link ServoController v1.1.T97sc - during dry run, activate wire clamp when debug waveform
+	2. link SoftController v1.0.T37 - revert T36
+T281sc 190123 link SoftController v1.0.T36
+T280sc 190123 rename message const
+T279sc 190121 cleanup CBond.MatrixAlign
+T279sc 190121 in CBond::PerformVisionAlignment, add MatrixAlign
+T279sc 190117 cleanup CBond.MatrixAlign
+T279sc 190117 add CBond.MatrixAlign
+T278sc 190117 rename message const
+T277sc 190116 change bsob/bbos search speed range from 2.5 (prev 10)
+T277sc 190116 cleanup CBallBondParaPage
+T276sc 190116 rename message const
+T275sc 190115 rename message const
+T274sc 190114 rename message const
+T273sc 190113 rename message const
+T272sc 190112 rename message const
+T271sc 190112 rename message const
+T270sc 190112 rename message const
+T269sc 190111 rename message const
+T268sc 190111 debug correct bond standby power offset not working
+T267sc 190111 in debug, add correct bond option when calc wire info
+T266sc 190111 in CCorrectBondDlg, add option to show para value or offset only
+T265sc 190111 debug correct bond standby power offset not working
+T264sc 190110 use back CPositionAdjustDlg except correct bond
+T263sc 190110 rename message const
+T262sc 180110
+	1. in CCorrectBondDlg, add bond para
+	2. link BondPara v1.0.T22 - add fCrtStandbyPowerOffset
+T261sc 190110 add CCorrectBondDlg
+T260sc 190109
+	1. in CIndexCtrlDlg, debug not allow user to enter unit/row/col
+	2. cleanup CIndexCtrlDlg
+T259sc 190107 rename message const
+T258sc 190101
+	1. link Program v1.0.T69 - rename to thePgm
+	2. link VisionDisplay v1.0.T20, BondStatistics v1.0.T26
+	3. link CuIndex v1.0.T19, R2RIndex v1.0.T25, ServoController v1.1.T96
+	4. link BondPara v1.0.T21, DeviceData v1.0.T14, LoopPara v1.0.T16
+	5. link Reference v1.0.T22, Wire v1.0.T23, Efo v1.0.T23
+T257sc 181231 cleanup CWireBondDlg::ConvertRecipeName
+T256sc 181231 in CAdvWireLayoutPage, use pstPgm
+T256sc 181231 in CAutoPad, use pstPgm
+T256sc 181230 in CPrAlign, use pstPgm
+T255sc 181230 in CMaterialHandlerThread, use pstPgm
+T255sc 181230 in CVisionCfgDlg, use pstPgm
+T255sc 181230 in CTopIndexerSetupPage/CTopIndexTchPage/CUsgSetupDlg, use pstPgm
+T255sc 181229 in CTchBondPoints, use pstPgm
+T254sc 181227 cleanup CBond::CalcWireInfo
+T254sc 181226 cleanup CBusy
+T254sc 181225 rename message
+T254sc 181222 in CBond::SendWire/BallInfoToServo, debug not set head time for MHS_FOXCONN
+T253sc 181221 rename CBond::SendWire/BallInfoToServo pass-in param
+T253sc 181221 rename stCur/NextBondInfo to stCur/NextWireInfo
+T253sc 181221 rename CBond::SendBondInfoToServo to SendWire/BallInfoToServo
+T252sc 181220
+	1. remove CMsgManager::GetMsg(short nMsgID, CString& sMsg)
+	2. link CuOn/Offload v1.0.T12, CuIndex v1.0.T18
+	3. link R2ROn/Offload v1.0.T13, R2RIndex v1.0.T24
+	4. link TopOnload v1.0.T19, TopOffload v1.0.T20
+T251sc 181220 in CVledElitePage, use CString GetMsg, rename message
+T250sc 181220 in CTeachR2RWorkHolderSheet, use CString GetMsg
+T250sc 181220 in CCuEliteWorkHolderTeachSheet, use CString GetMsg
+T249sc 181220 in CSingleTestingPage, use CString GetMsg, rename message
+T248sc 181220 in CSingleStepperPage, use CString GetMsg, rename message
+T247sc 181220 in CSingleCapTrackPage, use CString GetMsg, rename message
+T246sc 181220 in CSingleCapSettingPage, use CString GetMsg, rename message
+T245sc 181220 in CR2RWhSetupPage, use CString GetMsg, rename message
+T244sc 181220 in CR2RTestingPage, use CString GetMsg, rename message
+T243sc 181220 in CR2RSnrMainPage, use CString GetMsg, rename message
+T242sc 181220 L Angle range change to -90..90 (from -45..45)
+T241sc 181220 in CR2RSettingPage, use CString GetMsg, rename message
+T240sc 181219 in CR2RIndexTchPage, use CString GetMsg, rename message
+T239sc 181219 in CR2RIndexerSetupPage, use CString GetMsg, rename message
+T239sc 181219 in CR2RIndexerDebug, use CString GetMsg, rename message
+T239sc 181219 in CR2RDevicePage, use CString GetMsg, rename message
+T238sc 181219 in CPopUpCuEliteStepperCtr, use CString GetMsg, rename message
+T237sc 181219 in CDlgCuEliteWHSetupPage, use CString GetMsg, rename message
+T236sc 181219 in CDlgCuEliteElevSetupPage, use CString GetMsg, rename message
+T235sc 181219 in CDlgCuEliteElevCtrl, use CString GetMsg, rename message
+T234sc 181219 in CCuEliteTestingPage, use CString GetMsg, rename message
+T233sc 181219 in CCuEliteStepperPage, use CString GetMsg, rename message
+T232sc 181219 in CCuEliteSettingPage, use CString GetMsg, rename message
+T231sc 181219 in CCuEliteSensorMainPage, use CString GetMsg, rename message
+T230sc 181218 in CCuEliteIndexTchPage, use CString GetMsg, rename message
+T229sc 181217 in CCuEliteIndexerSetupPage, use CString GetMsg, rename message
+T228sc 181217 in CCuEliteIndexerDebug, use CString GetMsg, rename message
+T227sc 181217 in CCuEliteElevSetupPage, use CString GetMsg, rename message
+T227sc 181217 in CCuEliteDeviceParaPage, use CString GetMsg, rename message
+T226sc 181217 in CJoystickSpeedDlg, use CString GetMsg, rename message
+T226sc 181217 in CForceAutoCalibPage, use CString GetMsg, rename message
+T225sc 181217 in CDlgDelBkPR, use CString GetMsg
+T225sc 181217 in CLoopLastKinkPage, use CString GetMsg, rename message
+T225sc 181217 in CSwapWireDlg & CSleepModeDlg, use CString GetMsg, rename message
+T225sc 181217 in CTchVisionPatternPage, use CString GetMsg, rename message
+T224sc 181217 in CPositionAdjustDlg & CN2h2WaitStableDlg, use CString GetMsg
+T224sc 181217 in CDyBtnMsgDlg, use CString GetMsg
+T224sc 181217 in CDummyProgram, use CString GetMsg, rename message
+T224sc 181217 in CBallScrubPage, use CString GetMsg, rename message
+T223sc 181217 cleanup CUsgInfoDispPage
+T223sc 181217 in CUsgInfoDispPage, use CString GetMsg, rename message
+T222sc 181216 in CTchBondPoints, use CString GetMsg, rename message
+T222sc 181216 in CThreadWireDlg, use CString GetMsg, rename message
+T222sc 181216 in CMaterialHandlerThread, use CString GetMsg, rename message
+T222sc 181216 in CBondObjectDlg, use CString GetMsg, rename message
+T221sc 181216 in CBond, use CString GetMsg, rename message
+T220sc 181215 GetBondShift2 based on unit total wire
+T219sc 181215 link MachineConfig v1.0.T139 - add GetBondShift2
+T218sc 181213 in CDlgRework, use CString GetMsg, rename message
+T217sc 181211 add Clear Track function for MHS_FOXCONN
+T216sc 181211 in CBondEditPage, use CString GetMsg, rename message
+T215sc 181211 in CScanKeyThread, use CString GetMsg, rename message
+T215sc 181211 in CKeyPadHandler, use CString GetMsg, rename message
+T215sc 181211 in CVisionCalibDlg, use CString GetMsg, rename message
+T214sc 181211 in CKeyPadDlg, use CString GetMsg
+T214sc 181211 in CAdvWireLayoutPage, use CString GetMsg, rename message
+T214sc 181211 cleanup CAdvWireLayoutPage
+T213sc 181211 in CUPSWarnPage, use CString GetMsg
+T213sc 181211 in CInitDlg, use CString GetMsg
+T213sc 181211 in CHelpMsgDlg, use CString GetMsg, rename message
+T213sc 181211 in CWarnMsgDlg, use CString GetMsg, rename message
+T213sc 181211 in CKeyPadDlg, use CString GetMsg, rename message
+T212sc 181211 in CBondFromToUnitDlg, use CString GetMsg, rename message
+T212sc 181211 in CAfpOptionDlg, replace with CString GetMsg
+T212sc 181211 in CWireBondDlg, replace with CString GetMsg
+T211sc 181211 in CIndexCtrlDlg, rename pfWnd to pWbDlg
+T211sc 181211 cleanup CBsdDebug
+T210sc 181210 replace with sList & CString GetMsg
+T210sc 181210 in CAutoPad, replace with sList & CString GetMsg
+T209sc 181209 in CTopTrack, replace with sList & CString GetMsg
+T208sc 181209 in CWireBond, use CString GetMsg
+T207sc 181209 in CScanKeyThread, replace with sList & str
+T206sc 181209 in CWireBondDlg, replace with sList & str
+T205sc 181209 in CTchAlignPointPage, replace with sList & str
+T205sc 181209 in CTchBondPoints, replace with sList & str
+T204sc 181209 in CVisionCfgDlg, replace with sList
+T204sc 181209 in CVisionCalibDlg, replace with sList & str
+T204sc 181209 in CMaterialHandlerThread, replace with sList
+T204sc 181209 in CBond, replace with sList & str
+T203sc 181209 in CPositionCalibPage, replace with sList
+T203sc 181209 in CAdvWireLayoutPage, replace with sList
+T203sc 181209 in CKeyPadHandler, replace with sList & str
+T202sc 181209 in CAutoBondPage, replace with sList
+T202sc 181209 in CWarnMsgDlg, replace with sList & str
+T202sc 181209 cleanup CWarnMsgDlg
+T201sc 181209 in CHelpMsgDlg, replace with sList & str
+T201sc 181209 cleanup CHelpMsgDlg
+T200sc 181208
+	1. rename CMsgManager::ShowMessage... to ShowMsg...
+	2. link CuOn/Offload v1.0.T11, CuIndex v1.0.T17
+	3. link R2ROn/Offload v1.0.T12, R2RIndex v1.0.T23
+	4. link TopOnload v1.0.T18, TopOffload v1.0.T19
+T199sc 181208
+	1. rename CMsgManager::GetMsgString to GetMsg
+	2. link CuOn/Offload v1.0.T10, CuIndex v1.0.T16
+	3. link R2ROn/Offload v1.0.T11, R2RIndex v1.0.T22
+	4. link TopOnload v1.0.T17, TopOffload v1.0.T18
+T198sc 181208
+	1. rename theMsgMgr to theMsg
+	2. link CuOn/Offload v1.0.T9, CuIndex v1.0.T15
+	3. link R2ROn/Offload v1.0.T10, R2RIndex v1.0.T21
+	4. link TopOnload v1.0.T16, TopOffload v1.0.T17
+T197sc 181208 cleanup CMaterialHandlerThread
+T196sc 181208 for MHS_FOXCONN, can bond with index
+T195sc 181207 debug MHS_FOXCONN
+T194sc 181206 link MachineConfig v1.0.T138 - add GetTotalIndex/GetFirstIndexPos/GetIndexPitch
+T193sc 181206 in CMsgManager, rename szStringList to sList
+T193sc 181206 cleanup CMsgManager
+T192sc 181206 in CTchSequencePage, replace stPgmRcd with pstPgm
+T192sc 181206 cleanup CTchSequencePage
+T192sc 181205 in CTchSequencePage, debug not teach top-left unit for MHS_FOXCONN
+T191sc 181205 in CTchSequencePage, inc row/col limit to 70 for MHS_FOXCONN
+T190sc 181204 change CBond.m_bPrOn1stEnterDone to private
+T190sc 181204 change CBond.m_bAutoDefineBond to private
+T189sc 181204
+	1. in CTchVisionPatternPage/CPrAlign, remove stBondData
+	2. in CMaterialHandlerThread, remove stBondData
+	3. in CBond, remove Get/SetBondData
+T189sc 181204 in CTchSequencePage, remove stBondData
+T189sc 181204 in CBondFromToUnitDlg, remove stBondData
+T189sc 181204 in CDebugDlg/CDummyProgram/CTchAlignPointPage, remove stBondData
+T189sc 181204 in CCfgWclProfilePage, remove stBondData
+T189sc 181204 in CAdvWireLayoutPage, remove stBondData
+T189sc 181204 in CBondEditPage, remove stBondData
+T189sc 181204 in CAutoBondPage, remove m_stBondData
+T188sc 181203 in CBondFromToUnitDlg, rename m_nStartNumId to m_nStartWire, m_nEndNumId to m_nEndWire
+T188sc 181203 cleanup CBondFromToUnitDlg
+T187sc 181203 in Bond.h,
+	1. rename m_bUpdateAutoBondData to m_bUpdateBondData
+	2. rename Is/SetUpdateAutoBondData to Is/SetUpdateBondData
+T187sc 181203 in Bond.h,
+	1. rename BOND_OBJECT_SEQUENCE to EN_BOND_OBJECT_SEQUENCE
+	2. rename BOND_OBJECT_TYPE to EN_BOND_OBJECT_TYPE
+	3. rename EN_HELP_MSG_ID to EN_HELP_MSG
+	4. rename m_nBondObjectSequenceMode to m_nBondObjSeq
+T187sc 181203 in Bond.h, remove enum BOND_SEQUENCE_STAGE & define WIRE_END
+T186sc 181203 rename Get/Set/Load/Save/ResetAutoBondData to Get/../ResetBondData
+T186sc 181203 rename AUTO_BOND_DATA to ST_BOND_DATA, stAutoBond to stBondData
+T185sc 181203
+	1. link ServoController v1.1.T95 - remove SetAutoBondData, add SetDryRun
+	2. link SoftController v1.0.L35 - add DownloadWclBuffer2
+T184sc 181202 rename stAutoBondData to stAutoBond
+T183sc 181202 in AUTO_BOND_DATA, rename nCurrentRow/Column to nCurRow/Col, nMatrixRow/Column to nCurMatRow/Col
+T183sc 181202 in AUTO_BOND_DATA, rename nCurrentTrack to nCurTrack
+T183sc 181202 in AUTO_BOND_DATA, rename nEndWireNum to nEndWire
+T183sc 181202 in AUTO_BOND_DATA, rename nCurrentWireNum to nCurWire
+T183sc 181202 in AUTO_BOND_DATA, rename nRestartWireNum to nRestartWire
+T182sc 181202 in AUTO_BOND_DATA, rename BOOL bAutoIndex to bool
+T182sc 181202 in AUTO_BOND_DATA, rename BOOL bCompleteBond/bIll to bool
+T182sc 181202 in AUTO_BOND_DATA, rename BOOL bBondNoVision to bool
+T182sc 181202 in AUTO_BOND_DATA, rename BOOL bCheckNsop/Nsol & bDryRun to bool
+T182sc 181202 in AUTO_BOND_DATA, rename BOOL bCheckBallFormation to bool bCheckFab
+T181sc 181202 cleanup CBond
+T181sc 181202 rename CBond::UpdateAutoBondData to SetAutoBondData
+T180sc 181202 cleanup CMaterialHandlerThread::ClearTrack
+T180sc 181202 cleanup CMaterialHandlerThread::WarmReset
+T179sc 181202 link MachineConfig v1.0.T136 - add IsUsg/Efo/VisonLightEnable
+T178sc 181129 for foxconn, debug start up not home indexer
+T177sc 181128 link Camera v1.0.T12 - debug machine startup no video
+T176sc 181128 link MachineConfig v1.0.T134 - add GetWclType & GetWclForce
+T175sc 181127 debug indexer not home for MHS_FOXCONN
+T174sc 181127 debug offline mode not working
+T173sc 181127 cleanup CBond::WaitIndexComplete
+T172sc 181123 add indexing for MHS_FOXCONN
+T171sc 181122 link Log v1.0.T24 - move DIR_DATALOG... to DataStruct.h
+T170sc 181121 link Vision8 v1.8.T57 - add LoadImage
+L169sc 181121 in VisionSystem, add CameraType CAMERA_DAHENG_USB3
+T168sc 181121 in CBond::AutoBondInformIndex, remove nUnitTotalWire
+T168sc 181121 cleanup CBond::AutoBondInformIndex
+T167sc 181121 rename CBond::ResetBondStates to ResetMinMaxRef
+T166sc 181120 debug key pad not working for MHS_FOXCONN
+T165sc 181120 link EFO v1.0.T22 - add InitConfig
+T164sc 181119 debug always offline because check IsDebugOnline before load config
+T163sc 181119 link EFO v1.0.T21 - rename ST_EFO_PROFILE to ST_EFO_PROFILE
+T162sc 181119 link MachineConfig v1.0.T133, EFO v1.0.T20 - add [EFO][Time Resolution]
+T161sc 181118 link MachineConfig v1.0.T132 - add MHS_FOXCONN, remove MHS_CU_ELITE_2
+T160sc 181118 link StepperIO v1.2.T29, StepperControl v1.0.T8 - rename io variable name
+T159sc 181117
+	1. link MachineConfig v1.0.T131 - add IsOn/OffloadEnable, IsDebugOnline
+	2. link StepperIO v1.2.T28, StepperControl v1.0.T7
+T158sc 181116
+	1. not init stepper if mhs type none
+	2. link MachineConfig v1.0.T130 - add boundary for mhs type
+T157sc 181116 link MachineConfig v1.0.T129 - add MHS_NONE
+T156sc 181115 in CBond::PerformWireBond, check MHS Type before check vacuum
+T155sc 181115 use switch to check mhs type
+T154sc 181115 use switch to check mhs type
+T153sc 181115 use switch to check mhs type
+T152sc 181115 use switch to check mhs type
+T151sc 181114 use switch to check mhs type
+T150sc 181114 use switch to check mhs type
+T149sc 181113 link MachineConfig v1.0.T128, Vision8 v1.8.T55 - add CAMERA_DAHENG_USB3
+T148sc 181113 link MachineConfig v1.0.T127 - default xrms z=30
+T147sc 181110 link Vision8 v1.8.T54 - rename CClient::m_MilImage...
+T146sc 181110 link Vision8 v1.8.T53 - rename to CVision::GrabImage
+T145sc 181108 link MathCalc v1.0.T9, ServoController v1.1.T93 - remove BH_FORCE_KA_LOW/UP_LMT
+T144sc 181107 when exit cali pos, always resume bond head to fire level
+T143sc 181107 link Log v1.0.T23, ServoController v1.1.T92 - add LOG_CALI_POSITION
+T142sc 181106 link ServoController v1.1.T91 - cali pos relayout file output
+T141sc 181106 cleanup CPositionCalibPage
+T140sc 181105 cleanup CBondHeadCalibSheet
+T139sc 181105 rename message const
+T138sc 181105 link MachineData v1.1.T18 - debug wrong cali data ref value
+T137sc 181105 show init message in chinese
+T136sc 181104 link MachineConfig v1.0.T126 - debug toggle language not update config
+T135sc 181104 link Vision8 v1.8.T52 - remove m_MilDigitizer etc
+T134sc 181103 link MachineConfig v1.0.T125 - add [DEBUG][Debug Info Show Time]
+T133sc 181103 link Camera v1.0.T11, Vision8 v1.8.T51
+T132sc 181102 link Camera v1.0.T10, Vision8 v1.8.T50 - show video time
+T131sc 181102 link Vision8 v1.8.T49 - move m_MilSystem to CClient
+T130sc 181101 link Vision8 v1.8.T48 - SaveImage return image ID
+T129sc 181031 link MachineConfig v1.0.T124 - add GetLogImageScore/Angle
+T128sc 181031
+	1. link Log v1.0.T22 - add DIR_DATALOG_IMAGE
+	2. Vision8 v1.8.T47 - SaveImage to DIR_DATALOG_IMAGE
+T127sc 181031 link Vision8 v1.8.T46 - add SaveImage
+T126sc 181031
+	1. link Debug v1.0.T18 - add IsDebugLeadLocate
+	2. link Vision8 v1.8.T45
+T125sc 181031
+	1. link Debug v1.0.T17 - add IsDebugLogImage
+	2. link Vision8 v1.8.T44
+T124sc 181024 link MachineConfig v1.0.T121 - add GetHidePrResultTime
+T123sc 181024
+	1. link Vision8 v1.8.T43 - add IsShowResult
+	2. link MachineConfig v1.0.T120 - add IsHidePrResult
+	3. auto hide srch pr result after 60 sec
+T122sc 181024 link Vision8 v1.8.T42 - add Set/ToggleShowResult
+T121sc 181024 in CBond::DieAheadAlign, rename stMatrix1 to stMatrix, remove stMatrix2
+T120sc 181023 cleanup CN2h2WaitStableDlg
+T119sc 181023 in CBond::DieAheadAlign, rename stTopDevicePara to pstTopDevice
+T119sc 181023 in CBond::DieAheadAlign,
+	1. rename nLastIndexWndColumn to nLastIndexCol
+	2. rename stSrchResult to stSrchRes
+	3. rename nMakeupAheadAlign to nAheadDone
+T119sc 181023 in CBond::DieAheadAlign,
+	1. rename nSearchRange to nSrchRange, nPrPassScore to nPassScore
+	2. rename stVisionOffset to stPrOS, stStepRepeatOffset to stStepRepeatOS
+T119sc 181023 in CBond::DieAheadAlign, rename szStringList to sList
+T119sc 181023 in CBond::DieAheadAlign, rename lVisionError to nSrchErr
+T118sc 181023 in bond page, rename "Dry Circle" to "Dry Run"
+T118sc 181023 rename enHelpMsgId to EN_HELP_MSG_ID
+T118sc 181023 change to private CBondStatisticPage::UpdateStatDisplay
+T117sc 181023 link Vision8 v1.8.T37 - SearchPattern add pass-in bShowResult
+T116sc 181023 in CVisionSystem::SearchVisionPattern, remove checking angle
+T115sc 181023 log single bond with short message
+T115sc 181023 log auto bond exclude single bond
+T114sc 181023
+	1. rename enum BOND_TYPE to EN_BOND_TYPE
+	2. rename CBond.m_nAutoBondType to m_nBondType
+T113sc 181023
+	1. rename enum BOND_MODE to EN_BOND_MODE
+	2. rename CBond.m_nAutoBondMode to m_nBondMode
+	3. rename CBond.GetAutoBondMode to GetBondMode
+T112sc 181022 remove CTimingDebug, use CHTimer instead
+T111sc 181021 fixed debug info extra line
+T110sc 181021 rename enInfoViewType to EN_INFOVIEW_TYPE
+T109sc 181021 link MachineConfig v1.0.T119 - change default [SEARCH PR]
+T108sc 181020 link Vision8 v1.8.T35 - speedup DisplayText
+T107sc 181020 link Vision8 v1.8.T34 - in SearchPattern, show display time
+T106sc 181020 link MachineConfig v1.0.T118, Vision8 v1.8.T32 - add GetSrchPrRed/GreenScore
+T105sc 181020 link MachineConfig v1.0.T117, Vision8 v1.8.T31 - add IsSrchPrRetry
+T104sc 181020 link Debug v1.0.T16, Vision8 v1.8.T28 - add IsDebugSrchPattern
+T103sc 181019 link Vision8 v1.8.T27 - SearchPattern show search time
+T102sc 181019 link Vision8 v1.8.T26 - LearnPattern show config setting
+T101sc 181017
+	1. link MachineConfig v1.0.T116 - add [SEARCH PR]
+	2. link Vision8 v1.8.T25
+T100sc 181014 link MachineConfig v1.0.T114 - default [WAVEFORM][RPZ/FPZ Show]=1
+T99sc 181009 cleanup CKeyPadDlg
+T99sc 181009 cleanup CFileOpenDlg
+T98sc 181009 rename CMaterialHandlerThread::GetMhsEventStatus to UpdateDebugInfo
+T97sc 181008 link Debug v1.0.T15 - add GetDebugInfo
+T96sc 181008 change to theDebug.AddInfo
+T96sc 181008 in CMaterialHandlerThread, change to theDebug.AddInfo
+T96sc 181008 in CTopTrack, change to theDebug.AddInfo
+T96sc 181008 in CBond, change to theDebug.AddInfo
+T96sc 181008 change to theDebug.ClearInfo
+T95sc 181007 for wire/lf cycle time, use theDebug.AddInfo
+T95sc 181007 link Debug v1.0.T14, MachineConfig v1.0.T113 - add [DEBUG][Debug Info Length]
+T94sc 181007 link Debug v1.0.T12 - add AddInfo, ClearInfo
+T93sc 181007 in CWireBondApp::InitInstance, create vision image dir
+T92sc 181006 in stat show LF cycle time
+T91sc 181006
+	1. debug wire clamp cant open after load config
+	2. link ServoController v1.1.T90 - add ReDownloadBufferProgram
+	3. in CBond.Init, remove ClearAllBuffer before DownloadBufferProgram
+T90sc 181006 change to *pstPgm
+T89sc 181005 in CBond, change to pstDevice
+T88sc 181005 cleanup CWireBondDlg::OnClickKeyboardShortcut
+T88sc 181005 in CTopElevSetupPage, change stDevicePara to pstDevice
+T87sc 181005 in CTopDeviceParaPage, change stTopDevicePara to pstDevice
+T86sc 181005 in CIndexCtrlDlg, change stTopDevicePara to pstDevice
+T86sc 181005 in CTopIndexerSetupPage, rename private var
+T86sc 181005 when edit WH indexer, add clamp col param
+T85sc 181005 in CTopIndexerSetupPage, change stTopDevicePara to pstDevice
+T84sc 181005 cleanup CTopDeviceParaPage & CTopIndexerSetupPage
+T83sc 181005 link MachineConfig v1.0.T112 - add [WAVEFORM][RPZ/FPZ Show]
+T82sc 181005 in CWaveForm, maximize window & show RPZ/FPZ
+T81sc 181004 link Camera v1.0.T8, Vision8 v1.8.T22
+T80sc 181004 link Camera v1.0.T7, Vision8 v1.8.T21
+T79sc 181004 link Camera v1.0.T4, Vision8 v1.8.T20
+T78sc 181004 link Vision8 v1.8.T19
+T77sc 181004 link Vision8 v1.8.T18
+T76sc 181004
+	1. link Vision8 v1.8.T17 - rename functions
+	2. link CuIndex v1.0.T14, R2RIndex v1.0.T20
+T75sc 181003
+	1. link Vision8 v1.8.T16 - CClient change to nPatRcd
+	2. link CuIndex v1.0.T13, R2RIndex v1.0.T19
+T74sc 181003 link Vision8 v1.8.T14 - rename to ST_SEARCH_PATTERN_RESULT
+T73sc 181003 link Vision8 v1.8.T12 - CPatternMgr change to nPatRcd
+T72sc 181003 link Vision8 v1.8.T11
+T71sc 181002 link Vision8 v1.8.T10
+T70sc 181002 link Vision8 v1.8.T9
+T69sc 181002 link Vision8 v1.8.T8
+T68sc 180930 link MachineConfig v1.0.T111 - add [DEBUG][Wire Cycle Time]=0:show time & length/1:show time/2:show length
+T67sc 180930 link Log v1.0.T21 - add backup time
+T66sc 180930 debug wire cycle time only show 1st wire's length
+T65sc 180930 in CWireBondDlg::OnMenuTree, cleanup save recipe code
+T64sc 180929
+	1. link ServoController v1.1.T89 - add InitConfig
+	2. link MachineConfig v1.0.T110 - debug XRMS not working
+T63sc 180929 cleanup CWireBondDlg::VerifyRecipe
+T62sc 180929 cleanup CWireBondDlg::LoadRecipe
+T61sc 180929 cleanup CWireBondDlg::VerifyRecipe
+T60sc 180928 link TopClamp v1.0.T10
+T59sc 180928 link ServoController v1.1.T88, MachineData v1.1.T17
+T58sc 180928
+	1. link TopClamp v1.0.T9, TopOnload v1.0.T15, TopOffload v1.0.T16
+	2. link MachineConfig v1.0.T109 - add GetVerifyShowTrack
+T57sc 180928 link MachineData v1.1.T16 - VerifyData add more param
+T56sc 180928
+	1. link MachineData v1.1.T15 - add VerifyData
+	2. link MachineConfig v1.0.T108 - add GetVerifyShowMcData
+T55sc 180928
+	1. link ServoController v1.1.T87 - show servo speed/control by block add diff
+	2. link BallPara v1.0.T6, LoopPara v1.0.T15
+T54sc 180928 link ServoController v1.1.T86 - add VerifySpeed/ControlData
+T53sc 180927 link ServoController v1.1.T85 - show diff for verify servo control
+T52sc 180927
+	1. link MachineConfig v1.0.T107 - add [VERIFY RECIPE][Show Servo Speed/Control]
+	2. link ServoController v1.1.T84
+T51sc 180927 in wire cycle time, show current wire length
+T50sc 180927 in CDebugDlg,
+	1. rename m_szDebugInfo to m_sInfo, m_lDebugMode to m_nMode
+	2. rename m_iDebugItem to m_nItem, m_nIndexNum to m_nItemIdx
+T49sc 180927 show message after manual load config
+T48sc 180927 change log "Edit W?" to "EditWire_?"
+T47sc 180927 re-download buffer after load config
+T46sc 180927 log LoadRecipe_PathName
+T45sc 180927 cleanup CWireBondDlg::LoadRecipe
+T45sc 180927 in CWireBondDlg::LoadRecipe, rename local var
+T45sc 180926 change CWireBondDlg::LoadRecipe return bool instead of BYTE
+T45sc 180926 cleanup CWireBondDlg::LoadRecipe
+T44sc 180926 change idle/bond time format to _?_?_?
+T43sc 180926 link LogTrace v1.0.T20 - WriteLine use "_" as delimiter
+T42sc 180925 change idle/bond time format to ?h?m?s
+T41sc 180923 in CTopTrack::EnterDelayState, rename pass-in param
+T40sc 180923
+	1. in CTopIndex, rename ST_TOP_INDEXER_DELAY to ST_DELAY_STATE, m_stTimeDelayPara to m_stDelayState
+	2. link R2RIndex v1.0.T18
+T39sc 180923
+	1. in TopIndex.h, rename TOP_INDEXER_DEALY_ST to ST_TOP_INDEXER_DELAY
+	2. link R2RIndex v1.0.T17
+T38sc 180923 LF Cycle Time add elapsed time
+T37sc 180922 log start/stop show idle/bond time
+T36sc 180922 LF Cycle Time add matrix row/col, show per index/row/col time
+T35sc 180920 link MachineConfig v1.0.T106 - change default [DEBUG][Remove Delay Search 1]=0
+T34sc 180920 in CTopIndexerSetupPage, use *theTopTrack.GetRcd
+T33sc 180920
+	1. rename CTopTrack.Get/SetTrackRcd to Get/SetRcd
+	2. link CuIndex v1.0.T12, R2RIndex v1.0.T16, TopOffload v1.0.T15
+T32sc 180919 rename CTopTrack.Load/SaveTrackRcd to Load/SaveRcd
+T31sc 180919 add missing LF Cycle Time option in debug mode
+T30sc 180919
+	1. link MachineConfig v1.0.T105 - add GetUphMode
+	2. link BondStatistics v1.0.T25
+T29sc 180919 in SERVO_INT_VARIABLE, rename BUF2_PARAM_1/2 to BUF2_PARAM1/2
+T28sc 180918 link BondStatistics v1.0.T24
+T27sc 180918 link BondStatistics v1.0.T23
+T26sc 180915
+	1. in debug mode, add LF Cycle Time option to show leadframe cycle time
+	2. link Debug v1.0.T11 - add DEBUG_LF_CYCLE_TIME
+T25sc 180915
+	1. in debug mode, add Wire Cycle Time option to show wire cycle time of all wires
+	2. link Debug v1.0.T10 - add DEBUG_WIRE_CYCLE_TIME
+T24sc 180914
+	1. add buffer 2 param
+	2. link SoftController v1.0.T34, MachineConfig v1.0.T104
+T23sc 180914 debug srch speed step=0.5 wrong speed
+T22sc 180914 link MachineConfig v1.0.T103 - set default verify not show ref & wire
+T21sc 180913 debug eric buffer 2 show spark unknown error
+T20sc 180912 remove comment-out function CBond.CheckEfoResult
+T19sc 180911 link MachineConfig v1.0.T102 - add GetSrchSpeedStep
+T18sc 180911
+	1. link MachineConfig v1.0.T101 - add GetAcsXRMS
+	2. link ServoController v1.1.T83sc
+T17sc 180911
+	1. link MachineConfig v1.0.T100 - add IsRestoreMcdata
+	2. by default not restore mcdata to avoid overwriting calib data
+T16sc 180911 link ServoController v1.1.T82sc
+T15sc 180911 add function for GetDeviceSeq=2
+T14sc 180911 in BackupMcdata, remove PowerOn.dat
+T13sc 180910 move PowerOn.dat & WhData.dat to \Mcdata
+T12sc 180909 cleanup CWireBondApp::ArchivePowerOnData
+T11sc 180909 cleanup CWireBondApp::LoadRecipeFromFile
+T11sc 180909 in ArchiveProgram & LoadRecipeFromFile, rename pass-in param bWHData to bLoadWH
+T10sc 180908 cleanup code
+T10sc 180907 link ServoController v1.1.T81 - add VerifyData
+T9sc 180907 link MachineConfig v1.0.T99 - change default [DEBUG][Remove Delay Search 2]=0
+T8sc 180906 cleanup CTopSettingPage
+T7sc 180905 create dir \wbdata\backup & \wbdata\backup\vision
+T7sc 180905 backup wbdata & mcdata after init mcdata
+T6sc 180904 in RestoreWb/Mcdata, log error not show msg
+T5sc 180904 in RestoreWb/Mcdata, use goto quit replace return
+T4sc 180904 in BackupWb/Mcdata, log error not show msg
+T3sc 180903 link TopClamp v1.0.T7
+T2sc 180901
+	1. link Wire v1.0.T22, Program v1.0.T68
+	2. add individual search height offset
+T1sc 180901 upgrade version no.
+
+v2.0
+T124sc 180831 link MachineConfig v1.0.T98 - move McConfig.ini to Mcdata
+T123sc 180831 link MachineConfig v1.0.T97 - default [DEBUG][Mcdata]=1
+T122sc 180831 add CWireBondApp::InitMcdata
+T121sc 180831 add CWireBondApp::BackupMcdata & RestoreMcdata
+T120sc 180831 link MachineConfig v1.0.T96 - add [DEBUG][Mcdata]=0/1
+T119sc 180830 cleanup CWireBondApp
+T118sc 180830
+	1. remove CWireBondApp::GetWorkingDir
+	2. in CWireBondDlg::LoadRecipe, remove GetWorkingDir
+T117sc 180830 in CWireBondApp::ArchivePowerOnData, remove GetWorkingDir
+T117sc 180830 in CWireBondApp::RestoreWbdata, remove GetWorkingDir
+T117sc 180830 in CWireBondApp::IsAbnormalExit, remove GetWorkingDir
+T117sc 180830 in CWireBondApp::ArchiveMachineData, remove GetWorkingDir
+T116sc 180830 replace CWireBondDlg::SaveBackupFile with CWireBondApp::BackupWbdata
+T115sc 180830 cleanup CWireBondDlg::OnMenuTree
+T114sc 180830 rename CWireBondApp::CopyBackupFile to RestoreWbdata
+T113sc 180830
+	1. add DIR_MCDATA & DIR_MCDATA_BACKUP
+	2. cleanup CWireBondApp::IsAbnormalExit
+T112sc 180830 cleanup CWireBondApp::CopyBackupFile
+T112sc 180830 cleanup CWireBondDlg::SaveBackupFile
+T111sc 180830
+	1. rename WORK_SPACE_BACKUP to DIR_BACKUP
+	2. rename WORK_DIRECTION_BACKUP to DIR_BACKUP_VISION
+	3. move from WireBondDlg.h to DataStruct.h
+T110sc 180830 cleanup CWireBondApp.CopyBackupFile
+T109sc 180827 in CVisionSystem, replace stWireRcd with pstWire
+T109sc 180827 in CVisionSystem, replace stPgmRcd with pstPgm
+T108sc 180827 debug stat wrong wire count
+T107sc 180827 in CVisionSystem, rename m_nCurImageThreshold to m_nBinaryThreshold
+T107sc 180827 cleanup CVisionSystem
+T107sc 180827 in CVisionSystem, remove GetVisionErrorMsg
+T106sc 180827 cleanup CVisionSystem
+T105sc 180825
+	1. in CVisionSystem, change to return void
+	2. link CuIndex v1.0.T11, R2RIndex v1.0.T15
+	3. link Program v1.0.T67, VisionDisplay v1.0.T19
+T104sc 180825 in CVisionSystem,
+	1. rename m_bWireDrawEnable to m_bDrawWire
+	2. rename GetWireLayoutFlag to IsDrawWire
+	3. rename SetVisionLayoutFlag to SetDrawWire
+	4. link CuIndex v1.0.T10, R2RIndex v1.0.T14
+T104sc 180825 cleanup CVisionSystem
+T103sc 180825 in CVisionSystem, rename SwitchToIdleLight to SetIdleLight
+T103sc 180825 cleanup CVisionSystem
+T102sc 180824 in CVisionSystem, remove //@
+T102sc 180824 cleanup CVisionSystem
+T101sc 180822
+	1. link MachineConfig v1.0.T95 - add [CONTACT STAT 1/2][Contact Low/High Error Enable]
+	2. link ContactLevel v1.0.T31, Program v1.0.T66
+T100sc 180822 debug tail delay not working
+T99sc 180821
+	1. link MachineConfig v1.0.T93 - add [DEBUG][Tail Delay]
+	2. link SoftController v1.0.T32
+T98sc 180820 link Vision v1.8.T7 - debug cross-hair wrong color
+T97sc 180820 link Vision v1.8.T6 - debug cross-hair wrong color
+T96sc 180820 revert T86
+T95sc 180820 link Program v1.0.T65
+T94sc 180820 in CAutoBondPage & CDlgRework, rename m_nRwRow/Col/Wire to m_nReworkRow/Col/Wire
+T94sc 180820 cleanup CDlgRework
+T93sc 180820 in matrix die ahead, debug dummy teach matrix pitch even when no matrix
+T92sc 180818 link Log v1.0.T19, BondStatistics v1.0.T22 - log stat
+T91sc 180817 cleanup CPositionCalibPage
+T90sc 180816
+	1. link MachineConfig v1.0.T92 - add [MACHINE][Table Home Sequence]
+	2. link ServoController v1.1.T80sc
+T89sc 180815 link Log v1.0.T18 - set GetFileName/GetBackupFileName private
+T88sc 180815 edit wire show m_nAdjustX/Y & m_nAdjStep in um
+T87sc 180814 edit wire allow move more than 1 step
+T86sc 180813 edit wire disable right-click move table
+T85sc 180813 cleanup CPositionAdjustDlg
+T84sc 180811 debug log wh error show blank message (because of chinese)
+T83sc 180811 in CBond.ReportBondError, relayout code
+T82sc 180811 link BondStatistics v1.0.T21 - log reset cap/wire count
+T81sc 180811 shorten start/stop auto bond message
+T81sc 180811 link Log v1.0.T17 - create directory DIR_DATALOG_VISION
+T80sc 180810 debug log bond error show blank message (because of chinese)
+T79sc 180809 link VledClamp v1.0.T3 - move GkgLib to Library
+T79sc 180809 link VledIndex v1.0.T4 - move GkgLib to Library
+T79sc 180809 link VledOffload v1.0.T3 - move GkgLib to Library
+T79sc 180809 link VledOnload v1.0.T3 - move GkgLib to Library
+T78sc 180809 link R2RIndex v1.0.T13 - move GkgLib to Library
+T77sc 180809 link R2ROn/Offload v1.0.T9 - move GkgLib to Library
+T76sc 180809 link BondStatistics v1.0.T20 - move GkgLib to Library
+T75sc 180809 link Stepper v1.0.T6, StepperControl v1.0.T6 - move GkgLib to Library
+T74sc 180809 link StepperIO v1.2.T26 - move GkgLib to Library
+T73sc 180808 link BondPara v1.0.T20 - verify data show range
+T72sc 180808 link BondPara v1.0.T18 - verify data show range
+T71 180808 convert to pc version
+T71sc 180808 link DataManager v1.0.T6 - debug save recipe hang
+T70sc 180807 rename menu tab "module test" to "stepper time test"
+T69sc 180807 cleanup CTestMotionTimePage
+T68sc 180807 remove tab [Debug][Diagnostic Tool][File]
+T67sc 180807
+	1. link Reference v1.0.T20 - rename functions
+	2. link Program v1.0.T63
+T66sc 180806 link Program v1.0.T62
+T66sc 180806 link BondPara v1.0.T17
+T66sc 180806
+	1. link MachineConfig v1.0.T91 - add [VERIFY RECIPE][Show Program/Reference/Wire/Bond Para]
+	2. link Wire v1.0.T21, Reference v1.0.T19
+T65sc 180806 link BondPara v1.0.T16 - debug wrong power display
+T64sc 180806 link BondPara v1.0.T15 - verify data show more para
+T63sc 180806 link AutoPad v1.0.T11, BondPara v1.0.T14, Efo v1.0.T19 - add VerifyData
+T62sc 180805 link BondPara v1.0.T13
+T61sc 180805 link EFO v1.0.T18
+T60sc 180805 link AutoPad v1.0.T10
+T59sc 180805 link Wire v1.0.T20, Reference v1.0.T18
+T58sc 180805 link Wire v1.0.T19 - add VerifyData
+T57sc 180805
+	1. link Reference v1.0.T17 - add VerifyData
+	2. link Program v1.0.T61
+T56sc 180804 add CWireBondDlg::VerifyRecipe
+T55sc 180804 link Log v1.0.T16, Program.h v1.0.T59, DataManager.h v1.0.T5
+T54sc 180804 revert to T47
+T53sc 180802 link Reference v1.0.T16, Program v1.0.T60
+T52sc 180731 link Program v1.0.T58 - VerifyData add total ref/wire
+T51sc 180730
+	1. link Log v1.0.T16, Program v1.0.T57, DataManager v1.0.T5
+	2. add CWireBondDlg::VerifyRecipe
+T50sc 180730
+	1. rename WORK_SPACE_BACKUP to DIR_BACKUP
+	2. rename WORK_DIRECTION_BACKUP to DIR_BACKUP_VISION
+T50sc 180730 in CWireBondApp::CopyBackupFile, rename variables
+T49sc 180729 link DataManager v1.0.T4
+T48sc 180728 in CWireBondDlg::LoadRecipe, replace stPgmRcd with pstPgm
+T48sc 180728 in CWireBondDlg::LoadRecipe, replace strDir with str
+T48sc 180728 in CWireBondDlg::LoadRecipe, rename aszBuf to acBuf
+T48sc 180728 in CWireBondDlg::LoadRecipe, rename sName to sFileName
+T48sc 180728 in CWireBondDlg::LoadRecipe, rename szPgmName to sPathName
+T48sc 180728 cleanup CWireBondDlg::LoadRecipe
+T47sc 180727 cleanup WireBondDlg.cpp
+T47sc 180727 link Log v1.0.T12 - save log to DIR_DATALOG
+T46sc 180727 verify recipe open notepad
+T46sc 180727 add menu "Verify Recipe"
+T45sc 180724 cleanup CWireBondDlg::OnMouseMove
+T45sc 180724 link Vision8 v1.8.T5 - remove DrawCursor
+T45sc 180724 link Vision8 v1.8.T4, MachineConfig v1.0.T90 - add config cursor color
+T44sc 180724
+	1. link VisionDisplay v1.0.T18
+	2. link MachineConfig v1.0.T89 - add GetColorCurWire & GetColorWireGroup
+T43sc 180723 link Vision8 v1.8.T2
+T42sc 180723 cleanup CDlgSpider
+T41sc 180723 in CWireBondDlg,
+	1. remove dummy var
+	2. rename g_bAPC to gbAPC, g_nAlgorithm to gnAlgorithm
+T40sc 180723 in CWireBondDlg, rename private var
+T40sc 180723 cleanup CWireBondDlg
+T39sc 180721 add keyboard single bond function
+T38sc 180721 use CBond.ProcessKeyboard as shared procedure
+T37sc 180721 cleanup HotkeyHandler
+T37sc 180721 in CScanKeyThread, add comment
+T37sc 180721 in CScanKeyThread, rename m_bThreadActive to m_bScanEnable
+T37sc 180721 cleanup CScanKeyThread
+T37sc 180721 in CScanKeyThread, rename enum JOYSTICK_STEPPER_HORIZEN to JOYSTICK_STEPPER_HORIZONTAL
+T37sc 180721 in CScanKeyThread,
+	1. rename theHeaterDetector to m_HeaterDetector
+	2. rename theWireClampButton to m_WireClampButton
+	3. rename theJoyStickPositive(Negative)X(Y) to m_JoyStickPositive(Negative)X(Y)
+T37sc 180721 in CScanKeyThread,
+	1. rename m_pThread to m_pScanThread
+	2. rename PerformScanKeyHandle to PerformScanKeyThread
+T36sc 180721 link Program v1.0.T55 - rename to GetBondSeqOrientation
+T36sc 180721 rename CTchSequencePage.m_nBondSequence to m_nBondSeqOrientation
+T35sc 180720 change check keypad type from 1||2 to >=1/<=3
+T34sc 180720 rename CBond.ProcessHotkeyMessage to ProcessKeyboard
+T33sc 180720 cleanup WireBondDlg.cpp
+T33sc 180720 in CMsgManager,
+	1. change m_bProcessKeyboard to private
+	2. add SetProcessKeyboard
+T33sc 180720 in CWireBondDlg,
+	1. rename SetProcessClickKeyboardShortcut to SetProcessKeyboard
+	2. rename m_IsProcessClickKeyboardShortcut to m_bProcessKeyboard
+T33sc 180720 in CMsgManager, rename m_bProcesskeyboardshortcut to m_bProcessKeyboard
+T32sc 180719 cleanup CWireBondDlg
+T31sc 180719 link Reference v1.0.T15
+T30sc 180719 in CBond, rename nDieRefNum to nUnitTotalDie
+T29sc 180719 in CTchAlignPointPage,
+	1. rename m_nDieRefNum to m_nUnitTotalDie
+	2. rename m_nTotalAlignmentStep to m_nTotalAlignStep
+	3. rename m_nAlignmentStep to m_nAlignStep
+T28sc 180719 link Program v1.0.T54 - remove CalcSubunitOffset
+T27sc 180719 in CMatrixSchedule,
+	1. rename m_nTotalColumn to m_nTotalCol
+	2. rename m_nCurrentRow to m_nCurRow
+	3. rename m_nCurrentColumn to m_nCurCol
+	4. rename m_nCurrentMatrix to m_nCurMat
+T27sc 180719 rename local var
+T27sc 180719 link Program v1.0.T53 - rename GetSubMatNum to GetMatNum
+T26sc 180719 link Program v1.0.T52 - remove GetMatRowColOfSubMatrix & GetSubMatrixFromMatRowCol
+T25sc 180719
+	1. link Program v1.0.T51 - remove GetRowColOfSubunit
+	2. VisionDisplay v1.0.T17, Wire v1.0.T18
+T24sc 180719 in CBond,
+	1. rename m_nCurWireNum to m_nCurWire
+	2. rename m_nRestartWireNum to m_nRestartWire
+	3. remove m_nNextWireNum
+	4. rename m_nBondedWireNum to m_nBondedWire
+	5. rename m_nEndWireNum to m_nEndWire
+	6. rename m_nCurrentTrack to m_nCurTrack
+T23sc 180719 rename local variables
+T23sc 180719 link Program v1.0.T50 - rename GetSubUnitNum to GetUnitNum
+T22sc 180719 rename nRefNumOfSubunit to nUnitDieNum
+T21sc 180719 rename nSubUnitRefNum to nUnitTotalDie
+T21sc 180719
+	1. link Program v1.0.T49 - rename GetSubUnitDieRefNum to GetUnitTotalDie
+	2. link Reference v1.0.T13
+T20sc 180718 rename nUnitRefNum to nUnitTotalRef
+T20sc 180718 rename nWireNumInUnit to nUnitWireNum
+T19sc 180718 rename nTotalWireNum to nTotalWire
+T18sc 180718 rename nTotalRefNum to nTotalRef
+T18sc 180718 in CCtactSrchPage,
+	1. rename m_nTotalRefNum to m_nTotalRef
+	2. rename m_nCurrentRefNum to m_nCurRef
+T17sc 180718 rename nSubUnitNum to nUnitNum
+T16sc 180718 rename nSubUnitWireNum to nUnitTotalWire
+T16sc 180718
+	1. link Program v1.0.T48 - rename to GetUnitTotalWire
+	2. link Wire v1.0.T17
+T15sc 180718 change to GetTotalUnit
+T15sc 180718 rename SubUnitOffset to UnitOffset
+T14sc 180718
+	1. link Program v1.0.T47 - rename to CalcUnitOffset
+	2. link VisionDisplay v1.0.T16, Wire v1.0.T16
+T13sc 180717
+	1. link Program v1.0.T46 - add GetTotalUnit
+	2. in CMaterialHandlerThread, change to GetTotalUnit
+T12sc 180717
+	1. add *CTopTrack::GetRcd
+	2. in CMaterialHandlerThread::IndexLeadFrame, replace stTrackData with pstTopTrack
+T11sc 180717
+	1. link DeviceData v1.0.T13 - add *GetTopRcd
+	2. in CMaterialHandlerThread::IndexLeadFrame, replace stTopDevicePara with pstTopDev
+T10sc 180717 in CMaterialHandlerThread::IndexLeadFrame, remove nMhsErrStatus
+T10sc 180717 in CMaterialHandlerThread::IndexLeadFrame
+	1. rename nCurrentUnit to nCurUnit
+	2. rename nCurrentRow to nCurRow
+	3. rename nCurrentColumn to nCurCol
+T10sc 180717 cleanup CMaterialHandlerThread::IndexLeadFrame
+T10sc 180717 in CMaterialHandlerThread::IndexLeadFrame, remove stPgmRcd
+T9sc 180717 replace stPgmRcd with pstPgm
+T9sc 180717 rename pstPgmRcd to pstPgm
+T9sc 180717 add const to PGM_RECORD*
+T8sc 180716 debug inverted individual param on even col when device seq=1
+T7sc 180714 link Program v1.0.T45 - add IsEvenCol
+T6sc 180713 link Log v1.0.T11 - WriteLine ignore blank message
+T6sc 180713 cleanup CBond
+T5sc 180713 in CAdvParaMapDlg:
+	1. rename panRowLable to m_paRowLabel
+	2. rename m_nRowValue to m_anRowValue
+	3. rename panEditArray to m_paMapEdit
+	4. rename m_nMapPara to m_anMapPara
+T5sc 180713 in CAdvParaMapDlg::OnDestroy, replace stWireRcd with pstWire
+T5sc 180713 in CAdvParaMapDlg::OnInitDialog, replace stWireRcd with pstWire
+T5sc 180713 in CAdvParaMapDlg, replace stWireRcd with pstWire
+T5sc 180713 cleanup CAdvParaMapDlg
+T5sc 180713 cleanup CParaMapBase
+T4sc 180713 link MachineConfig v1.0.T88 - add [DEBUG][Edit Bond Pt Max]=5..20steps
+T3sc 180713 in CAutoBondPage:
+	1. rename m_nCurrentWireNum to m_nCurWire
+	2. rename m_nBondPoint to m_nCurBondPt
+	3. rename m_bCheckBallFormation to m_bCheckBall
+T2sc 180712 link Matrix v1.0.T12
+T2sc 180712 link Wire v1.0.T15
+T2sc 180711 link Reference v1.0.T12
+T2sc 180711 link Program v1.0.T43
+T1sc 180711 link MachineConfig v1.0.T87 - set default [DEBUG][Device Sequence]=0
+
+v1.6
+T377sc 180709 link ServoController v1.1.T79sc
+T377sc 180709 link AcsServo v1.0.T10
+T376sc 180706 link MachineConfig v1.0.T86
+T375sc 180706 link ServoController v1.1.T78sc, SoftController v1.0.T31
+T374sc 180706 in DataStruct.h remove TOP_OFFLOAD_RCD (move to TopOffload.h)
+T373sc 180706 in DataStruct.h remove TOP_ONLOAD_RCD (move to TopOnload.h)
+T372sc 180706 remove dummy theLog.WriteLine for v1.1.T309
+T372sc 180706 remove dummy theLog.WriteLine for v1.2.T10
+T371sc 180705 debug wrong stat on bonded unit & cap usage in case of incomplete last index
+T370sc 180705
+	1. link Log v1.0.T10 - add WriteDouble3
+	2. edit wire show position difference
+T369sc 180703 cleanup CBondEditPage
+T368sc 180625
+	1. update DeviceData v1.0.T12 - rename to theDevice
+	2. link CuIndex v1.0.T9, CuOn/Offload v1.0.T8
+	3. link R2RIndex v1.0.T12, R2ROn/Offload v1.0.T8
+	4. link TopOn/Offload v1.0.T12
+T367sc 180625
+	1. link DeviceData v1.0.T11
+	2. link CuIndex v1.0.T8, CuOn/Offload v1.0.T7
+	3. link R2RIndex v1.0.T11, R2ROn/Offload v1.0.T7
+	4. link TopOn/Offload v1.0.T11
+T366sc 180625
+	1. link DeviceData v1.0.T10, CuIndex v1.0.T7
+	2. remove struct TOP_DEVICE_RECORD, CUELITE_DEVICE_RECORD, INDEX_PR_REF (move to DeviceData.h)
+T365sc 180622 link DeviceData v1.0.T8
+T364sc 180622 cleanup CBond::CompleteUnitUpdate
+T363sc 180622 link BondStatistics v1.0.T19 - rename theBondStatistics to theStat
+T362sc 180622 link BondStatistics v1.0.T18 - add *GetRcd
+T361sc 180622 link BondStatistics v1.0.T17
+T360sc 180620
+	1. link SoftController v1.0.T30, ServoController v1.1.T77 - add DownloadEric2Buffer0/1/9
+	2. for eric2 buffer, change search delay range
+T359sc 180615 link Vision8 v1.7.T29 - rename EN_VISION_ERROR
+T358sc 180613 convert to sc version
+T358 180612 cleanup CWireBondDlg::OnTimer
+T358 180612 link MachineConfig v1.0.T85 - add [MACHINE][Key Pad Type]
+T357 180607 convert to pci version
+T357sc 180607 cleanup code
+T356sc 180601 add Dahua camera
+T355sc 180529 link MachineConfig v1.0.T84 - set default [DEBUG][Device Sequence]=1
+T354sc 180526 in CAutoBondPage::DuplicatePoints, debug wrong edit wire when [DEBUG][Device Sequence]=1
+T353sc 180523 link MachineConfig v1.0.T83, StepperIO v1.2.T25 - rename enum
+T352sc 180515 link CanController v1.1.T11, StepperIO v1.2.T23
+T351sc 180514 link CanController v1.1.T10, StepperIO v1.2.T22
+T350sc 180511 debug wrong ahead pr for new device seq
+T349sc 180511 cleanup CBond::DieAheadPR
+T349sc 180510 move MSZAPI.lib to \Library\CamMSZ (from \Library\Mil8\Lib)
+T348sc 180507 link MachineConfig v1.0.T81 - add [VISION][Library/Camera Type]
+T347sc 180507 link Vision8 v1.7.T26 - remove CVisionApp
+T346sc 180507 link Vision8 v1.7.T25 - replace CVisionApp with CVision
+T345sc 180506 link Vision8 v1.7.T23 - remove CVisionApp pass-in nClientId
+T344sc 180506 link Vision8 v1.7.T22 - remove CVisionApp pass-in nClientId
+T343sc 180506 link Vision8 v1.7.T21 - remove CVisionApp pass-in nClientId
+T342sc 180506 link Vision8 v1.7.T20 - remove CVisionApp pass-in nClientId
+T341sc 180506 link Vision8 v1.7.T19 - remove CVision.m_pClient
+T340sc 180506 link Vision8 v1.7.T18 - remove CVisionApp.Init
+T340sc 180506 link Vision8 v1.7.T17 - rename to CVisionApp.Init/InitUsb
+T339sc 180505 in CVisionSystem::Init, remove pass-in param nClientNum
+T338sc 180505 replace CBond.CheckEfoResult with theEFO.IsSparkSuccess
+T337sc 180505 cleanup CDummyBond
+T337sc 180505 rename CVisionSystem.thePrSystem to m_VisionApp
+T337sc 180504 cleanup code
+T337sc 180504 cleanup CVisionSystem, link Program v1.0.T42
+T336sc 180504 link StepperIO v1.2.T17 - add [ONLOADER][Holder Screw Type]=2:lead screw 4mm
+T335sc 180504 in CAutoBondPage::OnRedoPr, remove try/catch
+T334sc 180428 move AcsServo.h/.lib from \Library\Acs to \GkgLib\AcsServo
+T334sc 180426
+	1. link operation v1.0.T3 - rename to theOper
+	2. link CuClamp v1.0.T5, ServoController v1.1.T76sc, Stepper v1.0.T5
+	3. link R2RIndex v1.0.T10, Reference v1.0.T11, TopClamp v1.0.T6, AcsServo v1.0.T9
+T333sc 180420 in CAutoBondPage::DuplicatePoints, replace stWire with pstWire
+T332sc 180419 when edit wire, swap wire no. for even col if [debug][Device Sequence]=1
+T331sc 180412 debug new device seq not working
+T330sc 180412 link ContactLevel v1.0.T30 - debug lOrgSize==-1
+T329sc 180412
+	1. link Program v1.0.T41 - add CalcUnitOffset
+	2. link VisionDisplay v1.0.T14, Wire v1.0.T14
+T328sc 180411 link MachineConfig v1.0.T80 - set default [DEBUG][Device Sequence]=0
+T327sc 180411 link SoftController v1.0.T29 - debug bond timeout error
+T326sc 180411 cleanup CAutoBondPage::DuplicatePoints
+T326sc 180411 in CAutoBondPage::DuplicatePoints, separate case PGM_MAT_DIE_AHEAD from case group
+T326sc 180411 in CAutoBondPage::DuplicatePoints, use switch/case instead of if/else
+T325sc 180410 link MachineConfig v1.0.T79 - add [DEBUG][Device Sequence]=0:ori seq/1:speedup seq
+T324sc 180410
+	1. link MachineConfig v1.0.T78 - add remove delay srch 2
+	2. link SoftController v1.0.T28 - remove delay srch 2
+	3. link ServoController v1.1.T75sc
+T323sc 180410 cleanup CTchSequencePage
+T322sc 180409
+	1. link Matrix v1.0.T11 - rename to AddRcd
+	2. link Reference v1.0.T10
+T321sc 180409
+	1. link Reference v1.0.T9 - rename to AddRcd
+	2. link Program v1.0.T40
+T321sc 180409 link Wire v1.0.T13
+T321sc 180409
+	1. link Reference v1.0.T8 - rename to Get/SetRcd
+	2. Program v1.0.T39, Matrix v1.0.T10
+	3. VisionDisplay v1.0.T13, R2RIndex v1.0.T9
+T321sc 180409
+	1. link Reference v1.0.T7 - rename to theRef
+	2. Program v1.0.T38, ContactLevel v1.0.T29, Matrix v1.0.T9
+	3. VisionDisplay v1.0.T12, R2RIndex v1.0.T8, Wire v1.0.T12
+T320sc 180409
+	1. link Wire v1.0.T11 - rename to theWire
+	2. Program v1.0.T37, ContactLevel v1.0.T28
+	3. link LoopPara v1.0.T14, VisionDisplay v1.0.T11
+T319sc 180409 cleanup CTeachRecipeSheet
+T319sc 180409 cleanup CWireBondDlg
+T318sc 180409 show software version add "_Buf?"
+T317sc 180330 in CBondStatisticPage::UpdateStatDisplay, rename stBondStatsRcd to stStatRcd
+T317sc 180330 in CBondStatisticPage, always enable Start/Stop Bond button
+T316sc 180330 in CBondStatisticPage, debug press Start/Stop Bond button not update button status
+T316sc 180330 cleanup CBondStatisticPage
+T315sc 180329 in stat page, resume start bond button
+T314sc 180329 debug [config][Bond Process Config][Feature][Fab Test] will scroll upon entering the page
+T313sc 180322 log bond error
+T313sc 180322 log WH error
+T312sc 180226 link SoftController v1.0.T27 - update new buffer 0/1/7
+T311sc 180225 link ContactLevel v1.0.T27 - in AddRcd, discard data if out of tol
+T310sc 180213
+	1. link ContactLevel v1.0.T24 - add GetAddLog & GetGetLog
+	2. in debug, show contact log data
+T309sc 180213 link ContactLevel v1.0.T23 - GetRcd return ptr
+T308sc 180213 link ContactLevel v1.0.T22 - add data log, remove std dev
+T307sc 180212 link ContactLevel v1.0.T19 - rename var
+T306sc 180211 link MachineConfig v1.0.T77, ContactLevel v1.0.T17 - add [CONTACT STAT 1/2][Offset/Tol]
+T305sc 180208 link MachineConfig v1.0.T76, ContactLevel v1.0.T14 - add [CONTACT STAT 1/2][Add/Get Enable Default]
+T304sc 180208
+	1. in DataStruct.h, define CTACT_WIRE_BUFFER (move from ContactLevel.h)
+	2. link MachineConfig v1.0.T75, ContactLevel v1.0.T13
+T303sc 180208 link MachineConfig v1.0.T74, ContactLevel v1.0.T12 - add [CONTACT STAT 1/2][Add/Get Enable]=0:disable/1:enable
+T302sc 180207 link ContactLevel v1.0.T11 - add debug message
+T301sc 180205 link MachineConfig v1.0.T73, ContactLevel v1.0.T8 - use GetCtactSampleSize to calc ctact stat
+T300sc 180203 in CBond.PreFireEFO, set time 2/3 = 0
+T299sc 180203
+	1. link Program v1.0.T36 - add GetRowCol, GetSubMatNum
+	2. replace GetRowColOfSubunit with GetRowCol
+	3. replace GetSubMatrixFromMatRowCol with GetSubMatNum
+T298sc 180202
+	1. link Program v1.0.T35 - add GetMatRowCol, rename to GetSubUnitNum
+	2. replace GetMatRowColOfSubMatrix with GetMatRowCol
+T297sc 180202 in CBond.CheckBondResult, add const to pstWire
+T296sc 180202 replace GetSubunitFromRowCol with GetSubunitNum
+T295sc 180202 link MachineConfig v1.0.T72 - add [CONTACT STAT 1/2][Sample Size]
+T294sc 180202 link Program v1.0.T34 - add GetSubunitNum
+T293sc 180202 link ContactLevel v1.0.T6
+T292sc 180201 in CBond.CheckBondResult:
+	1. rename stBumpWireParaRcd to stBumpWire
+	2. rename stBumpBondParaRcd to stBumpBond
+	3. rename stWireRcd to pstWire
+T291sc 180201 in CBond, relayout "contact level" debug message
+T291sc 180201 in CBond, rename #define names
+T291sc 180201 in CBond:
+	1. rename GetUpdateAutoBondDataFlag to IsUpdateAutoBondData
+	2. rename SetUpdateAutoBondDataFlag to SetUpdateAutoBondData
+T291sc 180201 in CBond, remove GetCurrentMatrixRowCol
+T291sc 180201 for 3-profile efo, change time 2/3 range to 0..8000 (from 50..8000)
+T290sc 180129 link MathCalc v1.0.T7sc
+T290sc 180129 link SoftController v1.0.T26 - update new buffer 0/1/9
+T289sc 180129 in SendIntDataToServo & SendRealDataToServo, rename pass-in param
+T289sc 180129 rename local alIntData to anData
+T288sc 180128 link MachineConfig v1.0.T71 - add [EFO][Prefire Time]=0:default
+T287sc 180128
+	1. link MathCalc v1.0.T7 - add Calc2PtDist
+	2. in CalcUsgProfile, rename pstWireRcd to pstWire, rename stServoSpeedProfile to stServoSpeed
+T286sc 180128 in CalcUsgProfile:
+	1. rename stBondBallParaRcd to stBondBall
+	2. rename stBallShapeParaRcd to stBallShape
+	3. rename stBumpWireParaRcd to stBumpWire
+T285sc 180126 link Debug v1.0.T9, link BSD v1.0.T15 - add DEBUG_USG_PROFILE
+T284sc 180126 rename "wire feed timeout" to "wire feed count"
+T284sc 180126 cleanup CBondFeaturePage
+T283sc 180125 link ServoController v1.1.T73sc - remove delay search 2
+T282sc 180124 debug machine stop wrongly when auto bond timeout = 0
+T281sc 180124 link Log v1.0.T9
+T280sc 180123 in CBond, rename the? to m_?
+T279sc 180123 in CTopSensorMainPage, rename m_the? to m_?
+T279sc 180123 in CDebugToolSheet, rename m_the? to m_?
+T278sc 180123 link Wire v1.0.T10 - move enum DUMMY_PGM_PATTERN from MacDef.h to Wire.h
+T277sc 180123 link Wire v1.0.T8 - dummy program add horizontal left & right
+T276sc 180123 link MachineConfig v1.0.T70, ServoController v1.1.T72sc - add [XY TABLE][Slow Move Vel/Acc/Jerk] to fix move sound
+T275sc 180122 link ServoController v1.1.T71sc - add GetResolXY & GetResolZ
+T274sc 180122 link MachineConfig v1.0.T69 - add [EFO][Prefire]=0:disable/1:enable
+T273sc 180119 for 3-profile efo, change time range to 50..8000 (from 200..8000)
+T272sc 180118 debug auto bond timeout wrong checking
+T271sc 180116
+	1. add 3-profile EFO
+	2. link EFO v1.0.L17, MachineConfig v1.0.T68
+	3. link Program v1.0.T33 - version 100 for 3-profile EFO
+T270sc 180115 in CBond.CalcMZ1:
+	1. rename pstWireRcd to pstWire
+	2. rename stLoopModePara to stLoopMode
+	3. rename stLoopAcsModePara to stLoopAcsMode
+T269sc 180115
+	1. link MachineConfig v1.0.T67 - add [MACHINE][Auto Bond Timeout]=0:no timeout/other:timeout in minutes
+	2. link Timer v1.0.T3 - add GetTime_x1min
+T268sc 180115 link ServoController v1.1.T70sc - enable xy soft limit detection
+T267sc 180114 in CBond.CalcWireInfo, rename stRefRcd1/2 to pstRef1/2
+T266sc 180114 in CBond.CalcWireInfo, rename stPgmRcd to pstPgm
+T266sc 180114 in CBond.CalcWireInfo, rename stMatRcd1/2 to pstMat1/2
+T266sc 180114
+	1. in CBond.CalcWireInfo, rename stWireRcd to pstWire
+	2. in CBond.CalcMZ1, add const to pstWireRcd
+T265sc 180114 in CBond.CalcMZ1, rename stRefRcd1/2 to pstRef1/2
+T265sc 180114 in CBond.CollectData, pstBondInfoRcd to pstWireInfo, pstLoopModePara to pstLoopMode
+T265sc 180114 in CBond.CalcMZ1, rename lpstWireRcd to pstWireRcd, pstBondInfoRcd to pstWireInfo
+T264sc 180114 in CBond.CalcWireInfo, re-arrange code
+T264sc 180114 in CBond.CalcWireInfo, rename stMatRcd1/2 to pstMatRcd1/2
+T264sc 180114 in CBond.CalcWireInfo:
+	1. remove stBallShapeParaRcd, stBondBallParaRcd
+	2. rename stBumpWireParaRcd to stBumpWire
+	3. rename stLoopShapePara to stLoopShape
+T264sc 180114 in CBond.CalcWireInfo, rename pstBondInfoRcd to pstWireInfo
+T264sc 180114 in CBond.CalcWireInfo, add const for pstMcData & pstPgm
+T263sc 180113 in CBond.BondOneWire, add debug message
+T262sc 180113 link SoftController v1.0.T25 - remove delay search 1
+T261sc 180113 link MachineConfig v1.0.T66 - add [EFO][Type]=0:1-profile/1:3-profile
+T260sc 180113 link MachineConfig v1.0.T65, ServoController v1.1.T69sc - remove delay before search 1
+T259sc 180112 link MachineConfig v1.0.T64 - add [MACHINE][Die Ahead PR]=0:slow/1:fast
+T258sc 180112 in CBond.DieAheadPR, add debug message
+T257sc 180110 link ServoController v1.1.T68sc - update new buffer 0/1/9
+T256sc 180110 link SoftController v1.0.T24 - update new buffer 0/1/8/9
+T255sc 180109
+	1. link ServoController v1.1.T67sc - add soft search 2
+	2. link SoftController v1.0.T23 - add soft search 2
+T254sc 180109
+	1. link ServoController v1.1.T66sc - add soft search
+	2. link SoftController v1.0.T22 - add soft search
+T254 180109 link MachineConfig v1.0.T63 - add [SOFT SEARCH 1/2][Speed/Position Error/Position Error Series]
+T253 180103 link ServoController v1.1.T65
+P252sc 171229 修复CLoopParaBaseDlg参数保存错误
+T251sc 171227 in TchSequencePage.OnStart, when teach matrix die ahead or matrix hybrid, allow matrix row/col = 1
+T250sc 171226 link ServoController v1.1.T64sc - debug overwrite new buffer 2
+T249sc 171226 link ServoController v1.1.T63sc - update new buffer 9
+T248sc 171225 link ServoController v1.1.T62sc - download old buffer 3/4
+T247sc 171225 link ServoController v1.1.T61sc, SoftController v1.0.T18 - add missing DownloadBufferToServo
+T246sc 171222 link ServoController v1.1.T60sc, SoftController v1.0.T17 - add sc new buffer 0/1/2/7/8/9
+T245sc 171222 link ServoController v1.1.T58sc - update new buffer 0/1/7/9
+T244sc 171222 pass EN_VISION_ACTION by enum instead of short
+T243sc 171221 rename enum VISION_ACTION_CODE to EN_VISION_ACTION
+T243sc 171221 in CBond.BondOneWire, remove stNextWireRcd
+T243sc 171221 in CBond.BondOneWire, change stCurWireRcd to pstCurWire
+T242sc 171221 rename CBond.PerformBondOneBall/Wire to BondOneBall/Wire
+T242sc 171221 in CBond.DieAheadPR, debug wrong skip
+T241sc 171221
+	1. rename CBond.PerformDieAheadPR to DieAheadPR
+	2. rename CBond.PerformDieAheadAlignment to DieAheadAlign
+	3. rename CBond.PerformMatrixDieAheadAlignment to MatrixDieAheadAlign
+T241sc 171221 in CBond.PerformBondOneWire, add QUIT to end
+T240sc 171220 cleanup CBond.PerformDieAheadPR
+T240sc 171220 in CBond.PerformDieAheadPR, change stWireRcd to pstWire
+T239sc 171220
+	1. link MachineConfig v1.0.T59
+		- add [DEBUG][Random Skip]=0:not skip/other:random modulo
+		- add [DEBUG][Random Seed]=0:false/1:true
+	2. in CBond.PerformDieAheadPR, add QUIT to end
+P238sc 171220 添加"加载配置"菜单项
+T237sc 171219 link StepperIO v1.2.T15 - cleanup code
+T236sc 171219 link StepperIO v1.2.T14 - remove m_cAddr/m_cAxisID
+T235sc 171219 link StepperIO v1.2.T12
+T234sc 171218 use ShowDebugMsg(DEBUG_VISION_TIMING,...)
+T234sc 171218 rename CBond.ShowDebugBondTiming to ShowDebugMsg
+T233sc 171218 link Debug v1.0.T8
+T232sc 171218 add test code for rand()
+T232sc 171218
+	1. link Matrix v1.0.T8 - rename to theMatrix
+	2. link Program v1.0.T32, Reference v1.0.T6, Wire v1.0.T7
+T231sc 171217
+	1. link Matrix v1.0.T7 - add CalcMatrix2
+	2. in CBond.PerformMatrixDieAheadAlignment, remove stMatrix2
+T230sc 171217 link Matrix v1.0.T6 - rename UpdateMatrixRcd to CalcMatrix
+T229sc 171217 debug vs error due to using wrong theWire.GetRcd in CBond.PerformWireBond
+T228sc 171217 in CBond.CheckAheadAlignDone, change stMatrixRcd to pstMatrix
+T228sc 171217 in CBond.CheckAheadAlignDone, change stWireRcd to pstWire
+T228sc 171217 cleanup CBond.CheckAheadAlignDone
+T227sc 171217 cleanup CBond.PerformWireBond
+T227sc 171217 in CBond.PerformWireBond, change stWireRcd to pstWireRcd
+T227sc 171217 cleanup CBond.PerformWireBond
+T226sc 171217 link CanController v1.0.T7
+T225sc 171217 link CriticalSection v1.0.T1, StepperIO v1.2.T8
+T224sc 171217 link TowerLight v1.0.T6
+T223sc 171216 link ServoController v1.1.T57sc
+	1. set current limit XRMS & XRMST to motion x/y/z/wcl
+	2. to avoid table move high pitch sound
+	3. update new buffer program 0/1/7/8/9
+T222sc 171216 fix bond timeout error by changing pstForceSwitch to stForceSwitch in CBond.CalcTail
+T221sc 171214
+	1. link Reference v1.0.T4 - add REF_RECORD* GetRcd
+	2. link Matrix v1.0.T4 - add MATRIX_RECORD* GetRcd
+T221sc 171214 in DataStruct.h, add version no.
+T221sc 171214 link StepperIO v1.2.T7 - add CCriticalSection
+T220sc 171213
+	1. link Wire v1.0.T6 - add WIRE_RECORD* GetRcd
+	2. in AutoBondPage.OnCorrectBond, change stWireRcd to pstWireRcd
+T219sc 171213 link ServoController v1.1.T54sc
+T218sc 171212
+	1. link MathCalc v1.0.T6sc - remove GetMachineDataRcd
+	2. link MachineData v1.1.T14 - remove Get/SetMachineDataRcd
+T217sc 171212 in CR2RWhSetupPage, change stMcData to pstMcData
+T217sc 171212 in CDlgCuEliteWhSetupPage, change stMcData to pstMcData
+T217sc 171212 in CServoTune, change stMcData to pstMcData
+T217sc 171212 in CDummyBond, change stMcData to pstMcData
+T217sc 171212 in CStickDetectDlg, change stMcData to pstMcData
+T217sc 171212 in CWireBondDlg, change stMcData to pstMcData
+T217sc 171212 in CThreadWireDlg, change stMcData to pstMcData
+T217sc 171212 in CWclCalibPage, change stMcData to pstMcData
+T217sc 171212 in CDummyBondPage, change stMcData to pstMcData
+T217sc 171212 change stMcData to pstMcData
+T217sc 171212 in CServoGeneralPage, change stMcData to pstMcData
+T216sc 171211 debug force cali wrong default
+T215sc 171211
+	1. link MachineData v1.1.T13 - rename to theMcData
+	2. link BondStatistics v1.0.T15, MathCalc v1.0.T5sc
+	3. link CuOnload v1.0.T6, CuOffload v1.0.T6, CuIndex v1.0.T6
+	4. link ServoController v1.1.T53sc, Program v1.0.T31
+	5. link R2ROnload v1.0.T6, R2ROffload v1.0.T6, R2RIndex v1.0.T7
+	6. link TopOnload v1.0.T10, TOpOffload v1.0.T10
+T214sc 171211 in CWireBondApp, change stMcData to pstMcData
+T213sc 171211 link MachineData v1.1.T12 - add MACHINE_DATA_LIGHT* GetLightRcd
+T212sc 171211 in CForceAutoCalibPage, change stMcData to pstMcData
+T212sc 171211 in CTopIndex, change stMcData to pstMcData
+T212sc 171211 in CDlgTopWhSetUpPage, change stMcData to pstMcData
+T212sc 171211 in CCtactSrchTestPage, change stMcData to pstMcData
+T212sc 171211 in CBtosPage, change stMcData to pstMcData
+T211sc 171211 link BondPara v1.0.T12 - remove Get/SetBondParaRcd
+T211sc 171211 change stBondParaRcd to pstBondPara
+T211sc 171211 in CAdvParaMapDlg, change stBondParaRcd to pstBondPara
+T211sc 171211 change stBondParaRcd to pstBondPara
+T210sc 171209 cleanup CBond.CollectData
+T209sc 171209
+	1. link BondPara v1.0.T11 - add BOND_PARA_RCD* GetRcd
+	2. in CBond, change stBondParaRcd to pstBondPara
+T208sc 171209 in CBond, change stMcData to pstMcData
+T207sc 171209 in CSparkParaPage, change stMcData to pstMcData
+T207sc 171209 in CBondSafetyPage, change stMcData to pstMcData
+T207sc 171209 in CBondFeaturePage, change stMcData to pstMcData
+T207sc 171209 in CAutoBondPage, change stMachineData to pstMcData
+T207sc 171209 in CCfgBondPage & CFireLevelPage, change stMcData to pstMcData
+T207sc 171208 in CPositionCalibPage, change stMcData to pstMcData
+T207sc 171208
+	1. link MachineData v1.1.T11 - add GetRcd which return ptr
+	2. change stMcData to pstMcData
+T206sc 171208 in CBond, change stPgmRcd to pstPgm
+T206sc 171208 change stPgmRcd to pstPgm
+T205sc 171208 relayout IDD_TAB_POSITION_CALIB & IDD_TAB_FORCE_CALIB
+T204sc 171208 change stPgmRcd to pstPgm
+P203sc 171208 在IDD_TAB_FORCE_CALIB和IDD_TAB_POSITION_CALIB添加“重置当前值”控件
+T202sc 171208 change stPgmRcd to pstPgm
+T201sc 171208 relayout IDD_TAB_WCL_CALIB
+T200sc 171208
+	1. link Program v1.0.T30 - add GetRcd which return ptr
+	2. remove m_stPgmRcd
+T199sc 171207
+	1. relayout IDD_TAB_WCL_CALIB
+	2. in CWclCalibPage, change current factor default
+T198sc 171207 link BondPara v1.0.T10 - change GetBondParaLimit return ptr
+T197sc 171207 cleanup CBond.CalcMZ1
+P196sc 171207 添加线夹重置参数
+T195sc 171207 rename g_jpegHelp to theJpegHelp
+T195sc 171207 cleanup CJpeg
+T194sc 171207 in CForceSwitch:
+	1. set SetDefaultRcd to private
+	2. init tail param
+T193sc 171207 link MachineConfig v1.0.T57 - waveform sample rate default = 0
+T192sc 171207 link ServoController v1.1.L51sc - set current limit for sc only
+T191sc 171207 in CForceSwitch, rename GetDefaultRcd to SetDefaultRcd
+T191sc 171207 in CForceSwitch, change GetRcd to return ptr, remove SetRcd
+P190sc 171206 CLoopSpeedArcPage控件位置调整
+T189sc 171205 link LoopPara v1.0.T13 - in LOOP_MODE_ACS_PARA, rename var
+T188sc 171205 link LoopPara v1.0.T12 - in LOOP_MODE_ACS_PARA, rename var
+T187sc 171205 cleanup CBond.CalcMZ1
+T186sc 171205 link AutoPad v1.0.T9, VisionDisplay v1.0.T10
+T185sc 171205
+	1. add CBond.m_adTail
+	2. in CalcTail, pass in cFabType to calc fab2 tail
+T184sc 171205 rename CBond.m_adblMZ1 to m_adMZ1
+T183sc 171205 revert T167sc - fix bond servo error
+T182sc 171205 debug FORCE_SWITCH_PARA not compatible since var position changed
+T181sc 171204 link BSD v1.0.T14 - change wire feed debug message
+P180sc 171204 修复v1.6.P153sc慢搜索错误
+T179sc 171204 link MachineConfig v1.0.T55, BSD v1.0.T13 - add [BSD][Check Wire Feed Every Wire X]
+T178sc 171204 in CBond::InitUsgProfile, remove dummy stBondParaRcd
+T177sc 171204 link BondPara v1.0.T9
+T176sc 171204 in CBond::InitUsgProfile, rename local var
+T175sc 171204 link BondPara v1.0.T7 - rename to theBondPara
+T174sc 171203 in AdvParaMapDlg.cpp, remove dummy stPgmRcd
+T173sc 171203 link BallPara v1.0.T5 - rename to theBallPara
+T172sc 171203 link EFO v1.0.T16 - rename to theEfoProfile, FAB_TYPE_1/2
+T171sc 171203 link MachineConfig v1.0.T54 - change efo com port setting
+T170sc 171202
+	1. add config EFO and light com port
+	2. link MachineConfig v1.0.T53, USG v1.0.T7, EFO v1.0.T14
+T169sc 171202 link MachineConfig v1.0.T50, USG v1.0.T6 - add config USG com port
+T168sc 171202 link USG v1.0.T5 - rename functions
+T167sc 171202 in CalcTail, pass in cFabType to calc fab2 tail
+T166sc 171202 for new buffer, reset buffer 7/9 when start bond
+T165sc 171202 in CForceSwitch, rename tail param
+T164sc 171201 link Debug v1.0.T6 - add DEBUG_BSD
+T163sc 171201 link ServoController v1.1.T49sc - update new buffer program 0/1/2
+T162sc 171201 link BSD v1.0.T12 - rename UsbBsdDebugCheckResult to GetStickResult
+T161sc 171201 cleanup CUsbBsdDebugPage
+T160sc 171201 link BSD v1.0.T11 - rename BsdGetReadCounter to GetStickCount
+T159sc 171201 link BSD v1.0.T10 - rename functions
+T158sc 171201 link BSD v1.0.T9
+T157sc 171201 link BSD v1.0.T8 - rename functions
+T156sc 171201 in CBond, rename TriggerStickDetection to StartStickDetect
+T155sc 171201 link BSD v1.0.T7 - rename functions
+T154sc 171201 link ServoController v1.1.T48sc - to avoid burn wire clamp
+P153sc 171201 Align Sensor Slow Search Dist根据慢搜索方式传入正确的数值
+P152sc 171201 修改CSparkParaPage选项的范围
+T151sc 171130
+	1. in WIRE_INFO_RCD, remove lSrchLvl2, add nSrchHt1/2
+	2. link ServoController v1.1.T47sc, SoftController v1.0.T15
+T150sc 171130 in WIRE_INFO_RCD, add lSrchLvl2
+T150sc 171130 in WIRE_INFO_RCD, rename lSrchHt1Lvl to lSrchLvl1
+T149sc 171130 change tail break dist range to -1..50 (from 10..50)
+T148sc 171130 link ServoController v1.1.46, SoftController v1.0.T14 - anData remove global to debug dry run error after bonding one panel
+T147sc 171129 link ServoController v1.1.T45 - specify one-dim array for SERVO_VAR_TAIL
+T146sc 171129
+	1. link ServoController v1.1.T44 - add SERVO_VAR_TAIL
+	2. add CalcTail to send tail data to servo
+T145sc 171128 in CForceSwitch, add tail param menu
+T144sc 171128
+	1. link LoopPara v1.0.T11 - rename to Get/Set/Load/SaveRcd
+	2. link LoopShape v1.0.T4, Program v1.0.T29
+T143sc 171128
+	1. link LoopPara v1.0.T10 - rename to theLoopPara
+	2. link LoopShape v1.0.T3, Program v1.0.T28
+T142sc 171127 in CForceSwitch, rename to Get/Set/Load/SaveRcd
+T141sc 171127
+	1. in motion.h, add enum SERVO_INT_VARIABLE
+	2. link ServoController v1.1.T43 - remove enum SERVO_INT_VARIABLE
+	3. link SoftController v1.0.T13 - change to global anData(MAX_INT_VARIABLE)
+T140sc 171127 debug device data corrupted causing teach device menu malfunction
+T139sc 171125 link MachineData v1.1.T10 - add GetFlatLevel, IsZeroBtosOptics
+P138sc 171125 删除v1.6.P134sc添加的代码
+T137sc 171124
+	1. link ServoController v1.0.T41sc - rename SERVO_VAR_ARRAY
+	2. pass SERVO_VAR_FORCE_COMPENSATE to servo
+	3. change force compensate range from 0..100 to -200..200
+P136sc 171125 ForceSwitchSheet以及FORCE_SWITCH_PARA内变量重命名
+T135sc 171124 pass FORCE_SWITCH, IMPACT_SPEED1/2/3, IMPACT_MODE1/2/3 to servo
+P134sc 171124 修改CTopDeviceParaPage当ListDatabase选项为自定义时，料盒参数为可输入状态
+T133sc 171124 link StepperIO v1.2.T5 - InitStepParameter in InitStepCard, after LoadConfig
+T132sc 171123 convert to sc version
+T132 171123 link ServoController v1.1.T39 - add FORCE_SWITCH, IMPACT_SPEED1/2/3, IMPACT_MODE1/2/3
+T131 171123 in force compensate menu, rename Hme1/2 to Time 1/2
+T130 171123 in CWireBondApp, remove m_pCurrentFont
+P129 171123 修复CLoopLandingPagePan页面键盘输入焦点
+T128 171122 in CMsgManager, remove m_nLanguage
+T128 171122
+	1. link MachineConfig v1.0.T49 - add ToggleLanguage
+	2. in CMsgManager, remove ToggleLanguage
+T127 171122 in CMsgManager, remove Get/SetLanguage
+T127 171122 in CMsgManager, remove GetIniFileName
+T126 171122
+	1. link Program v1.0.T26 - upgrade PGM_VERSION = 99
+	2. add force switch/force compensate/impact mode menu
+P125 171122 修改Language的本地保存方式
+T124 171121 link SoftController v1.0.T12 - rename to theMcConfig
+T123 171121
+	1. link MachineConfig v1.0.T48 - add [ONLOADER][Holder Screw Type]=0:lead screw 6mm/1:ball screw 5mm
+	2. link StepperIO v1.2.T4 - change holder screw pitch
+T122 171121
+	1. link MachineConfig v1.0.T47 - rename to theMcConfig
+	2. link BondStatistics v1.0.T14, CanController v1.1.T5
+	3. link CuClamp v1.0.T4, CuIndex v1.0.T5, CuOnload v1.0.T5, CuOffload v1.0.T5
+	4. link DcMotor v1.0.T5, DeviceData v1.0.T4, MachineData v1.1.T8
+	5. link ServoController v1.1.T38, Stepper v1.0.T4, StepperControl v1.0.T5, StepperIO v1.2.T3
+	6. link Program v1.0.T26, R2RIndex v1.0.T6, R2ROn/Offload v1.0.T5
+	7. link Relay v1.0.T5, RollingClaw v1.0.T6, Sensor v1.0.T5
+	8. link TopClamp v1.0.T5, TopOn/Offload v1.0.T9, TowerLight v1.0.T5
+P121 171121 解决接触面搜索连点两次NEXT控件会当机的问题
+T120 171120 link MachineConfig v1.0.T45 - add [WAVEFORM][WCL Scale]=0:default/other:scaling factor
+T119 171120 link MachineConfig v1.0.T44 - add [WAVEFORM][MFZ/WCL Type]=0:self/1:bond force
+T118 171120 link MachineConfig v1.0.T42 - debug wrong config file name
+T117 171120 link MachineConfig v1.0.T41 - auto save config after set
+T116 171119 link MachineConfig v1.0.T40
+	1. rename to Load/SaveConfig
+	2. add [MACHINE][Language]=0:english/1:chinese
+T115 171119 in waveform, change name WCL to FORCE if display bond force
+T115 171119 link SoftController v1.0.T10 - display bond force
+T114 171119 rename WORK_SPACE_ROOT to DIR_WBDATA, RECIPE_DIRECTION to DIR_RECIPE
+T113 171119 link VisionDef v1.0.T15 - rename WORK_DIRECTION to DIR_VISION
+T112 171119 cleanup Bond.cpp
+T111 171117 in DataStruct, remove typedef
+T110 171116 in CParaLimitPage, remove auto_ptr
+T109 171116 in CDlgElevCtrl, remove auto_ptr
+T108 171116 in CServoGeneralPage, remove auto_ptr
+T107 171116 in CDlgDelBkPR, remove auto_ptr
+T106 171116 in CDlgRework, remove auto_ptr
+T105 171116 in CTchVisionPatternPage, remove auto_ptr
+T104 171116 in CVisionCalibDlg, remove auto_ptr
+T103 171116 in CTchAlignPointPage, remove auto_ptr
+T102 171116 in CWireBondDlg, remove auto_ptr
+T101 171116 in CBondFeaturePage, remove auto_ptr
+T100 171116 link Program v1.0.T25 - rename var
+T99 171116 in CPositionAdjustDlg, remove auto_ptr
+T98 171116 in CVisionSystem, remove auto_ptr
+T97 171116 in CBond, remove auto_ptr
+T97 171116 in CBond, remove auto_ptr, link Program v1.0.T23
+T96 171116 in CAutoBondPage, remove auto_ptr
+T96 171116 in CAutoBondPage, remove auto_ptr, link Program v1.0.T22
+T95 171115 in CDummyBondPage, remove pointer
+T94 171115 remove v1.5.T2 comment
+T94 171115 remove v1.2.T14 comment
+T93 171115 in CTopIndexerDebug, remove pointer
+T92 171115 in CTopIndexTchPage, remove pointer
+T91 171115 in CTopIndex, remove pointer
+T90 171115 in CTopIndexSetupPage, remove pointer
+T89 171115 in CTopElevSetupPage, remove pointer
+T88 171115 in CPositionCalibPage, remove pointer
+T87 171115 cleanup CLoopParaGeneral
+T87 171115 in CLoopParaGeneral, remove pointer
+T86 171115 in CDlgTopWhSetUpPage, remove pointer
+T85 171115 in CFireLevelPage, remove pointer
+T84 171115 in CBtosPage, remove pointer
+T83 171115 in CBallBondParaPage, remove pointer
+T82 171115 in CWireBondDlg, remove local pointer
+T82 171115 in CWireBondDlg, remove pointer
+T81 171115 cleanup CSparkParaPage
+T81 171115 in CSparkParaPage, remove pointer
+T80 171115 cleanup CMatrixSchedule
+T80 171115 in CMatrixSchedule, remove pointer
+T79 171115 cleanup CIndexCtrlDlg
+T79 171115
+	1. link Program v1.0.T19 - add IsCapillaryAutoPlug
+	2. in CIndexCtrlDlg, remove pointer
+T79 171115 in CIndexCtrlDlg, use theProgram.GetDeviceSequence()
+T78 171115 in CBumpWireParaPage, remove pointer
+T78 171115 cleanup CBumpWireParaPage
+T77 171114 in CBondParaPage, remove pointer
+T76 171114 cleanup CCtactSrchPage
+T76 171114 in CCtactSrchPage, remove pointer
+T75 171114 in CAdvVisionCfgPage, remove pointer
+T75 171114 cleanup CAdvVisionCfgPage
+T74 171114 in CBondSafetyPage, remove pointer
+T74 171114 cleanup CBondSafetyPage
+T73 171114 link ServoController v1.1.T37 - replace Sleep with Sleep_x1ms
+T72 171114 link ServoController v1.1.T36 - run eric buffer 7/8/9
+T71 171113 link ServoController v1.1.T35 - add eric buffer
+T70 171111 rename CServo.RunServoProgram to .RunBuffer
+T69 171110 link ServoController v1.1.T34 - remove enum SERVO_BUFFER
+T68 171109 in TopSettingPage.cpp, remove pointer
+T67 171109 in TopSensorMainPage.cpp, remove pointer
+T66 171109 in TopIndexerTchPage.cpp, remove pointer
+T65 171109 in TopIndexerSetupPage.cpp, remove pointerrunbuffer
+T64 171109 in TopIndexerDebug.cpp, remove pointer
+T63 171109 in TopDeviceParaPage.cpp, remove pointer
+T62 171109 in TchSequencePage.cpp, remove pointer
+T61 171109 in TchBondPoints.cpp, remove pointer
+T60 171109 in TchAutoPadPatternDlg.cpp, remove pointer
+T59 171109 in StickDetectDlg.cpp, remove pointer
+T58 171109 in PopUpTopStepperCtr.cpp, remove pointer
+T57 171109 in LoopSpeedArcPage.cpp, remove pointer
+T56 171109 in LoopParaBaseDlg.cpp, remove pointer
+T55 171109 in LoopLandingPagePan.cpp, remove pointer
+T55 171109 in LoopLandingPage.cpp, remove pointer
+T54 171109 in LoopGeneralPagePan.cpp, remove pointer
+T53 171109 in Loop3rdKinkPagePan.cpp, remove pointer
+T52 171109 in Loop3rdKinkPage.cpp, remove pointer
+T51 171109 in Loop2ndKinkPage.cpp, remove pointer
+T50 171109 in Loop1stKinkPage.cpp, remove pointer
+T49 171109 in LoopGeneralPage.cpp, remove pointer
+T49 171109 cleanup LoopConfigPage.cpp
+T49 171109 in LoopConfigPage.cpp, remove pointer
+T48 171109 in UsgConfigPage.cpp, remove pointer
+T48 171109 in UsgInfoDispPage.cpp, remove pointer
+T48 171109 in UsgSetupDlg.cpp, remove pointer
+T47 171109 in VisionCfgDlg.cpp, remove pointer
+T46 171109 in WclCalibPage.cpp, remove pointer
+T45 171109 in IndexCtrlDlg.cpp, remove pointer
+T44 171109 in FireLevelPage.cpp, remove pointer
+T43 171109 in CfgBondPage.cpp, remove pointer
+T42 171109 in BondEditPage.cpp, remove pointer
+T41 171109 in CapillarySmoothPage.cpp, remove pointer
+T40 171109 in BondStatisticPage.cpp, remove pointer
+T39 171109 in BondProcessSheet.cpp, remove pointer
+T38 171109 in BallBondParaPage.cpp, remove pointer
+T37 171109 in AutoBondPage.cpp, remove pointer
+T36 171109 in AdvWireLayoutPage.cpp, remove pointer
+T35 171108 in TopIndex.cpp, remove pointer
+T34 171108 in CAdvLoopParaSheet::OnInitDialog, remove pointer
+T33 171108 in CBondEditPage::OnEditWireNum, remove pointer
+P32 171108 添加慢搜索距离设定
+P31 171107 添加"慢搜索失败"错误警告
+T30 171107 in CAdvLoopParaSheet::AddLoopParaPages, remove pointer
+T29 171107 cleanup CBond
+T28 171106 in TopIndex.h, rename enum
+T27 171106 link MachineConfig v1.0.T37 - add [WORK HOLDER]Align Sensor Slow Search Distance=0:not move/+ve:move forward/-ve:move backward
+T26 171106 rename enum enIndexStates
+T25 171104 link ServoController v1.1.T33
+T24 171104 set INT_WIRE_NUM = unit wire no. (instead of program wire no.)
+T23 171104 in sc version, debug start bond show servo error
+T22 171103 link Program v1.0.T17 - add RecipeVersion
+T21 171101 link DcMotor v1.0.T4
+T20 171101
+	1. link StepperControl v1.0.T4 - rename CheckMotionStatus() to GetPos()
+	2. link DcMotor v1.0.T3, RollingClaw v1.0.T5
+	3. link CuClamp v1.0.T3, CuIndex v1.0.T4, CuOnload v1.0.T4, ChOffload v1.0.T4
+	4. link R2RIndex v1.0.T5, R2ROnload v1.0.T4, R2ROffload v1.0.T4
+	5. link TopClamp v1.0.T4, TopOnload v1.0.T8, TopOffload v1.0.T8
+	6. link VEClamp v1.0.T2, VEOnload v1.0.T4, VEOffload v1.0.T4, VEIndex v1.0.T4
+	7. link VledClamp v1.0.T2, VledOnload v1.0.T2, VledOffload v1.0.T2, VledIndex v1.0.T3
+T19 171031 link ServoController v1.1.T32 - merge v1.1.T26.W1
+T18 171028 for buffer type=1, change search speed step to 0.5 (from 2.5)
+T17 171028 check GetAcsBufferType for range change in v1.6.P8
+T16 171028 link ServoController v1.1.T31 - in enum SERVO_INT_VARIABLE, add INT_WIRE_NUM & INT_BALL_TYPE
+T15 171028 link MachineConfig v1.0.T34 - remove IO Card config
+T14 171028 link MachineConfig v1.0.T32 - remove EFO config
+T13 171028 link MachineConfig v1.0.T30 - remove USG config
+T12 171028 remove USG config option
+T11sc 171027 (repeat v1.5.175.T25) re-arrange startup init message
+T10sc 171027 (repeat v1.5.175.T7/9)
+	1. link ServoController v1.1.T30sc - inc z speed block to 12
+	2. link Program v1.0.T16, link LoopPara v1.0.T9, LoopShape v1.0.T2
+T9 171027 link SoftController v1.0.T9, ServoController v1.1.T29
+P8 171027 修改高级焊接属性页选项的范围
+T7 171027 (repeat v1.5.175.T22/23/26)
+	1. rename CInitDlg.UpdateInitInfo to ShowInfoMsg
+	2. in CInitDlg, add ShowInitMsg
+	3. cleanup CInitDlg
+T6 171027 (repeat v1.5.175.T28) link BondPara v1.0.T4
+T5 171027 (repeat v1.5.175.T27) link DeviceData v1.0.T3
+T4 171027 (repeat v1.5.175.T21) not do CalcMZ1 if [ACS]Buffer Type = 0
+T3 171027 (repeat v1.5.175.T11) resume W106 change to prevent cursor blink
+T2 171027 (repeat v1.5.175.T8)
+	1. cleanup CWaveform
+	2. in CWaveform, rename aiSpWave to m_anSpWaveform, adWaveformData to m_adWaveformData
+T1 171027 upgrade version no.
+
+v1.5
+175.P6 171012 添加线弧属性表单 (eric's buffer)
+175.T5 170929 link Program v1.0.T13 - upgrade program version to 97
+175.T4 170928 add version comment for v1.5.175.W1
+175.T3 170926 link WB_MotionLib v1.0.T11
+175.T2 170925 link MachineConfig v1.0.T28 - add [ACS]Buffer Type=0:Tony/1:Eric
+175.W1 170919 link ServoController v1.1.26.W1 - JX implement Eric's buffer
+W175 170915 Solved problem "Input claw spoils first LF if next LF not following" on old machine
+T174 170905 link MachineConfig v1.0.T27
+T173 170827 remove \r\n in "start/stop auto bond" message
+T173 170824 link SoftController v1.0.T7, ServoController v1.1.T26
+T172 170823 link SoftController v1.0.T6 - add SoftController.GetCommHandle
+T172 170823 link ServoController v1.1.T22 - add SoftController.GetCommHandle
+T171 170822
+	1. add reset message in debug window
+	2. link StepperIO v1.2.T2, MachineConfig v1.0.T26 - add [CAN BUS][Error Reset Start]
+W170 170818 Remove unused LoopParaAdvance.h, LoopParaAdvance.cpp, LoopParaSheet.h, LoopParaSheet.cpp from project
+T169 170818 link AcsServo v1.0.T8
+T168 170816 link ServoController v1.1.T21
+T167 170816 delete \Library\Motion\Release
+T167 170816 remove unused files from \Library\Motion
+	- inpout32.lib, MotionPlot.lib, WinMM.lib, MotionStepper.h, MtnApiSearchHome.h
+	- MtnDrawCurve.h, MtnInitAcs.h, poly7_bnd.h, ss_prof.h, twinsine.h
+T166 170816 link AcsServo v1.0.T7, ServoController v1.1.T20
+W165 170815 Tidy up "Software Manager" page
+W164 170814 Add "back slow search for align-sensor" function
+T163 170811 link MachineConfig v1.0.T25 - bypass SaveToFile
+T162 170811 link ServoController v1.1.T19 - remove if _ACS_SC
+T161 170811 link SoftController v1.0.T4, ServoController v1.1.T16
+T160 170811 link ServoController v1.1.T15
+T159 170810 link ServoController v1.1.T13, SoftController v1.0.T4
+T158 170810 remove declare theDigitalIO (move to DigitalIO)
+T157 170810 link ServoController v1.1.T12
+T156 170808 in CalcWireInfo & CalcBallInfo, change pass-in param TBL_POS* to TBL_POS
+T155 170808 link MathCalc v1.0.T4, ServoController v1.1.T11
+T154 170808 remove unused files from \Library\Motion
+	- ForceCali.h, efo_monitor.h, mtnapi.h, mtnconfig.h, non_sym.h, non_sym.cpp
+T153 170807 link MathCalc v1.0.T3, ServoController v1.1.T10
+T152 170806 link MathCalc v1.0.T2, ServoController v1.1.T9
+T151 170804 log "start/stop auto bond"
+W150 170803 Remove unused list control from "Indexing Control" dialog
+T149 170803 show machine ID in bottom panel
+W148 170803 Solved "Die/Lead Number Clipped" problem on "Teach Bond Points" page
+T147 170802 link StepperIO v1.2.T1 - log error
+T146 170731 in CBond.CalcWireInfo & CalcBallInfo, remove local var nProfileNum
+W145 170731 Debugging: prevent redo PR on bonded units
+T144 170728
+	1. in CServo, replace theDebug with theLog when there is error
+	2. in CBond.CheckBondProgress, show progress error in debug window
+T143 170728 cleanup CBond.CheckBondProgress
+T142 170728 in CBond.ReportBondError, debug theLog.WriteLine not show chinese message
+T141 170727 cleanup CBond.CheckBondRsult
+W140 170727 Enhancement:
+	1. Add "before/after offset" to "Indexing Accuracy" function when "Half Clamp=0"
+	2. Add "before/after offset" to "Indexing Accuracy" function when "Index->Clamp" button is clicked
+T139 170726 link ServoController v1.1.T8, MachineConfig v1.0.T24 - add acs timeout to debug bond timeout
+T138 170726 in CVisionSystem
+	1. rename GetEditPatMaskFlag to IsEditPatternMask
+	2. rename m_bEditPatternMaskEnable to m_bEditPatternMask
+T137 170725 link Program v1.0.T12 - add GetUnit[Row/Col]Offset, GetMatrix[Row/Column], GetMatrix[Row/Col]Offset
+T136 170725 debug auto bond image not show wire line (because of W106 change)
+T135 170723
+	1. link Program v1.0.T10 - add GetTrackType
+	2. cleanup CBond.ResetAutoBondData
+T134 170723 cleanup CBond.ReportBondError
+T133 170723 cleanup CBond.CalcWireInfo
+T132 170723 link ServoController v1.1.T6
+T131 170723 link ServoController v1.1.T5
+T130 170723 in TrajData.txt, show TotalTime
+T129 170723 link MachineConfig v1.0.T22, ServoController v1.1.T4
+T128 170723 link MachineConfig v1.0.T21, ServoController v1.1.T3
+T127 170723 link MachineConfig v1.0.T20, ServoController v1.1.T2
+T126 170722 link MachineConfig v1.0.T19, SoftController v1.0.T3 to config ACS SC sample rate
+T125 170722 link WB_MotionLib v1.0.T9
+W124 170722 Only to capture "After Offset" when "Indexing Accuracy" function is enabled
+W123 170722 Enhance "Indexing Accuracy" function, show before/after offset
+T122 170722 link WB_MotionLib v1.0.T7
+T121 170722 link WB_MotionLib v1.0.T6
+T120 170722 link WB_MotionLib v1.0.T5
+T119 170722 link WB_MotionLib v1.0.T4
+T118 170722 link WB_MotionLib v1.0.T2
+W117 170721 Solved problem, cannot save parameter of "Material Handler System Configure->Setting" page
+W116 170720 Perform slow search for align-sensor to increase indexing accuracy
+T115 170719 in CBond.CheckBondProgress, add pass-in param bShowDebugMsg
+T114 170718
+	1. relayout CBond.CheckBondProgress, use CHTimer to replace GetCurrentTime
+	2. add ShowDebugMsg(DEBUG_BOND_TIMING, sMsg,nParam1,nParam2)
+T113 170718 in CBond.CheckBondProgress, remove pass-in param bCheckBuffer
+T112 170718 cleanup CBond.CheckBondProgress
+T111 170717 add GkgLib\WB_MotionLib, link WB_MotionLib v1.0.T1
+T110 170717 in CBond.CalcWireInfo, create TrajData.txt in debug mode even though no error
+T109 170717 link MachineConfig v1.0.T18 - debug GetAlignSensorSlowSearch always return 0
+T108 170715 link ServoController v1.1.T1 to debug v1.5.T107 error
+T107 170715 link ServoController v1.0.T18 - replace command X/Y/A_??? with ???(X/Y/A)
+W106 170714 Solved problem "Cursor movement in vision window causes high CPU consumption when using AdLink MB"
+T105 170713 in IDD_TAB_CONTROL, make bond head profile no. combobox longer
+T104 170713 in CServoControlPage, rename private & local var
+T103 170713 cleanup CServoControlPage
+T102 170713 relayout IDD_TAB_CONTROL
+T102 170713 relayout IDD_TAB_ACCELERATION
+T101 170712 in CBondFeaturePage, resume menu FAB Test
+W100 170708 Solved "Next/Cancel Button" malfunction/overlap problem while teaching recipe
+T99 170707 link MachineConfig v1.0.T17
+	1. add [WORK HOLDER][Align Sensor Slow Search Speed]=0:not search/other: slow search speed
+	2. add [WORK HOLDER][Align Sensor Type]=0:Back/1:Front
+T98 170706 in CAutoBondPage.DuplicatePoints, for PGM_DIE_AHEAD with matrix, debug wrong bond pt in other units after edit bond pt in current unit
+T97 170706 in CAutoBondPage.DuplicatePoints, rename local var
+T97 170705 in CAutoBondPage.DuplicatePoints, replace lpstCurWireRcd with stCurWireRcd
+T97 170705 in CAutoBondPage.DuplicatePoints, remove lpstPgmRcd
+T96 170703 in CTchSequencePage, debug wrong matrix panel offset in PGM_DIE_AHEAD
+T95 170630 in CTchSequencePage, add matrix col in PGM_DIE_AHEAD
+T94 170630 cleanup CWireBondApp, resume IsAbnormalExit function
+T93 170629 in CTchSequencePage, add matrix row in PGM_DIE_AHEAD
+T93 170629 relayout CTchSequencePage.UpdateDeviceSequence
+T93 170629 in CTchSequencePage, add matrix row/col in PGM_DIE_AHEAD
+T93 170629 in CTchSequencePage, rename local var
+T92 170628 cleanup unused message
+T92 170628 in CTchSequencePage.UpdateDeviceSequence, rename local var
+T92 170628 in CTchSequencePage.UpdateDeviceSequence, use switch(m_nProgramType) instead of if statement
+T91 170628 in CTchSequencePage, remove m_lpstPgmRcd
+T91 170628 in CTchSequencePage, rename private variables
+T91 170628 in CTchSequencePage, rename PlotIndexOrderArrow to PlotSequenceArrow
+T91 170628 in CTchSequencePage, add lower/upper limit when enter row/col
+T91 170628 in CTchSequencePage, narrow the sequence arrow
+T91 170628 in CTchSequencePage, enlarge subunit layout
+T91 170628 in CTchSequencePage, rename messages
+T91 170628 in IDD_TAB_SEQUENCE, combine no. of row/col in single line
+T91 170627 relayout IDD_TAB_SEQUENCE
+T91 170627 in CTchSequencePage, show "X" to indicate which unit to teach
+T90 170627 cleanup CTchSequencePage
+W89 170626 Display wire number for both matrix rows
+W88 170621 Enable “Over View” window to display/control next matrix
+W87 170616 Prohibit BH moving when performing PR Index if window clamp not closed properly
+T86 170614 relayout IDD_TAB_BTOS
+T86 170614 cleanup CBtosPage
+W85 170607 Reset slot offset when teaching/editing elevator
+W84 170606 Enable "Index->Clamper" to use PR index procedure introduced in V1.5.W79
+W83 170602 Add "Edit" button to "Work Holder Calibration->Clamp Distance"
+W82 170527 Fix bug of manual alignment function which occurs on last index when PR Index is enabled
+W81 170526 Add "IO Fw Version" to "Software Manager"
+T80 170525 link EFO v1.0.T13 - debug RequestProfile not working
+W79 170525
+A. Change PR Index procedure by setting config [PR INDEX][Half Clamp]=0
+	1. Close windows clamp
+	2. Move BH to perform PR
+	3. Pre-close window clamp if offset>0
+	3.1 Perform indexing offset
+	3.2 Close window clamp
+B. Revert change made in V1.5.W78
+W78 170525 Fix bug of manual alignment function related to PR Index
+T77 170525 link Camera v1.0.W2 - debug image freeze using new motherboard
+T76 170525 in CEfoTestPage.OnStartBurn, amend cycle sequence
+T76 170525 in CEfoTestPage, rename private var
+T76 170525 in CEfoTestPage.OnStartBurn, amend cycle sequence
+T76 170525 cleanup CEfoTestPage
+T75 170524
+	1. link EFO v1.0.T12 - rename functions
+	2. in CEfoTestPage, rename debug message
+	3. in IDD_TAB_EFO_TEST, rename button name
+T74 170524 link EFO v1.0.T10 - rename public var
+T73 170524 link EFO v1.0.T9, HTimer v1.0.T2
+T72 170524 in CEfoTestPage, show debug message when press function buttons
+T71 170524 re-layout IDD_TAB_EFO_TEST
+T70 170524 remove CEfoTestPage.UpdateRevData
+T70 170524 in CEfoTestPage, debug can't show version
+T70 170524 in CEfoTestPage.OnStartBurn, remove first dummy firing
+T70 170523 in CEfoTestPage, replace GetCurrentTime with CHTimer
+T70 170523 cleanup CEfoTestPage
+T69 170523 link EFO v1.0.T7
+T68 170522 link MachineConfig v1.0.T15 - add [PR INDEX][Half Clamp]
+W67 170522 Remove "OK" button from "Debug->AFP Mode"
+T66 170519 in CBond, remove //@
+T65 170519 rename CBond.m_nCurrentMatRow to m_nCurMatRow, m_nCurrentMatColumn to m_nCurMatCol
+T65 170519 in CBond, rename nCurrentUnit to nCurUnit
+T65 170519 rename CBond.m_nCurrentRow to m_nCurRow, m_nCurrentColumn to m_nCurCol
+T65 170519 rename CBond.m_nCurrentWireNum to m_nCurWireNum
+W64 170519 Solve intermittent problem of "Teach/Edit Indexer"
+T63 170519 rename CWaveForm.CalculateDeformInfo to CalcDeformInfo
+T63 170519 cleanup CWaveForm
+T63 170518 in CWaveForm, set sp waveform to m_pen[4] instead of m_pen[15]
+T63 170518 in CWaveForm, rename pen to m_pen, set to private
+T62 170518 in IDD_DIALOG1_WAVEFORM, rename DW to WCL, MZ to "MFlag Z"
+T62 170518 in CWaveForm, set all public functions to private
+T62 170518 in CWaveForm, rename private variables
+T61 170518 cleanup CWaveForm
+T60 170518 add CBond.m_WireCycleTimer
+T59 170517 for _acs_sc, increase base time by 1 (replace 4 in v1.5.T43)
+T58 170517 amend CBond.ShowDebugBondTiming
+T58 170517 when debug bond timing, show wh index state name instead of no.
+T57 170516 replace IsDebugBondTiming with ShowDebugBondTiming
+T56 170516 add CBond.ShowDebugBondTiming
+T55 170516 debug bond timing show current time + elapse time
+T54 170516 init CBond.m_dLastBondTime = 0
+T53 170516 debug bond timing show elapse time
+T52 170516 debug bond timing show elapse time
+T51 170515 amend debug bond timing message
+T51 170515 amend checking pr search timing
+T50 170512 link CanController v1.1.T4 - add m_lCanPort
+T49 170511 amend program info in debug mode
+T48 170511 revert T48sc
+T48sc 170510 link ServoController v1.0.T12sc
+T48 170509 link CanController v1.1.T2 - remove m_lCanPort
+T47 170509 link CanController v1.1.T1, StepperIO v1.1.T1 - set m_lDeviceType when init
+T46 170509 link CanController v1.0.T9, StepperIO v1.0.T23
+T45 170509 link MachineConfig v1.0.T14 - add [CAN BUS][Card Type]
+T44 170505 link SoftController v1.0.T2 - set CTIME = 0.2 for 5khz
+T43 170505 for _acs_sc, increase base time by 4 (replace 7 in v1.5.T24)
+T42 170503 log Edit Bond Point position change
+T41 170503 in CPositionAdjustDlg, debug not init m_nAdjustX/Y
+T40 170502 link StepperIO v1.0.T21 - add m_lDeviceType
+T39 170502 link CanController v1.0.T7 - add m_lDeviceType
+T38 170502 cleanup CSparkParaPage, relayout menu items
+T37 170502 in CBallShapeParaPage, relayout menu items
+T37 170502 in CBallShapeParaPage, remove pointer
+T37 170502 cleanup CBallShapeParaPage
+T36 170426 when "edit point", limit max 5 steps in x & y
+T35 170426 cleanup CAutoBondPage, CPositionAdjustDlg
+T35 170426 cleanup CAutoBondPage
+T34 170426 rename "wedge on bump" to "BSOB", "bump on wedge" to "BBOS"
+T33 170426 link MachineConfig v1.0.T13 - add [CHECK TIME 1/2]
+T32 170426 log change for lead/die pr score, skip pr score
+T31 170426 link MachineConfig v1.0.T12 - add [CHECK FORCE 1/2]
+T30 170426 amend debug ref message
+T30 170426 amend debug program/ref/matrix message
+T29 170426 cleanup Bond.cpp
+T28 170425 log change search height/tol/delay/speed 1/2
+W27 170425
+	1. Remove "OK" button from "Recipe->Wire Parameter"
+	2. Remove "OK" button from "Recipe->Wedge On Bump Offset"
+T26 170424 log change standby/contact/base/release force/power/time 1/2, force/power factor
+T25 170424 link StepperIO v1.0.T20 - revert T19
+T24 170424 for _acs_sc, increase base time by 7
+W23 170424 Show "Onload/Offload Firmware Version" on "Debug->Software Manager"
+T22 170422
+	1. link CanController v1.0.T6 - add SetLight
+	2. remove GkgLib\LightControl
+T21 170422 link StepperIO v1.0.T19 - remove CFastLock
+T20 170422 link CanController v1.0.T4 - add m_handle
+T19 170422 link LightControl v1.0.T3, CanController v1.0.T2 - add theCanController
+T18 170421 (refer v1.5.T1 as well) in CAdvBondParaPage, remove limit checking of search speed 1/2
+W17 170420 Add function/error msg to check window clamp state before BH moving
+T16 170420 link Vision8 v1.7.T13 - change accuracy to 0.1
+T15 170420 link MachineConfig v1.0.T11 - add [WINDOW CLAMP][Open/Close Sensor]=0/1
+T14 170420 link Vision8 v1.7.T12, Debug v1.0.T5 - add debug vision mode C
+T13 170419 link StepperIO v1.0.T18, MachineConfig v1.0.T10 - add [CAN BUS][Error Retry]
+T12 170419 use (((wirenum - 1) % 5) + 1) when check power
+W11 170419 Add "Window Clamp Open/Close Sensor Checking" to indexing procedure
+T10 170418 cleanup CDebugDlg
+T9 170418 combine "check power 1/2" to "check power"
+W8 170418 Split relation between "PR Index" and "Flatten LF before PR Index" function
+T7 170418 amend debug check power 1/2 message
+T7 170418 check power base + offset only, exclude compensation
+T6 170418 cleanup CBond
+T5 170418 link MachineConfig v1.0.T9 - change "POWER RANGE" to ""CHECK POWER 1/2"
+T4 170418
+	1. link MachineConfig v1.0.T8
+	2. in CBond.CalcWireInfo, check usg power range
+T3 170418 rename v1.4.T45/46 to v1.5.T1/2
+T2 170418 in CAdvBondParaPage, remove pointer
+T2 170418 cleanup CAdvBondParaPage
+T1 170418 in CAdvBondParaPage, remove limit checking of search speed 1/2
+
+v1.4
+T44 170417 link MachineConfig v1.0.T7 - add [POWER RANGE] & [STEPPER]
+W43 170417 Remove "OK" button from "Debug->Diagnostic Tool"
+W42 170417 Remove "OK" button from "Debug->Dummy Recipe"
+W41 170414 Remove "OK" button from "Debug->USG Setup"
+T40 170414 in CKeyPadHandler.HotkeyHandler, debug vk_down & vk_right not function
+W39 170414 Remove "OK" button from "Debug->Contact Level Search"
+W38 170414 Remove "OK" button from "Debug->BSD Debug"
+W37 170414 Recover "Indexer Fw Version", "Track Front/Back Home Sensor" deleted in V1.4.W35
+T36 170413 in CSoftwareMgrDlg, amend version display
+W35 170413
+	1. Add "Flatten LF before PR Index" function
+	2. Revert "StepperIO.h" and "StepperIO.lib" introduced in V1.4.W19
+T34 170413 link Vision8 v1.7.T8 - rename version no.
+T33 170413 cleanup CSoftwareMgrDlg
+T32 170412 link Vision8 v7.8 - remove SetVisionDebugMode
+T31 170412
+	1. link Program v1.0.T9 - remove nVisionDebugMode
+	2. move vision debug mode from vision config menu to debug menu
+T30 170412 in CVisionCalibDlg, rename private var & function
+T29 170412 link Debug v1.0.T3 - add IsDebugVisionModeA/B
+T28 170412 cleanup CVisionCfgDlg, CVisionCalibDlg
+T27 170412 rename vision debug mode chinese name
+W26 170412 Remove "OK" button from "Debug->Hardware Test"
+W25 170412 Remove "OK" button from "Config->Bond Process Configure"
+W24 170411 Remove "OK" button from "Config->Stick Detection Configure"
+W23 170411 Remove "OK" button from "Debug->Material Handling System Utility"
+W22 170411 Remove "OK" button from "Debug->Bond Tools"
+W21 170411 Remove "OK" button from "Config->Servo System Configure"
+W20 170411 Split PR alignment for "Die Ahead" from main procedure
+W19 170411
+	1. Add "Machine ID", "Indexer Fw Version" to "Debug->Software Manager" page
+	2. Add "Track Front/Back Home Sensor" to "Debug->Material Handling System Utility->Sensor Cylinder" page
+	3. Solve "Offload mag pully hits home limit" problem
+T18 170408 in CKeyPadHandler.HotkeyHandler, add {} for each case statement
+T17 170408 re-arrange CKeyPadHandler.HotkeyHandler
+T16 170408 after calling CKeyPadHandler.IsKeyDown, reset fire efo key down status (to avoid auto repeat firing efo)
+T15 170408 revert T14 problem: key down wire clamp keeps on/off
+T14 170408 after calling CKeyPadHandler.IsKeyDown, reset key down status (to avoid auto repeat firing efo)
+T13 170408 cleanup CKeyPadHandler
+T12 170407 in CForceCalibPage.CaliThreePointsNext step 0, re-apply dac after open loop
+T12 170407 in CForceCalibPage.CaliThreePointsNext step 0, apply dac before open loop to avoid bondhead jumping
+T12 170407 in CForceCalibPage.CaliThreePointsNext step 0, add delay between apply dac
+T11 170407 add 3s timeout from WH checking in CBond.QuitAutoBond
+T10 170407 link ServoController v1.0.T12 - cleanup code
+T9 170407 in CForceCalibPage.CaliThreePointsNext step 0, display message before apply dac
+T8 170407 link ServoController v1.0.T11 - PerformPositionCompensation remove pass-in nDebugMode & nBondHeadType
+T7 170407 change show ctact display
+T6 170407 debug vision timing display
+T5 170407
+	1. rename m_dForceCalibOutputDac to m_dCalibOutputDac
+	2. rename m_dForceCalibMeasureForce to m_dCalibMeasureForce
+T4 170407 in CForceCalibPage, remove partial //v1.2.T15
+T3 170407 delete CForceCalibPage.CaliTwoPointsNext
+T2 170407 cleanup CForceCalibPage
+T1 170407
+	1. in CForceCalibPage, show cali output dac when debug mode = contact level
+	2. in CForceCalibPage, debug not show updated m_fNewForceFactorPb
+	3. in CForceCalibPage.CaliThreePointsNext, remove lStatus
+	4. in CForceCalibPage.CaliThreePointsNext, rename iMotorFlags to nMFlag
+	5. in CForceCalibPage, rename private var m_lBkupDac to m_nBkupMFlag
+	6. in CForceCalibPage.CaliThreePointsNext, show CtactLvl & Pb
+	7. in CForceCalibPage, when press Start, clear new factors
+	8. in CForceCalibPage, show verify dac when debug mode = contact level
+
+v1.3 skip
+
+v1.2
+T19 170401 in CForceCalibPage, format display factors
+T18 170401 cleanup CForceCalibPage
+T17 170401 in CForceCalibPage, add AfxMessageBox
+T16 170401 cleanup CForceCalibPage
+T15 170401 in CForceCalibPage, replace GetCurrentTime with CHTimer
+T14 170401 cleanup CForceCalibPage
+T14 170401 in CForceCalibPage, remove m_lpstMcData
+W13 170331 Solved "Die/Lead Num clipping" problem in "Edit Recipe->Wire" page
+W12 170331 Enable application to remember last working language
+W11 170331 Display system time on main dialog
+T10 170330 (repeat v1.1.T309) remove theLog.Writeline
+T9 170330 (repeat v1.1.T307) replace DEBUG_LOG_TRACE
+T8 170330 (repeat v1.1.T307) replace DEBUG_CTACT_LVL
+T7 170330 (repeat v1.1.T307) replace DEBUG_WCL_TEST, DEBUG_SP_WAVEFORM
+T6 170330 (repeat v1.1.T305) replace DEBUG_STEP_MOTION, DEBUG_WORK_HOLDER
+T5 170330 (repeat v1.1.T305) replace DEBUG_WAVEFORM
+T4 170330 (repeat v1.1.T305) replace DEBUG_VISION_TIMING
+T3 170330 (repeat v1.1.T305) replace DEBUG_BOND_TIMING
+T2 170330 (repeat v1.1.T305) replace DEBUG_INDEX_ACCURACY, DEBUG_IO
+T1 170330 upgrade version no.
+
+v1.1
+288.T21 170329 remove low/up limit for individual force/power/time
+288.T20 170329
+	1. link MachineData v1.1.T5 - add GetIndexerLimit
+	2. in CTopIndex, remove GetMachineDataRcd
+288.T19 170329
+	1. link MachineData v1.1.T2 - add GetZeroOffset
+	2. cleanup CTopIndex
+288.T18 170328 in CTopIndex.ProcessIndexEvent, move lSlipTailPos to right by 8000
+288.T17 170328 remove calc param limit for search ht & delay
+288.T16 170328 accumulate/deduct m_nIdleTime_x1s when start/stop bond
+288.T15 170327 add CBond.CalcCapiWearOutPower2 & CBond.CompensateCapiWearOutPower2
+288.T15 170327
+	1. rename CBond.CalcCapiWearOutPower to CBond.CalcCapiWearOutPower1
+	2. rename CBond.CompensateCapiWearOutPower to CBond.CompensateCapiWearOutPower1
+288.T15 170327 add capi wear out power comp 2
+288.T14 170327 link MachineData v1.1.T1 - add capi wear out power comp 2
+288.T13 170327 show capi wear out power in debug window
+288.T13 170327 add CBond.CalcCapiWearOutPower
+288.T12 170327 change damp gain 1/2 range from 0..30 to 0..255 (for eric trial to control impact force)
+288.T11 170327 replace CBond.CapillaryWearOutPowerCompensate with CBond.CompensateCapiWearOutPower
+288.T10 170327 change CBond.CapillaryWearOutPowerCompensate return void
+288.T10 170327 add CBond.CompensateCapiWearOutPower
+288.T9 170327
+	1. link MachineData v1.0.T8
+	2. cleanup CBond.CapillaryWearOutPowerCompensate
+288.T8 170327 in CCfgBondPage, rename private var
+288.T8 170327 in CCfgBondPage, rename m_nPowerSlope to m_nPowerCompSlope, m_nPowerOffset to m_nPowerCompOs
+288.T8 170327 cleanup CCfgBondPage
+288.T8 170327 in CCfgBondPage, rename private var
+288.T7 170327
+	1. change debug "Spark First" to "Transducer"
+	2. change Transducer Idle Time (s) to (min)
+288.T6 170326 (repeat v1.1.T320) in CServo, not show error window if message empty, but show error in debug window
+288.T5 170326 (repeat v1.1.T317) cleanup CVisionSystem
+288.T4 170326 (repeat v1.1.T299) link BondStatistics v1.0.T11, MachineData v1.0.T7, Program v1.0.T8
+288.T3 170325 (repeat v1.1.T294)
+	1. rename 'wire feed check counter" to "wire feed timeout (s)"
+	2. link StepperIO v1.0.T15 - show CAN transmit 1/2 err in debug window
+288.T2 170325 (repeat v1.1.T293)
+	1. link Debug v1.0.T2, Log v1.0.T7
+	2. add transducer length compensation
+	3. rename debug items "Wcl Test" to "Wire Clamp", "Ctact Lvl" to "Contact Level"
+288.T1 170325 (repeat v1.1.T290)
+	1. cleanup CThreadWireDlg
+	2. raise bond head by 500 steps when thread wire
+T288 170315 link ServoController v1.0.T9
+T287 170315
+	1. link MachineData v1.0.T6 - rename TransducerPosComp to TransducerLengthComp
+	2. add CBond.m_nIdleTime_x1s
+	3. cleanup CBond
+W286 170314
+	1. Suppress "Machine ID" dialog while bonding
+	2. Solved problem of “per index skip die/unit limit” and “continuous skip die/unit num limit”
+T285 170314 cleanup CBond.InitAutoBond
+T284 170314 relocate m_BondTimer.StartTimer
+T283 170314 cleanup CBond.PerformWireBond
+T282 170314
+	1. link MachineData v1.0.T5
+	2. check idle time in x1s instead of x1ms
+T281 170314 replace with theProgram.GetDeviceSequence
+T281 170314 cleanup code
+T281 170314 cleanup CBond.PerformMatrixDieAheadAlignment
+T280 170314
+	1. start using theProgram.GetDeviceSequence
+	2. rename nActionCode to nVisionAction in CBond.PerformVisionAlignment/PerformMultiPrAlignment/PerformMatrixDieAheadAlignment
+T279 170314 link Program v1.0.T6 - add GetDeviceSequence
+T278 170314 in CBond.PerformMatrixDieAheadAlignment, remove pass-in param PGM_RECORD
+W277 170313 Suppress empty "Help Message" while bonding
+W276 170313 Disable "Skip Die/Unit Function" while teaching 
+T275 170313 link Log v1.0.T6, StepperIO v1.0.T8 - CAN transmit retry
+T274 170310 link ServoController v1.0.T8 - correct display version no.
+W273 170310 Ensure only one "Threading Wire" dialog popping up
+T272 170309 link TopOnload v1.0.T7, TopOffload v1.0.T7
+T271 170309
+	1. link MachineData v1.0.T4 - add nTransducerIdleTime & nTransducerPosComp
+	2. link BondStatistics v1.0.T4, ServoController v1.0.T8
+	3. link CuOnload v1.0.T3, CuOffload v1.0.T3, CuIndex v1.0.T3
+	4. link R2ROnload v1.0.T3, R2ROffload v1.0.T3, R2RIndex v1.0.T4
+	5. link TopOnload v1.0.T6, TopOffload v1.0.T6
+W270 170309 Solved "Change Capillary Key" malfunction problem
+T269 170309 cleanup code
+W268 170308 Solved "Manual Skip Unit Malfunction" problem
+T267 170308 link Vision8 v7.7
+W266 170308 Move "Machine ID Configure" menu to "Run->Statistics" page
+W265 170307 Add function/warning msg to check continuous skip die/unit num limit
+T264 170307 link Vision8 v7.6
+T263 170307 link Program v1.0.T5 - add nSerialSkipNum & nSkipNumPerIndex
+W262 170306 Add function/warning msg to check per index skip die/unit
+W261 170306 Add confirm message before clearing bond statistics data
+W260 170306 Solved problem of "application hangs when last 2 PR fails"
+W259 170301 Remove "OK" button from "Vision System Configure" pages
+W258 170228
+	1. Add menu/UI to configure machine ID
+	2. Add "Machine ID" to statistics
+T257 170228 link MachineConfig v1.0.T4 - add GetMachineID & SetMachineID
+W256 170224 Skip PR/bonding for empty columns of last index
+W255 170223 Split PR alignment for "Matrix Die Ahead" from main procedure
+W254 170223
+	1. Add function to handle "Wire length=0" error
+	2. Enable old machine to use COM3 for EFO
+T253 170222 link Log v1.0.T5, ServoController v1.0.T6
+T252 170221
+	1. link Log v1.0.T2, RollingClaw v1.0.T4, ServoController v1.0.T5
+	2. link CuOnoad v1.0.T2, CuOffload v1.0.T2
+	3. link R2ROnoad v1.0.T2, R2ROffload v1.0.T2
+W251 170217 Add "Wire Feed Error" statistics
+W250 170217
+	1. Fixed bug of "Auto Skip Die/Unit" malfunction
+	2. Corrected statistics of "Auto Skip Die/Unit"
+T249 170215 cleanup WireBond.cpp
+W248 170215 Remove "OK" button from "Material Handler System Configure" pages
+W247 170214 Add "Auto Skip Die" to statistics
+W246 170214
+	1. Remove "OK" button from "Loop Parameter" pages
+	2. Enable mouse wheel to scroll "Loop Parameter" pages
+W245 170210
+	1. Add "Index Accuracy" to "Debug" dialog
+	2. Remove "OK" button from "Debug" dialog
+W244 170209 Remove "OK" button from "Wedge On Bump Parameter" and "Bump On Wedge Parameter"
+T243 170207 remove //v3.3.P498
+T242 170207 remove //v3.3.P496
+T241 170207 remove //v3.3.P495
+T240 170207 remove //v3.3.T491/W494
+T239 170207 remove //v3.3.T484/P489
+T238 170207 remove //v3.3.P477
+T237 170207 remove //v3.3.P463/P472/P473/T475
+T236 170207 remove //v3.3.W454/W457/W458
+T235 170207 remove //v3.3.P453
+T234 170207 remove //v3.3.P448
+T233 170207 remove //v3.3.P447
+T232 170207 remove //v3.3.T320/W440/P441/W445
+T231 170207 remove //v3.3.T431/T432/W433/W435
+T230 170207 remove //v3.3.P425/T427/P428
+T229 170207 remove //v3.3.W420/T421/T422/T423, v2.20.G35
+T228 170206 remove //v3.3.W408/W411/W413/P414
+T227 170206 remove //v3.3.T404/T406/T407
+T226 170206 remove //v3.3.W387/P400
+T225 170206 remove //v3.3.W386
+T224 170206 remove //v3.3.P384
+T223 170206 remove //v3.3.W380/T381/T382
+T222 170206 remove //v3.3.T376/T377/T378
+T221 170206 remove //v3.3.T151/W366/T371/P372/T375
+T220 170206 remove //v3.3.P353/T358
+T219 170206 remove //v3.3.T283/W345
+T218 170206 remove //v3.3.W320/W327/T328
+T217 170206 remove //v3.3.W318/T319
+T216 170206 remove //v3.3.D164/W179/T193/D224/W311
+T215 170206 remove //v3.3.W297/W298
+T214 170206 remove //v3.3.D290/W291/D292/D293/D294
+T213 170206 remove //v3.3.D281/W283/T287
+T212 170206 remove //v3.3.T275/T278
+T211 170206 remove //v3.3.W270
+T210 170206 remove //v3.3.T233/W263/D266/T268
+T209 170206 remove //v3.3.D255/W257/T258
+T208 170206 remove //v3.3.D247/D248/D251/D252/D253
+T207 170206 remove //v3.3.T200/T243
+T206 170206 remove //v3.3.T198/W199
+T205 170204 remove //v3.3.W189/W191/T192/W195
+T204 170204 remove //v3.3.D173/W175/W178
+T203 170204 remove //v3.3.W170/W171/W172
+T202 170204 remove //v3.3.W168
+T201 170204 remove //v3.3.T166/W167
+T200 170204 remove //v3.3.T160/T161/T162/T204/T226
+T199 170204 remove //v3.3.T157/W158/T159
+T198 170204 remove //v3.3.D151/D153/D154
+T197 170204 remove //v3.3.W148
+T196 170204 remove //v3.3.T144/D145
+T195 170204 remove //v3.3.W138
+T194 170204 remove //v3.3.W124
+T193 170204 remove //v3.3.D81/D83
+T192 170204 remove //v3.3.T74/T77/D78/W79
+T191 170204 remove //v3.3.T70/D72
+T190 170204 remove //v3.3.T66/T67/T68/T69
+T189 170204 remove //v3.3.T58/T60/T61/T62/T65
+T188 170204 remove //v3.3.T51/T53/T55/T57
+T187 170204 remove //v3.3.T43/T48/T50
+T186 170204 debug switching btw red/blue light pr error
+T185 170202 remove //v3.3.T33/T38/T40/T42
+T184 170121 remove //v3.3.W30/W32
+T183 170121 remove //v3.3.W23/W25/T28/T29
+T182 170121 remove //v3.3.T16/w19/T21
+T181 170121 remove //v3.3.T10/T11
+T180 170121 remove //v3.3.T9
+T180 170121 remove //v3.3.D8
+T179 170121 remove //v3.3.T5/T6
+T179 170121 remove //v3.3.T4
+T179 170121 remove //v3.3.T2
+T178 170121 remove //v3.0.W170/W171
+T178 170121 remove //v3.0.D*
+T178 170121 remove //v3.0.w19
+T177 170121 remove //v2.20.Q3
+T176 170121 remove //v2.20.Q29
+T175 170120 cleanup CBond
+T174 170120 remove //v2.20.Q27
+T174 170120 remove //v2.20.Q26
+T174 170120 remove //v2.20.Q25
+T174 170120 remove //v2.20.Q24
+T173 170120 remove //v2.20.Q22/Q23
+W172 170120 Provide option to load work holder data when loading recipe
+T171 170120 remove //v2.20.Q21
+T170 170120 remove //v2.20.Q20
+T170 170120 remove //v2.20.Q19
+T170 170120 remove //v2.20.Q18
+W169 170119 Disable "AUX PR" page while wire bonding
+T168 170117 debug fab2 not working for bonding wire without bump
+T167 170113 remove //v2.20.Q15
+T167 170113 remove //v2.20.Q13
+T166 170113 remove //v2.20.Q12
+T166 170113 remove //v2.20.Q11
+T165 170113 remove //v2.20.Q10
+T164 170113 remove //v2.20.Q9
+W163 170104 Enhancement & debug:
+	1. Application hangs when clicking "Debug->Software Manager"
+	2. Remove "OK" button from "Debug->Software Manager"
+T162 170104 remove //v2.20.Q8
+W161 170103 Enhancement & debug:
+	1. Reverse "Emergency Pressed" flag
+	2. Solved "Vision Freeze" problem when using built-in graphics card
+	3. Change EFO to COM1 from COM3
+	4. Slow down elevator speed of onload/offload
+W160 161216 Remove bug of "Bond Setup->Bond Tip Offset"
+W159 161215 Remove "OK" button from "Recipe->Bond Parameter"
+W158 161214 Remove "OK" button from "Teach Recipe->Teach New Work Holder Program"
+W157 161213 1. Re-position "Stepper Control" Dialog, 2. Solved data saving problem in "Bond Parameter->Advanced Bond", 3. Solved problem of "Edit Work Holder Program->Indexer"
+W156 161208 Remove "OK" button from "Matrix Bonding Schedule" dialog
+W155 161206 Remove "OK" button from "Index Control" dialog
+W154 161205 Hide menu item "Elevator Calibration" and "Work Holder Calibration" for V-Elite machine
+W153 161202 Remove "OK" button from "Teach Recipe->Teach Bond Program"
+W152 161201 Solved problem: Application hangs when clicking "Edit Recipe->Wire->ILL Light"
+W151 161129 Solved problem: Cannot save "Bond Para" and "Loop Para" in "Bond" pages
+W150 161125 Enhance "Elevator Control" dialog
+W149 161124 (Ah Da) Standardize Chinese name
+W148 161123 Remove "OK" button from "Bond" pages
+W147 161121 1. Remove "OK" button from "Work Holder Calibration" page, 2. Enhance "Stepper Control" dialog
+W146 161118 Fine tune size of "USG Calibration" and "Servo System Calibration" to fit screen
+W145 161117 Remove "OK" button from "Servo System Calibration" pages
+W144 161116 Remove "OK" button from "USG Calibration" dialog
+W143 161115 Enhance "Position Adjustment" dialog, to show depressed button state
+W142 161115 Remove "OK" button from "Vision Calibration" dialog
+W141 161111 Enhancement: Prompt and guide user to load recipe/do contact search before "Bond Page" is opened
+W140 161107 Tidy up "Position Adjustment" dialog
+W139 161102 1. Tidy up "Indexer Setup Page", 2. Standardize Chinese name of "Next", 3. Replace repetitive codes with single function
+W138 161102 Fixed bug in "Teach New Work Holder Program"
+W137 161102 Tidy up "Elevator Setup Page"
+W136 161101 Standardize Chinese name of "Elevator"
+W135 161031 Fixed bug of "Lighting Control" dialog
+W134 161027 Fixed bug: LF database wrong when teaching new work holder program
+W133 161026 Tidy up "Lighting Control" dialog, change background
+W132 161025 Improve accuracy of vision calibration
+T131 161025 link VisionDisplay v1.0.T8 - fix screen center problem
+T130 161025 link AutoPad v1.0.T5, VisionDisplay v1.0.T7
+W129 161025 Solved "center point of vision view shifted" problem
+W128 161025 Enhancement of toolbar buttons:
+	1. Remove border
+	2. Improve appearance of disabled state
+W127 161024 (Renev) Enhancement of "Debug->Material Handling System Utility->Elevator":
+	1. Remove "Current Slot"
+	2. Change function of "Holding Fork->Stop" to "Holding Fork->Limit"
+W126 161022 Tidy up Keypad dialog, remove title bar, change background
+W125 161021 Change background of "Init Dialog"
+T124 161020 link Wire v1.0.T4, Program v1.0.T3
+T123 161020 link VledIndex v1.0.T2
+W122 161020 Link with new VisionDisplay.lib to solve "Edit Wire" problem
+W121 161020 Change background of help, warning and error msg
+T120 161020 link VisionDisplay v1.0.T6
+W119 161020 Enhancement:
+	1. (Ah Da) Re-align left toolbar buttons to right of vision-view
+	2. Update copyright info to GKG
+W118 161019 Change tree-view icon
+T117 161019 link VEOnload v1.0.T3
+W116 161019 Re-arrange layout of vision-view, info-view and over-view
+T115 161019 link VEOffload v1.0.T3
+T114 161018 link VEIndex v1.0.T3
+T113 161018 link TrackSensor v1.0.T4
+T112 161018 link TowerLight v1.0.T3
+T111 161018 link TopOnload v1.0.T5
+T110 161017 link TopOffload v1.0.T5
+T109 161017 link TopClamp v1.0.T3
+T108 161017 link StepperIO v1.0.T3
+T107 161017 link StepperControl v1.0.T3
+T106 161017 link Stepper v1.0.T3
+T105 161016 link ServoController v1.0.T4
+T104 161016 link RollingClaw v1.0.T3
+T103 161015 link Relay v1.0.T4
+T102 161015 link Reference v1.0.T3
+T101 161015 link R2RIndex v1.0.T3
+T100 161014 link Program v1.0.T2
+T99 161014 link Matrix v1.0.T2
+T98 161014 link MachineData v1.0.T2, ServoController v1.0.T2
+T97 161013 link MachineConfig v1.0.T2
+T96 161013 link LightControl v1.0.T2
+T95 161013 link DcMotor v1.0.T2
+W94 161013 Add tooltip to "Elevator button"
+W93 161013
+	1. (Ah Da)Re-position toolbar
+	2. (Ah Da)Change color of application logo
+T92 161013 link Sensor v1.0.T4
+T91 161013 link CuIndex v1.0.T2
+T90 161013 link CuClamp v1.0.T2
+T89 161012 link ContactLevel v1.0.T2
+W88 161012 Fix bug: exception occurs when performing bonding
+T87 161012 link BondStatistics v1.0.T2
+T86 161012 rename TopTrack.h/cpp to TopIndex.h/cpp
+W85 161012 Adjust icons to fit button size
+W84 161012 Tidy up background image
+T83 161012 relocate to \Library\Mil10 & \GkgLib\Vision10
+T82 161012 relocate to \Library\SoftwareLock
+T81 161011 debug compile/link error after relocation
+T81 161011 relocate to \Library\Motion
+T80 161011 debug compile error after relocation
+T80 161011 relocate to \Library\ForceCalibration
+T79 161011 link VledOffload v1.0.T1
+W78 161011 Change application icon
+T77 161011 link VledOnload v1.0.T1
+T76 161011 link VledClamp v1.0.T1
+T75 161011 link VledIndex v1.0.T1
+T74 161011 link CuOffload v1.0.T1
+W73 161011 Add tooltip to toolbar buttons
+T72 161011 link CuOnload v1.0.T1
+W71 161011 Move middle toolbar to top of window
+T70 161010 link CuIndex v1.0.T1
+T69 161010 link CuClamp v1.0.T1
+T68 161010 link R2ROffload v1.0.T1
+T67 161010 link R2ROnload v1.0.T1
+T66 161010 link R2RIndex v1.0.T1
+T65 161010 link VEIndex v1.0.T1
+T64 161010 link VEClamp v1.0.T1
+T63 161010 link VEOffload v1.0.T1
+T62 161010 link VEOnload v1.0.T1
+T61 161009 link TopOnload v1.0.P3, TopOffload v1.0.P3
+T60 161009 sort linker input
+T59 161009 link AutoPad v1.0.T2
+T58 161009 link TopOffload v1.0.T1
+T57 161009 link TopOnload v1.0.T1
+T56 161009 link TopClamp v1.0.T1
+T55 161009 link DeviceData v1.0.T1
+T54 161009 link LoopShape v1.0.T1
+T53 161009 link LoopPara v1.0.T1
+T52 161009 link BallPara v1.0.T1, BondPara v1.0.T1
+W51 161008 Move "Minimize Window button" to "setup menu"
+W50 161008 Move "language button" to "setup menu"
+T49 161007 link SoftController v1.0.T1
+T48 161007 link ServoController v1.0.T1
+T47 161007 link MathCalc v1.0.T1
+T46 161007 link StepperIO v1.0.T1
+T45 161007 link Stepper v1.0.T1
+T44 161007 link StepperControl v1.0.T1
+T43 161007 link ContactLevel v1.0.T1
+T42 161006 link DcMotor v1.0.T1
+T41 161006 link TrackSensor v1.0.T1
+T40 161006 link Relay v1.0.T1
+T39 161006 link Cylinder v1.0.T1
+W38 161006
+	1. Move "User Level" to "Setup Menu"
+	2. Re-position "Keypad Dialog"
+T37 161006 link Sensor v1.0.T1
+T36 161005 link BondStatistics v1.0.T1
+T35 161005 link CanController v1.0.T1
+T34 161005 link DigitalIO v1.0.T1
+T33 161005 link LightControl v1.0.T1
+T32 161005 link TowerLight v1.0.T1
+T31 161005 link EFO v1.0.T3 - debug warning error from GetErrorCode during linking
+T30 161005 link MachineData v1.0.T1
+T29 161005 link MachineConfig v1.0.T1, Vision8 v7.1
+W28 161005
+	1. Re-position "Warning Message" to right side
+	2. Change icons of main toolbar
+T27 161005 link Vision8 v7.0
+T26 161005 link Camera v1.0.T1
+W25 160930
+	1. Move sensor pages to left window
+	2. Improve accuracy of cursor when right-click on vision page
+T24 160930 link VisionDisplay v1.0.T1
+W23 160929 Solved problem: Cannot close "Help Message" when calibrating "Servo System Position"
+W22 160929
+	1. Revert changes made by V3.3.P495
+	2. change background of "Init Dialog"
+T21 160929 link Operation v1.0.T1
+W20 160929 Re-position child dialogs/pages
+T19 160929 link Debug v1.0.T1
+T18 160929 link Log v1.0.T1
+W17 160928
+	1. Re-position menus/controls on main dialog
+	2. Disable 'Operator' to exit the application
+	3. Add "Confirmation Message" before exiting the application
+T16 160928 link Timer v1.0.T1
+T15 160928 link User v1.0.T2
+T14 160928 link User v1.0.T1
+T13 160927 link USG v1.0.T1
+T12 160927 link DataManager v1.0.T1
+W11 160927 Change background color of ini and main dialog, and related controls
+T10 160927 link EFO v1.0.T2
+T9 160927 link BSD v1.0.T2
+T8 160927 link BSD v1.0.T1
+T7 160925 link EFO v1.0.T1
+T6 160925 link RollingClaw v1.0.T1
+T5 160924 link AutoPad v1.0.T1
+T4 160924 link Program v1.0.T1
+T3 160923 link Reference v1.0.T1
+T2 160923 link Matrix v1.0.T1
+T1 160922 link Wire v1.0.T1
+
+v1.0
+T37 160901 change to GKG logo
+T36 160720 remove //v2.20.Q7
+T36 160720 remove //v2.20.Q6
+T36 160720 remove //v2.20.Q5
+T35 160719 remove //v2.20.Q2
+T34 160718 remove //v2.20.Q1
+T34 160718 remove //v2.20.w1/2
+T33 160718 remove //v2.20.T2/32/34
+T33 160718 remove //v2.20.T8/11/12/13/14/15
+T33 160718 remove //v2.20.T1/6
+T32 160718 remove //v2.19.1.w3/4
+T32 160718 remove //v2.19.1.w30/34/35
+T32 160718 remove //v2.19.1.w12/20/22/23/26/27
+T32 160718 remove //v2.19.1.w2/3
+T32 160718 remove //v2.19.1.T21
+T31 160718 remove //v2.19.1.T18
+T31 160718 remove //v2.19.1.T10/11/12/13/14/16
+T31 160718 remove //v2.19.1.T1/3/5
+T30 160718 remove //v2.19.0.w4
+T30 160718 remove //v2.19.0.w2
+T30 160718 remove //v2.19.0.T3/7/8/9/10
+T29 160718 remove //v2.18.6.G4
+T29 160718 remove //v2.18.5.w4
+T29 160718 remove //v2.18.6.w2/5/8/11
+T28 160718 remove //v2.18.6.T7/41/44
+T28 160718 remove //v2.18.6.T3/31/34/35/39
+T28 160718 remove //v2.18.6.T23/25/26/27/28/30
+T28 160718 remove //v2.18.6.T12/15/16/17
+T28 160718 remove //v2.18.6.T4
+T28 160718 remove //v2.18.6.T13
+T28 160718 remove //v2.18.6.T18
+T28 160718 remove //v2.18.6.T8
+T27 160718 remove //v2.18.5.w4
+T27 160718 remove //v2.18.5.w1
+T27 160718 remove //v2.18.5.w3
+T26 160718 remove //v2.18.5.T14/20
+T26 160718 remove //v2.18.5.T36/38/40/44
+T26 160718 remove //v2.18.5.T29/45
+T26 160718 remove //v2.18.5.T46/47/48
+T26 160718 remove //v2.18.5.T23/38/43
+T26 160718 remove //v2.18.5.T29//v2.18.6.T40
+T26 160718 remove //v2.18.5.T9
+T26 160718 remove //v2.18.5.T71/72/74
+T26 160718 remove //v2.18.5.T42/70
+T25 160718 remove //v2.18.5.T62/64/67/68/69
+T24 160718 remove //v2.18.5.T56/58/59
+T24 160718 remove //v2.18.5.T54
+T24 160718 remove //v2.18.5.T49
+T24 160718 remove //v2.18.5.T51
+T24 160718 remove //v2.18.5.T52/55
+T24 160718 remove //v2.18.5.T3/4
+T24 160718 remove //v2.18.5.T1/2
+T23 160718 remove //v2.18.4.w4
+T23 160718 remove //v2.18.4.T1/8/15/16/17/18/19/20
+T23 160718 remove //v2.18.4.T9
+T23 160718 remove //v2.18.4.T14
+T23 160718 remove //v2.18.4.T7
+T22 160717 remove //v2.18.4.T6
+T22 160717 remove //v2.18.4.T21/22
+T22 160717 remove //v2.18.4.T3
+T22 160717 remove //v2.18.3.T2
+T22 160717 remove //v2.18.3.S1
+T22 160717 remove //v2.18.2.?
+T21 160717 remove //v2.18.1.T4
+T21 160717 remove //v2.18.1.T1
+T21 160717 remove //v2.18.1.T11
+T21 160717 remove //v2.18.1.S2
+T21 160717 remove //v2.18.1.S4
+T21 160717 remove //v2.18.1.T2
+T21 160717 remove //v2.18.3.S2
+T21 160717 remove //v2.18.2.S5
+T21 160717 remove //v2.18.1.S6
+T21 160717 remove //v2.18.1.S9
+T21 160717 remove //v2.18.5.J2/4
+T20 160716 remove //v2.18.5.J17
+T20 160716 remove //v2.18.5.J7
+T20 160716 remove //v2.18.5.J1
+T20 160716 remove //v2.18.5.J14
+T20 160716 remove //v2.18.5.J11
+T19 160716 remove //v2.18.5.J12
+T18 160716 remove //v2.18.2.J7
+T17 160716 remove //v2.18.5.J16
+T16 160716 remove //v2.18.5.J10
+T15 160716 remove //v2.18.2.J2
+T14 160716 remove //v2.18.5.J5
+T13 160716 remove //v2.18.3.J4
+T12 160716 remove //v2.18.3.J2
+T11 160716 remove //v2.18.5.J18
+T10 160716 remove //v2.18.2.S4
+T9 160716 remove //v3.3.T54
+T8 160716 remove //v2.19.1.T20
+T7 160716 remove //v2.19.0.w1
+T6 160716 remove //v2.18.6.T21
+T5 160716 remove //v3.3.T129
+T4 160716 remove //v2.18.6.T6
+T3 160716 remove //v3.3.T142
+T3 160716 remove //v2.18.6.T2
+T2 160716 remove //v2.18.6.T20
+T2 160716 cleanup code
+T1 160716 first version from v3.3.P498

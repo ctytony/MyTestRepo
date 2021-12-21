@@ -1,0 +1,5 @@
+
+01 Jul 2010 -- Zhang Dong
+Bond.cpp
+- Improve index system.
+--Ver:09.01.05.11-------------

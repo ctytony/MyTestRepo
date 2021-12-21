@@ -1,0 +1,302 @@
+//DigitalIO.h v1.0.T2
+
+#pragma once
+
+#include "..\Library\AdsApi\driver.h"
+#include "..\Library\AdsApi\Event.h"
+
+// CDigitalIO command target
+
+#define MAX_DEVICES				8
+#define DIGITAL_IO_DEVICE_0		0
+#define DIGITAL_IO_DEVICE_1		1
+
+typedef enum enDevChannel
+{
+    IO_DEV_CHANNEL_0,
+    IO_DEV_CHANNEL_1,
+    IO_DEV_CHANNEL_2,
+    IO_DEV_CHANNEL_3,
+    IO_DEV_CHANNEL_4,
+    IO_DEV_CHANNEL_5
+};
+
+typedef enum enDevBitMap
+{
+    IO_DEV_BIT_0,
+    IO_DEV_BIT_1,
+    IO_DEV_BIT_2,
+    IO_DEV_BIT_3,
+    IO_DEV_BIT_4,
+    IO_DEV_BIT_5,
+    IO_DEV_BIT_6,
+    IO_DEV_BIT_7
+};
+
+#define USG_SUBDEVICE				0
+#define USG_OUTPUT_BYTE_CHANNEL		IO_DEV_CHANNEL_0
+
+typedef enum enOutputIoBitId
+{
+	//Sprint VLED
+    TOWER_LIGHT_GREEN = 0,			//common output
+    TOWER_LIGHT_RED,				//common output
+    TOWER_LIGHT_YELLOW,				//common output
+    ONLOAD_PICKER_MAG,
+    OUTPUT_PUSHER_VALVE,
+	OUTPUT_CLAW_VALVE,
+	VACUUM_SWITCH_VALVE,
+    OUTPUT_PANEL_LIGHT_PORT,		//common output
+    OUTPUT_TRACK_LF_HOLDER,
+	MAX_SINGLE_OUTPUT_BIT_ID,
+	
+	//Sprint Top
+	TOP_ONLOAD_PUSHER_ON,
+    TOP_ONLOAD_PUSHER_DIR,
+    TOP_ONLOAD_PULLY_ON,
+    TOP_ONLOAD_PULLY_DIR,
+	TOP_OFFLOAD_PULLY_ON,
+    TOP_OFFLOAD_PULLY_DIR,
+    TOP_RELAY_LEFT_GRIPPER,
+    TOP_RELAY_RIGHT_GRIPPER,
+	TOP_REALY_EJECTOR,
+	TOP_REALY_INJECTOR,
+	MAX_TOP_OUPUT_BIT_ID,
+	
+	//Sprint Cu-Elite
+    CUELITE_ONLOAD_PUSHER_ON,
+    CUELITE_ONLOAD_PUSHER_DIR,
+    CUELITE_ONLOAD_PULLY_ON,
+    CUELITE_ONLOAD_PULLY_DIR,
+  	CUELITE_OFFLOAD_PULLY_ON,
+    CUELITE_OFFLOAD_PULLY_DIR,
+    CUELITE_RELAY_LEFT_GRIPPER,
+    CUELITE_RELAY_RIGHT_GRIPPER,
+	CUELITE_RELAY_EJECTOR,
+	CUELITE_RELAY_INJECTOR,
+    //add oupt I/O for cu machine here
+    MAX_CUELITE_OUPUT_BIT_ID,	//v1.1.T5 edit
+
+	//VLED_ELITE_MHS	//v1.1.T8 add
+	VE_OFFLOAD_MAG_KICKER_ON,
+	VE_OFFLOAD_MAG_KICKER_DIR,
+	VE_OUTPUT_LF_KICKER_SOL,
+	VE_OFFLOAD_MAG_ARM_LOCK_SOL,
+	VE_OFFLOAD_MAG_BUF_SUPPORT_SOL,
+	VE_OFFLOAD_MAG_BUF_SUPPORT_SOL2,
+	MAX_VE_OUTPUT_BIT_ID,
+};
+
+typedef enum enInputIoBitId
+{
+	//Sprint VLED
+    HEATER_RELAY_STATE = 0,				//common input
+    EFO_SPARK_BUTTON,					//common input
+    WIRE_CLAMP_BUTTON,					//common input
+    JOYSTICK_X_POSITIVE,				//common input
+    JOYSTICK_X_NEGATIVE,				//common input
+    JOYSTICK_Y_POSITIVE,				//common input
+    JOYSTICK_Y_NEGATIVE,				//common input
+    NEFO_STATE_RELAY,
+    ONLOAD_PICKER_LF_DETECT_SENSOR,
+    ONLOAD_TRACK_SENSOR,
+    PREBOND_TRACK_SENSOR,
+	OFFLOAD_TRACK_SENSOR,
+	ONLOAD_LIMIT_SENSOR,
+	ONLOAD_LF_DROP_POS_SENSOR,
+	OFFLOAD_PUSHER_FRONT_SENSOR,
+	OFFLOAD_PUSHER_REAR_SENSOR,
+	ONLOAD_HOLD_POS_SENSOR,
+	BOND_CUP_DETECT_SENSOR,
+    TBL_THERMAL_PROTECT_X,
+    TBL_THERMAL_PROTECT_Y,
+	DOUBLE_LF_CHECK_SENSOR,
+	ONLOAD_FORK_EXIST_SENSOR,
+	OFFLOAD_FORK_EXIST_SENSOR,
+	VACUUM_STATE_SENSOR,
+	WIRE_END_SENSOR,
+	MAX_SINGLE_INPUT_BIT_ID,
+	
+	//Sprint Top
+	TOP_ONLOAD_FORK1_PRESENT_SENSOR,
+    TOP_ONLOAD_FORK2_PRESENT_SENSOR,
+    TOP_OFFLOAD_FORK1_PRESENT_SENSOR,
+    TOP_OFFLOAD_FORK2_PRESENT_SENSOR,
+    TOP_ONLOAD_MAG_BUFFER_PRESENT_SENSOR,
+    TOP_OFFLOAD_MAG_BUFFER_PRESENT_SENSOR,
+	TOP_ONLOAD_PUSHER_HOME_SENSOR,
+	TOP_ONLOAD_PUSHER_LIMIT_SENSOR,
+	TOP_ONLOAD_MAG_DETECT_SENSOR,
+	TOP_ONLOAD_PULLY_MAG_EXIST_SENSOR,
+	TOP_TRACK_ALIGHN_SENSOR,
+	TOP_TRACK_INJECT_SENSOR,
+	TOP_TRACK_EJECT_SENSOR,
+	TOP_TRACK_EJECT_JAM_SENSOR,
+	TOP_OFFLOAD_MAG_DETECT_SENSOR,
+	TOP_OFFLOAD_PULLY_MAG_EXIST_SENSOR,
+	TOP_ONLOAD_PULLY_HOME_SENSOR,
+	TOP_ONLOAD_PULLY_LIMIT_SENSOR,
+	TOP_OFFLOAD_PULLY_HOME_SENSOR,
+	TOP_OFFLOAD_PULLY_LIMIT_SENSOR,
+    TOP_ONLOAD_MAG_DROP_SENSOR,
+    TOP_OFFLOAD_MAG_DROP_SENSOR,
+    TOP_ONLOAD_FORK_REMOVE_DETECT_SENSOR,
+    TOP_OFFLOAD_FORK_REMOVE_DETECT_SENSOR,
+	MAX_TOP_INPUT_BIT_ID,
+	
+	//Sprint Cu-Elite
+	CUELITE_ONLOAD_PUSHER_HOME_SENSOR,
+	CUELITE_ONLOAD_PUSHER_LIMIT_SENSOR,
+	CUELITE_ONLOAD_MAG_DETECT_SENSOR,
+	CUELITE_ONLOAD_PULLY_MAG_EXIST_SENSOR,
+	CUELITE_TRACK_ALIGHN_SENSOR,
+	CUELITE_TRACK_INJECT_SENSOR,
+	CUELITE_TRACK_EJECT_SENSOR,
+	CUELITE_TRACK_EJECT_JAM_SENSOR,
+	CUELITE_OFFLOAD_MAG_DETECT_SENSOR,
+	CUELITE_OFFLOAD_PULLY_MAG_EXIST_SENSOR,
+	CUELITE_ONLOAD_PULLY_HOME_SENSOR,
+	CUELITE_ONLOAD_PULLY_LIMIT_SENSOR,
+	CUELITE_OFFLOAD_PULLY_HOME_SENSOR,
+	CUELITE_OFFLOAD_PULLY_LIMIT_SENSOR,
+    CUELITE_ONLOAD_FORK1_PRESENT_SENSOR,
+    CUELITE_ONLOAD_FORK2_PRESENT_SENSOR,
+    CUELITE_OFFLOAD_FORK1_PRESENT_SENSOR,
+    CUELITE_OFFLOAD_FORK2_PRESENT_SENSOR,
+    CUELITE_ONLOAD_MAG_BUFFER_PRESENT_SENSOR,
+    CUELITE_OFFLOAD_MAG_BUFFER_PRESENT_SENSOR,
+    CUELITE_ONLOAD_MAG_DROP_SENSOR, 
+    CUELITE_OFFLOAD_MAG_DROP_SENSOR,
+    CUELITE_ONLOAD_FORK_REMOVE_DETECT_SENSOR,
+    CUELITE_OFFLOAD_FORK_REMOVE_DETECT_SENSOR,
+    MAX_CUELITE_INPUT_BIT_ID,	//v1.1.T5 edit
+
+	//R2R
+	R2R_ONLOAD_STOP_BOND,
+	R2R_ONLOAD_ERROR,
+	R2R_OFFLOAD_STOP_BOND,
+	R2R_OFFLOAD_ERROR,
+	MAX_R2R_INPUT_BIT_ID,
+
+	//VLED_ELITE_MHS	//v1.1.T8 add
+	VE_ONLOAD_HOLD_POS_SENSOR,
+	VE_OFFLOAD_MAG_BUF_DROP_SENSOR,
+	VE_OFFLOAD_MAG_BUF_PRESENCE_SENSOR,
+	VE_ONLOAD_PICKER_LF_DETECT_SENSOR,
+	VE_ONLOAD_TRACK_SENSOR,
+	VE_PREBOND_TRACK_SENSOR,
+	VE_OFFLOAD_MAG_ARM_PRESENCE_SENSOR,
+	VE_ONLOAD_LF_DROP_POS_SENSOR,
+	VE_OFFLOAD_MAG_KICKER_PRESENCE_SENSOR,
+	VE_OFFLOAD_LF_KICKER_JAM_SENSOR,
+	VE_WIRE_USE_UP_SENSOR,
+	VE_DOUBLE_LF_CHECK_SENSOR,
+	VE_OFFLOAD_MAG_FULL_SENSOR,
+	VE_OFFLOAD_MAG_KICKER_HOME_SENSOR,
+	VE_OFFLOAD_MAG_KICKER_LIMIT_SENSOR,
+	VE_ONLOAD_FORK_EXIST_SENSOR,
+	VE_OFFLOAD_LF_OUTPUT_JAM_SENSOR,
+	MAX_VE_INPUT_BIT_ID,
+};
+
+#pragma pack(push, 1)
+
+typedef struct PCI_ADS_CARDS
+{
+    DEVLIST     stDeviceList[MAX_DEVICES];
+    DEVLIST     stSubDeviceList[MAX_DEVICES];
+    SHORT       sNumOfDevices;
+    SHORT       sNumOfSubdevices;	// number of installed devices
+} _PCI_ADS_CARDS;
+
+typedef struct PCI_ADS_IO_WRITE_BYTE
+{
+    LONG        DriverHandle;		// driver handle = (LONG)NULL
+    USHORT      gwDevice;
+    USHORT      gwSubDevice;		// device index
+    PT_DioWritePortByte stPCIADS_WritePortByte;	// DioWritePortByte table
+} _PCI_ADS_IO_WRITE_BYTE;
+
+typedef struct PCI_ADLINK_IO_WRITE_BYTE
+{
+    short DeviceId;
+    unsigned short u16PortId;	
+} _PCI_ADLINK_IO_WRITE_BYTE;
+
+typedef struct PCI_ADS_IO_WRITE_BIT
+{
+    LONG DriverHandle;		// driver handle   = (LONG)NULL
+    USHORT gwDevice;
+    USHORT gwSubDevice;		// device index
+    PT_DioWriteBit stPCIADS_WriteBit;	// DioWriteBit table
+} _PCI_ADS_IO_WRITE_BIT;
+
+typedef struct PCI_ADS_IO_READ_BIT
+{
+    LONG            DriverHandle;          // driver handle   = (LONG)NULL
+    USHORT          gwDevice;
+    USHORT          gwSubDevice;		   // device index
+    USHORT          unState;
+    PT_DioReadBit   stPCIADS_ReadBit;      // DioWriteBit table
+} _PCI_ADS_IO_READ_BIT;
+
+typedef struct PCI_ADLINK_IO_WRITE_BIT
+{
+    short                    DeviceId;
+    unsigned short           u16PortId;				
+    BYTE                     u8BitId;
+} _PCI_ADLINK_IO_WRITE_BIT;
+
+typedef struct PCI_ADLINK_IO_READ_BIT
+{
+    short                  DeviceId;
+    unsigned short         u16PortId;
+    BYTE                   u8BitId;
+} _PCI_ADLINK_IO_READ_BIT;
+
+#pragma pack(pop)
+
+class CDigitalIO : public CObject
+{
+public:
+	CDigitalIO();
+	virtual ~CDigitalIO();
+
+public:	//functions
+	int Init1739u(short nMaterialHandlerType);
+	// Initialize IO PCI card
+    int InitIoCard(short nMaterialHandlerType);
+    // Enable interrupt event of digital IO card
+    int EnableInterruptEvent(bool bEnable);
+    // Check interrupt event status
+    int CheckInterruptEvent(unsigned short*  pusEventType);
+    //// Write bit to USG output
+    //int UsgWriteOutputBit(unsigned short usState);
+    // Write byte data to USG output
+    int UsgWriteOutputByte(unsigned short usState);
+
+	// @2
+	//USHORT usGetUsgCardsChannel();
+	/*void GetUsgOutPutBit_port_bit(USHORT *port, USHORT *bit);*/
+	void GetCardsName(USHORT usIdxCard, char *strText, UINT uiStrLen);
+
+	//@3
+	int EnableInterruptEvent_DI16(bool bEnable);
+	int EnableInterruptEvent_DI40(bool bEnable);
+    // Set output state for bit
+    int SetOutputBitState(short nOutputBitId, short nState);
+    // Get input state for bit
+    int GetInputBitState(short nInputBitId, short *pnState);
+private:	//variables
+    PCI_ADS_CARDS m_IoCardInfo;
+    PCI_ADS_IO_WRITE_BYTE m_UsgOutputByte;
+
+    // Output IO bit array
+	//PCI_ADS_IO_WRITE_BIT m_stOuputIoBitArray[MAX_CUELITE_OUPUT_BIT_ID];	//v1.1.T8 delete
+	PCI_ADS_IO_WRITE_BIT m_astOutputBit[MAX_VE_OUTPUT_BIT_ID];			//v1.1.T8 add, v1.1.T10 edit
+    // Input IO bit array
+	//PCI_ADS_IO_READ_BIT m_stInputIoBitArray[MAX_R2R_INPUT_BIT_ID];	//v1.1.T5 edit, v1.1.T8 delete
+	PCI_ADS_IO_READ_BIT m_astInputBit[MAX_VE_INPUT_BIT_ID];				//v1.1.T8 add, v1.1.T10 edit
+};
+
+extern CDigitalIO theDigitalIO;

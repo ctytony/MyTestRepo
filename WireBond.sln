@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WireBond", "WireBond\WireBond.vcproj", "{8834ED97-AB6A-4F8F-A277-742498137917}"
+	ProjectSection(ProjectDependencies) = postProject
+		{03CC2630-1615-4BD9-8164-930D01046C47} = {03CC2630-1615-4BD9-8164-930D01046C47}
+		{B9F3C4B7-1D38-4149-9978-E1CB79B49C74} = {B9F3C4B7-1D38-4149-9978-E1CB79B49C74}
+		{A5EE03D2-6B0B-4847-80A0-8C8289A6DEA3} = {A5EE03D2-6B0B-4847-80A0-8C8289A6DEA3}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vision", "Vision\Vision.vcproj", "{03CC2630-1615-4BD9-8164-930D01046C47}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bond", "Bond\Bond.vcproj", "{B9F3C4B7-1D38-4149-9978-E1CB79B49C74}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MaterialHandler", "Materialhandler\Materialhandler.vcproj", "{A5EE03D2-6B0B-4847-80A0-8C8289A6DEA3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Include", "Include\Include.vcproj", "{9A1988B8-8504-4CB6-8BA8-48551E4C14C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AC75A76D-CAEE-40D1-A083-953F98DF385B}"
+	ProjectSection(SolutionItems) = preProject
+		SoftwareNote.txt = SoftwareNote.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8834ED97-AB6A-4F8F-A277-742498137917}.Debug|Win32.ActiveCfg = Release|Win32
+		{8834ED97-AB6A-4F8F-A277-742498137917}.Debug|Win32.Build.0 = Release|Win32
+		{8834ED97-AB6A-4F8F-A277-742498137917}.Release|Win32.ActiveCfg = Release|Win32
+		{8834ED97-AB6A-4F8F-A277-742498137917}.Release|Win32.Build.0 = Release|Win32
+		{03CC2630-1615-4BD9-8164-930D01046C47}.Debug|Win32.ActiveCfg = Release|Win32
+		{03CC2630-1615-4BD9-8164-930D01046C47}.Debug|Win32.Build.0 = Release|Win32
+		{03CC2630-1615-4BD9-8164-930D01046C47}.Release|Win32.ActiveCfg = Release|Win32
+		{03CC2630-1615-4BD9-8164-930D01046C47}.Release|Win32.Build.0 = Release|Win32
+		{B9F3C4B7-1D38-4149-9978-E1CB79B49C74}.Debug|Win32.ActiveCfg = Release|Win32
+		{B9F3C4B7-1D38-4149-9978-E1CB79B49C74}.Debug|Win32.Build.0 = Release|Win32
+		{B9F3C4B7-1D38-4149-9978-E1CB79B49C74}.Release|Win32.ActiveCfg = Release|Win32
+		{B9F3C4B7-1D38-4149-9978-E1CB79B49C74}.Release|Win32.Build.0 = Release|Win32
+		{A5EE03D2-6B0B-4847-80A0-8C8289A6DEA3}.Debug|Win32.ActiveCfg = Release|Win32
+		{A5EE03D2-6B0B-4847-80A0-8C8289A6DEA3}.Debug|Win32.Build.0 = Release|Win32
+		{A5EE03D2-6B0B-4847-80A0-8C8289A6DEA3}.Release|Win32.ActiveCfg = Release|Win32
+		{A5EE03D2-6B0B-4847-80A0-8C8289A6DEA3}.Release|Win32.Build.0 = Release|Win32
+		{9A1988B8-8504-4CB6-8BA8-48551E4C14C8}.Debug|Win32.ActiveCfg = Release|Win32
+		{9A1988B8-8504-4CB6-8BA8-48551E4C14C8}.Debug|Win32.Build.0 = Release|Win32
+		{9A1988B8-8504-4CB6-8BA8-48551E4C14C8}.Release|Win32.ActiveCfg = Release|Win32
+		{9A1988B8-8504-4CB6-8BA8-48551E4C14C8}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
