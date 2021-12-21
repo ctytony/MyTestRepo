@@ -1,5 +1,4 @@
 v3.1
-T581sc 211221 v3.1.T581
 T580sc 211020 debug spark fail bond extra wire
 T579sc 211009 link USG v1.0.T28 - debug display wrong version no.
 T578sc 211007
@@ -936,9 +935,9 @@ T491sc 200210 in CServoETEL.SendRealDataToServo, use shared memory
 T491sc 200210 in CServoETEL.SendIntDataToServo, add buffer no.
 T491sc 200210 in CServoETEL.SendIntDataToServo, use shared memory
 T491sc 200210 add CServoETEL
-Y490sc 200110 ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¾ï¿½ï¿½ï¿½ï¿½Ìµï¿½Comï¿½ï¿½×¡,ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Ê¼ï¿½ß´ï¿½ï¿½ï¿½1Ê±
+Y490sc 200110 »úÌ¨ÔË×÷ÖÐÍ¾½«±à³ÌµÄComËø×¡,Ìõ¼þÎª¿ªÊ¼Ïß´óÓÚ1Ê±
 T489sc 200102 revert T482
-Y488sc 191219 ï¿½Þ¸ï¿½ï¿½É¾×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦
+Y488sc 191219 ÐÞ¸´´É¾×¼üÅÌÎÞÏìÓ¦
 Y487sc 191218 add soft keyboard function
 T486sc 191216 debug single bond key not functioning
 T486sc 191214 in CScanKeyThread, rename enum JOYSTICK_CONFIG to EN_JOYSTICK_CONFIG
@@ -1345,10 +1344,10 @@ T327sc 190527 change debug bond/vision time message
 T326sc 190524 debug IsTimeStampCycle not show time
 T325sc 190524 link MachineConfig v1.0.T148 - add IsTimeStampCycle/Bond/PR
 T325sc 190524 delete dummy CWireBondApp::GetWorkingDir
-T324sc 190507 ï¿½ï¿½ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î²ï¿½ï¿½X,YÎ»ï¿½ÃµÄ¹ï¿½ï¿½ï¿½
-T323sc 190507 ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½Ð¾Æ¬/ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½
-T322sc 190507 ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½ï¿½ï¿½Å¥ï¿½Þ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-T321sc 190507 ï¿½ï¿½ï¿½Ó¸ï¿½Ê¿ï¿½ï¿½ï¿½ï¿½Ð¾Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î§
+T324sc 190507 Ìí¼ÓÄÜ¹»ÉèÖÃ×öÎ²µÄX,YÎ»ÖÃµÄ¹¦ÄÜ
+T323sc 190507 ¸ü¸Ä×Ô¶¯Ìø¹ýÐ¾Æ¬/µ¥Ôª¹¦ÄÜ
+T322sc 190507 ½â¾öÇå¿Õ¹ìµÀ°´Å¥ÎÞ·¨²Ù×÷µÄÎÊÌâ
+T321sc 190507 Ìí¼Ó¸»Ê¿¿µµÄÐ¾Æ¬ËÑË÷·¶Î§
 T320sc 190427 link MachineConfig v1.0.T147 - add AccessControl.ini
 T319sc 190426
 	1. revert T316 - resume elevator button
@@ -1372,7 +1371,7 @@ T306sc 190328 debug CForceCalibPage hang
 T305sc 190327 only use search pr show time offset when showing "PrStatus"
 T304sc 190327 link MachineConfig v1.0.T146 - add [WIRE SPOOL][Trigger Delay]
 T303sc 190327 link MachineConfig v1.0.T145 - add [SEARCH PR][Show Time Offset]
-L302sc 190322 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+L302sc 190322 ¼ÓÔØÅäÖÃÎÄ¼þºóÉèÖÃËÍÏßÂí´ï²ÎÊý
 T301sc 190322 in CForceCalibPage, debug can't set apply force
 T300sc 190316 for foxconn, move to next index pos use relative instead of absolute
 T299sc 190314 link MachineConfig v1.0.T144 - add [WIRE SPOOL][Type/Distance/Speed]
@@ -2390,7 +2389,7 @@ T254sc 180109
 	2. link SoftController v1.0.T22 - add soft search
 T254 180109 link MachineConfig v1.0.T63 - add [SOFT SEARCH 1/2][Speed/Position Error/Position Error Series]
 T253 180103 link ServoController v1.1.T65
-P252sc 171229 ï¿½Þ¸ï¿½CLoopParaBaseDlgï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+P252sc 171229 ÐÞ¸´CLoopParaBaseDlg²ÎÊý±£´æ´íÎó
 T251sc 171227 in TchSequencePage.OnStart, when teach matrix die ahead or matrix hybrid, allow matrix row/col = 1
 T250sc 171226 link ServoController v1.1.T64sc - debug overwrite new buffer 2
 T249sc 171226 link ServoController v1.1.T63sc - update new buffer 9
@@ -2416,7 +2415,7 @@ T239sc 171220
 		- add [DEBUG][Random Skip]=0:not skip/other:random modulo
 		- add [DEBUG][Random Seed]=0:false/1:true
 	2. in CBond.PerformDieAheadPR, add QUIT to end
-P238sc 171220 ï¿½ï¿½ï¿½ï¿½"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"ï¿½Ëµï¿½ï¿½ï¿½
+P238sc 171220 Ìí¼Ó"¼ÓÔØÅäÖÃ"²Ëµ¥Ïî
 T237sc 171219 link StepperIO v1.2.T15 - cleanup code
 T236sc 171219 link StepperIO v1.2.T14 - remove m_cAddr/m_cAxisID
 T235sc 171219 link StepperIO v1.2.T12
@@ -2506,7 +2505,7 @@ T206sc 171208 in CBond, change stPgmRcd to pstPgm
 T206sc 171208 change stPgmRcd to pstPgm
 T205sc 171208 relayout IDD_TAB_POSITION_CALIB & IDD_TAB_FORCE_CALIB
 T204sc 171208 change stPgmRcd to pstPgm
-P203sc 171208 ï¿½ï¿½IDD_TAB_FORCE_CALIBï¿½ï¿½IDD_TAB_POSITION_CALIBï¿½ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½Ãµï¿½Ç°Öµï¿½ï¿½ï¿½Ø¼ï¿½
+P203sc 171208 ÔÚIDD_TAB_FORCE_CALIBºÍIDD_TAB_POSITION_CALIBÌí¼Ó¡°ÖØÖÃµ±Ç°Öµ¡±¿Ø¼þ
 T202sc 171208 change stPgmRcd to pstPgm
 T201sc 171208 relayout IDD_TAB_WCL_CALIB
 T200sc 171208
@@ -2517,7 +2516,7 @@ T199sc 171207
 	2. in CWclCalibPage, change current factor default
 T198sc 171207 link BondPara v1.0.T10 - change GetBondParaLimit return ptr
 T197sc 171207 cleanup CBond.CalcMZ1
-P196sc 171207 ï¿½ï¿½ï¿½ï¿½ï¿½ß¼ï¿½ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½
+P196sc 171207 Ìí¼ÓÏß¼ÐÖØÖÃ²ÎÊý
 T195sc 171207 rename g_jpegHelp to theJpegHelp
 T195sc 171207 cleanup CJpeg
 T194sc 171207 in CForceSwitch:
@@ -2527,7 +2526,7 @@ T193sc 171207 link MachineConfig v1.0.T57 - waveform sample rate default = 0
 T192sc 171207 link ServoController v1.1.L51sc - set current limit for sc only
 T191sc 171207 in CForceSwitch, rename GetDefaultRcd to SetDefaultRcd
 T191sc 171207 in CForceSwitch, change GetRcd to return ptr, remove SetRcd
-P190sc 171206 CLoopSpeedArcPageï¿½Ø¼ï¿½Î»ï¿½Ãµï¿½ï¿½ï¿½
+P190sc 171206 CLoopSpeedArcPage¿Ø¼þÎ»ÖÃµ÷Õû
 T189sc 171205 link LoopPara v1.0.T13 - in LOOP_MODE_ACS_PARA, rename var
 T188sc 171205 link LoopPara v1.0.T12 - in LOOP_MODE_ACS_PARA, rename var
 T187sc 171205 cleanup CBond.CalcMZ1
@@ -2539,7 +2538,7 @@ T184sc 171205 rename CBond.m_adblMZ1 to m_adMZ1
 T183sc 171205 revert T167sc - fix bond servo error
 T182sc 171205 debug FORCE_SWITCH_PARA not compatible since var position changed
 T181sc 171204 link BSD v1.0.T14 - change wire feed debug message
-P180sc 171204 ï¿½Þ¸ï¿½v1.6.P153scï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+P180sc 171204 ÐÞ¸´v1.6.P153scÂýËÑË÷´íÎó
 T179sc 171204 link MachineConfig v1.0.T55, BSD v1.0.T13 - add [BSD][Check Wire Feed Every Wire X]
 T178sc 171204 in CBond::InitUsgProfile, remove dummy stBondParaRcd
 T177sc 171204 link BondPara v1.0.T9
@@ -2568,8 +2567,8 @@ T157sc 171201 link BSD v1.0.T8 - rename functions
 T156sc 171201 in CBond, rename TriggerStickDetection to StartStickDetect
 T155sc 171201 link BSD v1.0.T7 - rename functions
 T154sc 171201 link ServoController v1.1.T48sc - to avoid burn wire clamp
-P153sc 171201 Align Sensor Slow Search Distï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½Öµ
-P152sc 171201 ï¿½Þ¸ï¿½CSparkParaPageÑ¡ï¿½ï¿½Ä·ï¿½Î§
+P153sc 171201 Align Sensor Slow Search Dist¸ù¾ÝÂýËÑË÷·½Ê½´«ÈëÕýÈ·µÄÊýÖµ
+P152sc 171201 ÐÞ¸ÄCSparkParaPageÑ¡ÏîµÄ·¶Î§
 T151sc 171130
 	1. in WIRE_INFO_RCD, remove lSrchLvl2, add nSrchHt1/2
 	2. link ServoController v1.1.T47sc, SoftController v1.0.T15
@@ -2595,20 +2594,20 @@ T141sc 171127
 	3. link SoftController v1.0.T13 - change to global anData(MAX_INT_VARIABLE)
 T140sc 171127 debug device data corrupted causing teach device menu malfunction
 T139sc 171125 link MachineData v1.1.T10 - add GetFlatLevel, IsZeroBtosOptics
-P138sc 171125 É¾ï¿½ï¿½v1.6.P134scï¿½ï¿½ï¿½ÓµÄ´ï¿½ï¿½ï¿½
+P138sc 171125 É¾³ýv1.6.P134scÌí¼ÓµÄ´úÂë
 T137sc 171124
 	1. link ServoController v1.0.T41sc - rename SERVO_VAR_ARRAY
 	2. pass SERVO_VAR_FORCE_COMPENSATE to servo
 	3. change force compensate range from 0..100 to -200..200
-P136sc 171125 ForceSwitchSheetï¿½Ô¼ï¿½FORCE_SWITCH_PARAï¿½Ú±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+P136sc 171125 ForceSwitchSheetÒÔ¼°FORCE_SWITCH_PARAÄÚ±äÁ¿ÖØÃüÃû
 T135sc 171124 pass FORCE_SWITCH, IMPACT_SPEED1/2/3, IMPACT_MODE1/2/3 to servo
-P134sc 171124 ï¿½Þ¸ï¿½CTopDeviceParaPageï¿½ï¿½ListDatabaseÑ¡ï¿½ï¿½Îªï¿½Ô¶ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ÏºÐ²ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬
+P134sc 171124 ÐÞ¸ÄCTopDeviceParaPageµ±ListDatabaseÑ¡ÏîÎª×Ô¶¨ÒåÊ±£¬ÁÏºÐ²ÎÊýÎª¿ÉÊäÈë×´Ì¬
 T133sc 171124 link StepperIO v1.2.T5 - InitStepParameter in InitStepCard, after LoadConfig
 T132sc 171123 convert to sc version
 T132 171123 link ServoController v1.1.T39 - add FORCE_SWITCH, IMPACT_SPEED1/2/3, IMPACT_MODE1/2/3
 T131 171123 in force compensate menu, rename Hme1/2 to Time 1/2
 T130 171123 in CWireBondApp, remove m_pCurrentFont
-P129 171123 ï¿½Þ¸ï¿½CLoopLandingPagePanÒ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë½¹ï¿½ï¿½
+P129 171123 ÐÞ¸´CLoopLandingPagePanÒ³Ãæ¼üÅÌÊäÈë½¹µã
 T128 171122 in CMsgManager, remove m_nLanguage
 T128 171122
 	1. link MachineConfig v1.0.T49 - add ToggleLanguage
@@ -2618,7 +2617,7 @@ T127 171122 in CMsgManager, remove GetIniFileName
 T126 171122
 	1. link Program v1.0.T26 - upgrade PGM_VERSION = 99
 	2. add force switch/force compensate/impact mode menu
-P125 171122 ï¿½Þ¸ï¿½Languageï¿½Ä±ï¿½ï¿½Ø±ï¿½ï¿½æ·½Ê½
+P125 171122 ÐÞ¸ÄLanguageµÄ±¾µØ±£´æ·½Ê½
 T124 171121 link SoftController v1.0.T12 - rename to theMcConfig
 T123 171121
 	1. link MachineConfig v1.0.T48 - add [ONLOADER][Holder Screw Type]=0:lead screw 6mm/1:ball screw 5mm
@@ -2632,7 +2631,7 @@ T122 171121
 	6. link Program v1.0.T26, R2RIndex v1.0.T6, R2ROn/Offload v1.0.T5
 	7. link Relay v1.0.T5, RollingClaw v1.0.T6, Sensor v1.0.T5
 	8. link TopClamp v1.0.T5, TopOn/Offload v1.0.T9, TowerLight v1.0.T5
-P121 171121 ï¿½ï¿½ï¿½ï¿½Ó´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½NEXTï¿½Ø¼ï¿½ï¿½áµ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+P121 171121 ½â¾ö½Ó´¥ÃæËÑË÷Á¬µãÁ½´ÎNEXT¿Ø¼þ»áµ±»úµÄÎÊÌâ
 T120 171120 link MachineConfig v1.0.T45 - add [WAVEFORM][WCL Scale]=0:default/other:scaling factor
 T119 171120 link MachineConfig v1.0.T44 - add [WAVEFORM][MFZ/WCL Type]=0:self/1:bond force
 T118 171120 link MachineConfig v1.0.T42 - debug wrong config file name
@@ -2744,8 +2743,8 @@ T36 171109 in AdvWireLayoutPage.cpp, remove pointer
 T35 171108 in TopIndex.cpp, remove pointer
 T34 171108 in CAdvLoopParaSheet::OnInitDialog, remove pointer
 T33 171108 in CBondEditPage::OnEditWireNum, remove pointer
-P32 171108 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è¶¨
-P31 171107 ï¿½ï¿½ï¿½ï¿½"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½"ï¿½ï¿½ï¿½ó¾¯¸ï¿½
+P32 171108 Ìí¼ÓÂýËÑË÷¾àÀëÉè¶¨
+P31 171107 Ìí¼Ó"ÂýËÑË÷Ê§°Ü"´íÎó¾¯¸æ
 T30 171107 in CAdvLoopParaSheet::AddLoopParaPages, remove pointer
 T29 171107 cleanup CBond
 T28 171106 in TopIndex.h, rename enum
@@ -2777,7 +2776,7 @@ T10sc 171027 (repeat v1.5.175.T7/9)
 	1. link ServoController v1.1.T30sc - inc z speed block to 12
 	2. link Program v1.0.T16, link LoopPara v1.0.T9, LoopShape v1.0.T2
 T9 171027 link SoftController v1.0.T9, ServoController v1.1.T29
-P8 171027 ï¿½Þ¸Ä¸ß¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³Ñ¡ï¿½ï¿½Ä·ï¿½Î§
+P8 171027 ÐÞ¸Ä¸ß¼¶º¸½ÓÊôÐÔÒ³Ñ¡ÏîµÄ·¶Î§
 T7 171027 (repeat v1.5.175.T22/23/26)
 	1. rename CInitDlg.UpdateInitInfo to ShowInfoMsg
 	2. in CInitDlg, add ShowInitMsg
@@ -2792,7 +2791,7 @@ T2 171027 (repeat v1.5.175.T8)
 T1 171027 upgrade version no.
 
 v1.5
-175.P6 171012 ï¿½ï¿½ï¿½ï¿½ï¿½ß»ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ (eric's buffer)
+175.P6 171012 Ìí¼ÓÏß»¡ÊôÐÔ±íµ¥ (eric's buffer)
 175.T5 170929 link Program v1.0.T13 - upgrade program version to 97
 175.T4 170928 add version comment for v1.5.175.W1
 175.T3 170926 link WB_MotionLib v1.0.T11
@@ -2922,7 +2921,7 @@ T91 170627 relayout IDD_TAB_SEQUENCE
 T91 170627 in CTchSequencePage, show "X" to indicate which unit to teach
 T90 170627 cleanup CTchSequencePage
 W89 170626 Display wire number for both matrix rows
-W88 170621 Enable ï¿½ï¿½Over Viewï¿½ï¿½ window to display/control next matrix
+W88 170621 Enable ¡°Over View¡± window to display/control next matrix
 W87 170616 Prohibit BH moving when performing PR Index if window clamp not closed properly
 T86 170614 relayout IDD_TAB_BTOS
 T86 170614 cleanup CBtosPage
@@ -3195,7 +3194,7 @@ T287 170315
 	3. cleanup CBond
 W286 170314
 	1. Suppress "Machine ID" dialog while bonding
-	2. Solved problem of ï¿½ï¿½per index skip die/unit limitï¿½ï¿½ and ï¿½ï¿½continuous skip die/unit num limitï¿½ï¿½
+	2. Solved problem of ¡°per index skip die/unit limit¡± and ¡°continuous skip die/unit num limit¡±
 T285 170314 cleanup CBond.InitAutoBond
 T284 170314 relocate m_BondTimer.StartTimer
 T283 170314 cleanup CBond.PerformWireBond
